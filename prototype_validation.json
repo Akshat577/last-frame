@@ -1,0 +1,27 @@
+{
+  "tests_passed": 36,
+  "tests_skipped": 0,
+  "core_ai_tests": 23,
+  "ui_smoke_tests": 8,
+  "python": "3.12.14",
+  "streamlit": "1.45.1",
+  "original_pack_revalidated": {
+    "episodes": 50,
+    "promos": 15
+  },
+  "browser_demo_verified": true,
+  "live_ai_provider_tested": false,
+  "publicly_deployed": false,
+  "original_raw_outputs_changed": false,
+  "ui_refresh": "Distinct hero, upload/demo panels, metrics, editorial cards and chat/download sections; OpenAI dashboard link removed.",
+  "network_tests": 5,
+  "key_free_gemini_connectivity_verified": true,
+  "default_workspace": "Sample results \u00b7 50 episodes",
+  "workspaces": [
+    "Sample results \u00b7 50 episodes",
+    "New analysis"
+  ],
+  "history_feature": false,
+  "live_api_provider_tested": true,
+  "live_api_status": "User Gemini attempt validated two episodes before HTTP 503; no complete full-pack API run."
+}

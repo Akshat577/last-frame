@@ -1,0 +1,543 @@
+[
+  {
+    "episode": 1,
+    "source_sha256": "9787df1d0983957589fc407cb0f2cdc0a89fcde7100c022a4741b8abfeedfa81",
+    "status": "select",
+    "reason": "The replacement bride declares the betrayal immediately; cut on the unanswered question, before the sister explains how long.",
+    "segments": [
+      {
+        "start": "00:39.10",
+        "end": "01:14.30"
+      }
+    ],
+    "hook_id": "E001B027",
+    "cliff_id": "E001B050",
+    "ratings": {
+      "hook": 4,
+      "cliff": 3,
+      "context": 5
+    },
+    "open_question": "How long have her groom and sister been conspiring?",
+    "flags": []
+  },
+  {
+    "episode": 2,
+    "source_sha256": "f0bdb98b40cdd1cd1458e4dbae99ee51c55130e75cd676e06a12ce04a9cbb111",
+    "status": "pass",
+    "reason": "The rebuke is satisfying but resolves the humiliation emotionally; no equally strong unresolved cut with a clear opening survives the shortlist."
+  },
+  {
+    "episode": 3,
+    "source_sha256": "2a1df4c96f178a4784aef81dd6fe82e3a9d226d2443fe98629cfbc0c95dc14df",
+    "status": "select",
+    "reason": "A woman is dragged from a church and a stranger challenges the guards; the cut withholds the fight and his identity.",
+    "segments": [
+      {
+        "start": "00:58.30",
+        "end": "01:23.90"
+      }
+    ],
+    "hook_id": "E003B047",
+    "cliff_id": "E003B069",
+    "ratings": {
+      "hook": 5,
+      "cliff": 4,
+      "context": 4
+    },
+    "open_question": "Who is this stranger, and will the guards obey him?",
+    "flags": [
+      "Physical violence; verify restraint footage and tone."
+    ]
+  },
+  {
+    "episode": 4,
+    "source_sha256": "65f7f9c356a21c86dddfd4808bbdbc65dcd22f0ce220cc2de2cbcdc0371fc51b",
+    "status": "pass",
+    "reason": "The wedding acceptance and exit offer payoff; stronger marriage conflict appears in episode 45."
+  },
+  {
+    "episode": 5,
+    "source_sha256": "0dc648aeee02b1eebdd200144e70386f1dd101e820f96e3a5da65b527a43c9db",
+    "status": "pass",
+    "reason": "The ruined ledger is recovered and reassured over; the sacrifice premise in episode 12 gives a clearer open loop."
+  },
+  {
+    "episode": 6,
+    "source_sha256": "11131c5019b2c7021f376b17cfd99d6c876b8594da0ea4fe5abffda6f4db19de",
+    "status": "pass",
+    "reason": "Domestic rebuilding is warm but has a slow opening and little unresolved urgency."
+  },
+  {
+    "episode": 7,
+    "source_sha256": "d6125d1e308e9ea7993e1e22a4452e1f940bc384a13b621acdb5b3709bf96494",
+    "status": "pass",
+    "reason": "Gerald threatens the husband but then flees; a long version leaks the payoff and a short one needs more setup."
+  },
+  {
+    "episode": 8,
+    "source_sha256": "e2482244be533ae60b42cae3032208cf0bede3b2427639797a6323995dafeccb",
+    "status": "pass",
+    "reason": "The beard mystery is gentle teasing; neither the opening nor the unresolved stakes compete with the shortlisted scenes."
+  },
+  {
+    "episode": 9,
+    "source_sha256": "faea423ecdc00a4677d0cfe44deea27f2353120a682104faf07c073e99589e9e",
+    "status": "pass",
+    "reason": "The sick-child arc resolves; the late Duke rumor is promising but mostly exposition without a strong immediate hook."
+  },
+  {
+    "episode": 10,
+    "source_sha256": "474a02d035632a75787ddf6796abafcb7a5dac806f9739e25b3de09e0de5841f",
+    "status": "pass",
+    "reason": "Wound tending and romantic reassurance deliver intimacy rather than a distinct unresolved event."
+  },
+  {
+    "episode": 11,
+    "source_sha256": "839ae70b822b9ae862ea9b0625a372d2a03660757d6556cd2dc1251d876654de",
+    "status": "select",
+    "reason": "The theft accusation supplies immediate stakes; his consent to the search commits the scene without showing the watch discovery.",
+    "segments": [
+      {
+        "start": "00:16.80",
+        "end": "00:53.60"
+      }
+    ],
+    "hook_id": "E011B016",
+    "cliff_id": "E011B047",
+    "ratings": {
+      "hook": 4,
+      "cliff": 4,
+      "context": 5
+    },
+    "open_question": "Will the search prove her husband is a thief?",
+    "flags": []
+  },
+  {
+    "episode": 12,
+    "source_sha256": "d3c65e83677b3d1014a1e95dead2ea621ff2a81bf565462084f3ac9f5c0c6305",
+    "status": "select",
+    "reason": "A sister demands she crawl through frozen thorns with bare hands, then makes her husband's life the price of refusal.",
+    "segments": [
+      {
+        "start": "00:44.00",
+        "end": "01:09.20"
+      }
+    ],
+    "hook_id": "E012B032",
+    "cliff_id": "E012B045",
+    "ratings": {
+      "hook": 5,
+      "cliff": 5,
+      "context": 4
+    },
+    "open_question": "Will she enter the thorns to save her husband from hanging?",
+    "flags": [
+      "Threat of execution; cruelty; confirm suitability for the intended audience."
+    ]
+  },
+  {
+    "episode": 13,
+    "source_sha256": "b0880fe2f19304409a390837761474a741e366a571f3435abdb40c74a7929a18",
+    "status": "pass",
+    "reason": "The thorn search is visually painful and finds the ring; episode 12 sets up the same dilemma more clearly without its answer."
+  },
+  {
+    "episode": 14,
+    "source_sha256": "23e67fb015dbfbf003d1008f2fd5033dfa192100b1eced5d1bb3e28d31c3844d",
+    "status": "pass",
+    "reason": "The ring is found and husband freed; the revenge vow is less specific than the already selected threats."
+  },
+  {
+    "episode": 15,
+    "source_sha256": "4820cb5f1dca8b09eb9b111eb828151ea39cb8d15da729b75acb08551f573b27",
+    "status": "select",
+    "reason": "The confrontation escalates from refusal and assault to a three-against-one challenge; the fight remains unseen.",
+    "segments": [
+      {
+        "start": "00:44.80",
+        "end": "01:22.40"
+      }
+    ],
+    "hook_id": "E015B031",
+    "cliff_id": "E015B053",
+    "ratings": {
+      "hook": 4,
+      "cliff": 4,
+      "context": 4
+    },
+    "open_question": "Can the veteran take on all three attackers?",
+    "flags": [
+      "Violence and visible blood; source footage review required."
+    ]
+  },
+  {
+    "episode": 16,
+    "source_sha256": "f86c26df7397d86091056e44fe613c2f50abe7d221f7e015d8cdd5c4f8775e19",
+    "status": "pass",
+    "reason": "The fight and interrogation reveal who paid the thugs; episode 15 cuts before that payoff."
+  },
+  {
+    "episode": 17,
+    "source_sha256": "25fad86cb46d505849d1247d92836e1176bf732e50699a00b1f34c0e14f28e27",
+    "status": "pass",
+    "reason": "Tender domestic exchanges close with trust rather than an urgent unknown."
+  },
+  {
+    "episode": 18,
+    "source_sha256": "1e1ecab8f43c144862ef126eb707196478303c1af57186357ba1e25ea4c8e529",
+    "status": "select",
+    "reason": "An urgent order to leave becomes a refusal to abandon her mother's book; cut on her scream before Alexander tackles her to safety.",
+    "segments": [
+      {
+        "start": "00:58.00",
+        "end": "01:26.20"
+      }
+    ],
+    "hook_id": "E018B034",
+    "cliff_id": "E018B046",
+    "ratings": {
+      "hook": 4,
+      "cliff": 5,
+      "context": 3
+    },
+    "open_question": "Will she escape after risking her life for her mother's ledger?",
+    "flags": [
+      "Fire and peril; opening pronoun refers to a book shown just before the cut-in; check visual clarity."
+    ]
+  },
+  {
+    "episode": 19,
+    "source_sha256": "45e16ab1556cb4afe16777d1538079263f933b85ecb63e1e44a462d33541fb24",
+    "status": "pass",
+    "reason": "The hidden Duke and imprisoned mother are interesting, but the informant scene relies on several unfamiliar names."
+  },
+  {
+    "episode": 20,
+    "source_sha256": "e6389a016e5aa432efca70d3bb2d64ec859200ad0e6aad207fa63a616ce12fa8",
+    "status": "pass",
+    "reason": "Villain succession talk and the healer's resolve need substantial context; other episodes make the poisoning threat explicit."
+  },
+  {
+    "episode": 21,
+    "source_sha256": "00cb2e6c0b31ed3022212cc30d2fadd006e70516eb33be7d50aed31137d39db9",
+    "status": "pass",
+    "reason": "The emergency with Toby offers a possible alternative, but the rescue resolves and the late Duchess setup requires a second premise."
+  },
+  {
+    "episode": 22,
+    "source_sha256": "516bd97dafb3753c10ac4a1a909aa7bccec17367050791e278e4102277cc3cc1",
+    "status": "select",
+    "reason": "A warning about recognition establishes the disguise; her plan to save the Duchess carries her through the servants' entrance.",
+    "segments": [
+      {
+        "start": "00:07.00",
+        "end": "00:42.50"
+      }
+    ],
+    "hook_id": "E022B005",
+    "cliff_id": "E022B022",
+    "ratings": {
+      "hook": 4,
+      "cliff": 4,
+      "context": 5
+    },
+    "open_question": "Will a noblewoman disguised as a maid be discovered inside the manor?",
+    "flags": []
+  },
+  {
+    "episode": 23,
+    "source_sha256": "2590fe65b7a4a8b4978992a4a857b46ba3c35d80f65ebdf0906e7f558107f1ca",
+    "status": "select",
+    "reason": "The accusation of poisoning is the hook; an approaching intruder interrupts her attempt to save the Duchess.",
+    "segments": [
+      {
+        "start": "01:19.00",
+        "end": "02:04.00"
+      }
+    ],
+    "hook_id": "E023B040",
+    "cliff_id": "E023B063",
+    "ratings": {
+      "hook": 5,
+      "cliff": 4,
+      "context": 4
+    },
+    "open_question": "Who is approaching the room where she has discovered a poisoning?",
+    "flags": [
+      "Fictional treatment dialogue is source content, not medical advice; assess whether it distracts from the thriller."
+    ]
+  },
+  {
+    "episode": 24,
+    "source_sha256": "c211a90aef87daaf36182aaee95262b6121e962537fb25b37ef68260e4971259",
+    "status": "pass",
+    "reason": "The assault is shocking, but punishment and a return vow have a weaker open loop than the poisoning discovery in episode 23."
+  },
+  {
+    "episode": 25,
+    "source_sha256": "c80b5d5b0e2ddf2033dd07eb15242604859e9dd2fd24c64113a274aa29dd6962",
+    "status": "pass",
+    "reason": "The wound mystery is answered with Catherine's name; the later poisoning conversation repeats episode 23 with more setup."
+  },
+  {
+    "episode": 26,
+    "source_sha256": "6ffdcf181c0b1067f4524a1696da17735a23b94498c443f342516aab7fe15966",
+    "status": "pass",
+    "reason": "The ring-recognition ending is promising, but episode 27 includes the husband and lost-son context inside one clip."
+  },
+  {
+    "episode": 27,
+    "source_sha256": "1d7ceb00a1cf58e1e97f31213bd40db884f5073f0abfc6b11bb2f6650882b63a",
+    "status": "select",
+    "reason": "A ring interrogation links her apparently penniless soldier husband to a noblewoman's lost son; cut before his name is spoken.",
+    "segments": [
+      {
+        "start": "00:03.40",
+        "end": "00:46.40"
+      }
+    ],
+    "hook_id": "E027B004",
+    "cliff_id": "E027B025",
+    "ratings": {
+      "hook": 4,
+      "cliff": 5,
+      "context": 5
+    },
+    "open_question": "What is her husband's name, and is he the Duchess's lost son?",
+    "flags": []
+  },
+  {
+    "episode": 28,
+    "source_sha256": "c16039c9150b946989645a76291309ef7889e05e14a38451ad10630ef7f90d21",
+    "status": "select",
+    "reason": "The accused maid protests innocence; the Duchess confirms she saved her, then breaks off while trying to accuse her attackers.",
+    "segments": [
+      {
+        "start": "00:15.30",
+        "end": "00:47.00"
+      }
+    ],
+    "hook_id": "E028B015",
+    "cliff_id": "E028B035",
+    "ratings": {
+      "hook": 4,
+      "cliff": 5,
+      "context": 5
+    },
+    "open_question": "Will the Duchess finish exposing the people who poisoned her?",
+    "flags": [
+      "Final utterance is intentionally interrupted in the script; stop at its existing endpoint, not mid-line."
+    ]
+  },
+  {
+    "episode": 29,
+    "source_sha256": "bf00c3e50abaa8f00aebcb55c6a4520f26e9a987f22ab4975348ab092bdf6265",
+    "status": "pass",
+    "reason": "The gallows threat repeats the captivity premise; episode 12 offers a more concrete choice and episode 34 a judicial deadline."
+  },
+  {
+    "episode": 30,
+    "source_sha256": "5535a6b12dd9085ead17b3b19968ca9f25f6d862c822cea65a417972ea3c1265",
+    "status": "pass",
+    "reason": "Manufacturing witchcraft charges is legible but largely explains the villains' plan rather than putting a new viewer inside a dilemma."
+  },
+  {
+    "episode": 31,
+    "source_sha256": "7c7df240ef6ad40a87f2d5514d857e60273642fba4a5bbbd0da899a68e969610",
+    "status": "pass",
+    "reason": "The branding threat is graphic and the longer confrontation repeats the worth-and-status argument; stronger alternatives need less context."
+  },
+  {
+    "episode": 32,
+    "source_sha256": "e35aeb60acdaeebbbee43d680bf3c910d1b48a08c7c141a727cc0b8649b15b53",
+    "status": "pass",
+    "reason": "The heated-iron ending supplies jeopardy but a standalone cut either repeats insults or depends on the preceding confrontation."
+  },
+  {
+    "episode": 33,
+    "source_sha256": "0012ba24a8fa997a1df93165c06c90dacf5bab6c76ceef791533e8747aec4ad6",
+    "status": "pass",
+    "reason": "Witness coercion is a viable reserve, but introduces another relationship; the trial itself is clearer for a cold viewer."
+  },
+  {
+    "episode": 34,
+    "source_sha256": "76ed46ede7bbc0388279753e8d3e8da924141b43480b9f52243d1155003ca436",
+    "status": "select",
+    "reason": "The judge offers her a way to save herself; she refuses to condemn healing and he rises to pronounce judgment.",
+    "segments": [
+      {
+        "start": "02:22.40",
+        "end": "03:04.20"
+      }
+    ],
+    "hook_id": "E034B091",
+    "cliff_id": "E034B114",
+    "ratings": {
+      "hook": 4,
+      "cliff": 4,
+      "context": 4
+    },
+    "open_question": "What sentence will the judge give her for refusing to renounce healing?",
+    "flags": []
+  },
+  {
+    "episode": 35,
+    "source_sha256": "07326970ef3d6f070ac1d6590c28721fda574046ea5e3885daec412a9f2d9ea6",
+    "status": "pass",
+    "reason": "The mother-son reunion resolves recognition; the later ambush account needs more setup than the rescue deadline in episode 36."
+  },
+  {
+    "episode": 36,
+    "source_sha256": "20e03164760e2aef2f6425e045f839e61841ebc2c378c7938803790bd19fc224",
+    "status": "select",
+    "reason": "An execution threat to his wife becomes a vow that the dead Duke is returning; the rescue and confrontation remain ahead.",
+    "segments": [
+      {
+        "start": "02:40.50",
+        "end": "03:16.80"
+      }
+    ],
+    "hook_id": "E036B100",
+    "cliff_id": "E036B119",
+    "ratings": {
+      "hook": 5,
+      "cliff": 4,
+      "context": 4
+    },
+    "open_question": "Can the supposedly dead Duke get home before they execute his wife?",
+    "flags": [
+      "Opening line begins with a conjunction; editor should check whether the audible pickup feels abrupt."
+    ]
+  },
+  {
+    "episode": 37,
+    "source_sha256": "a76d8261a5e8423038f50c4f78f9dfd15fe90fbbc900e06f579de5e943163e2e",
+    "status": "pass",
+    "reason": "Wedding/execution planning is disturbing but mostly exposition; the wife-focused vow in episode 36 supplies the emotional point of view."
+  },
+  {
+    "episode": 38,
+    "source_sha256": "03e0ee85f8752256ba57786e7857c8c7e9f49b24b40d8ae900c4a6f5a00b5926",
+    "status": "pass",
+    "reason": "The final wedding-bells line needs viewers to know the execution schedule; the bread scene opens gently."
+  },
+  {
+    "episode": 39,
+    "source_sha256": "9880b70ecdcada1fcb110b33761a1bdfdf96ccad454ef181cd47d641bb68e500",
+    "status": "pass",
+    "reason": "The Duke's transformation is a payoff and preparation montage; the wife's danger is only briefly stated at the end."
+  },
+  {
+    "episode": 40,
+    "source_sha256": "9b116fc10ed5209d6d3a109f10f574cd6f4a1b680f5e1cf66a99e6f02b7b51e0",
+    "status": "pass",
+    "reason": "Noble arrivals and wedding talk open slowly; the execution threat arrives after substantial scene setup."
+  },
+  {
+    "episode": 41,
+    "source_sha256": "80e99739af6910a1947da7e3b729f9a79f1acc371d8d09c2f8028786b1c3a6ef",
+    "status": "pass",
+    "reason": "The explosion is a strong ending but a 20-60s continuous cut starts in wedding business without clearly explaining the prisoner's danger."
+  },
+  {
+    "episode": 42,
+    "source_sha256": "338a2e4416e23ccbdd35fce7a7bef8fe67e442cb023bacc55ae9a3f512aca696",
+    "status": "pass",
+    "reason": "The guards refusing arrest is strong, but the dead-man comeback is substantially answered; episode 43 withholds the betrayers' names."
+  },
+  {
+    "episode": 43,
+    "source_sha256": "38bc44fd0e20af8d7d020f5616476647014c1fb0e0dff1bd0a59f77cf36d9bb9",
+    "status": "select",
+    "reason": "A royal report establishes a deliberate military leak; cut on the order to read the names, before either conspirator is identified.",
+    "segments": [
+      {
+        "start": "00:30.00",
+        "end": "01:00.00"
+      }
+    ],
+    "hook_id": "E043B029",
+    "cliff_id": "E043B048",
+    "ratings": {
+      "hook": 3,
+      "cliff": 5,
+      "context": 4
+    },
+    "open_question": "Which names are in the Crown report identifying the betrayal?",
+    "flags": [
+      "Report exposition is a weaker scroll hook than physical conflict; test after the first wave."
+    ]
+  },
+  {
+    "episode": 44,
+    "source_sha256": "d6578a980e20d1c89412d7828db835a3076dbe6b8555a2d0cdb7b54ad747e256",
+    "status": "pass",
+    "reason": "Catherine's love appeal resolves in rejection; the unresolved marriage reversal comes in episode 45."
+  },
+  {
+    "episode": 45,
+    "source_sha256": "3424e374024cd00f62363ff74cc760257a974bf2c966796922d6ee99beade3db",
+    "status": "select",
+    "reason": "His public declaration makes her a Duchess, then a priest declares her marriage invalid; the reversal leaves her status unresolved.",
+    "segments": [
+      {
+        "start": "01:14.80",
+        "end": "01:53.00"
+      }
+    ],
+    "hook_id": "E045B053",
+    "cliff_id": "E045B070",
+    "ratings": {
+      "hook": 4,
+      "cliff": 5,
+      "context": 5
+    },
+    "open_question": "Can the Duke keep the wife he has just publicly named as Duchess?",
+    "flags": []
+  },
+  {
+    "episode": 46,
+    "source_sha256": "0be3f531f43e86d3e33d345721484e16c73d7c066a20333d08f888a60d957e14",
+    "status": "pass",
+    "reason": "The ten-day hearing is a usable reserve, but the legal exposition is longer than the immediate reversal in episode 45."
+  },
+  {
+    "episode": 47,
+    "source_sha256": "fff9175ab2120638b955660a5b8cdf11c5f6cdfaf8e0d40d313c7f1a8a54b63a",
+    "status": "select",
+    "reason": "The opening identifies an enemy; the new mistress offers her tormentor shelter only as a scullery maid and demands a choice.",
+    "segments": [
+      {
+        "start": "01:24.00",
+        "end": "02:07.20"
+      }
+    ],
+    "hook_id": "E047B043",
+    "cliff_id": "E047B067",
+    "ratings": {
+      "hook": 5,
+      "cliff": 4,
+      "context": 4
+    },
+    "open_question": "Will the woman who tried to destroy her accept work as her maid?",
+    "flags": []
+  },
+  {
+    "episode": 48,
+    "source_sha256": "877b9ef4386e0bdc3b9103964979388eca1eb9c5341f835d6b203412fc6db624",
+    "status": "pass",
+    "reason": "The secret priest summons depends on knowing the hearing, her humiliation and what the priest already did."
+  },
+  {
+    "episode": 49,
+    "source_sha256": "7b96649d2e272da28d82c5cf18c7915d4f09117e5d7632a04625a333d554016e",
+    "status": "pass",
+    "reason": "A secret priest conspiracy is intriguing, but repeated references to earlier meetings and the council burden standalone clarity."
+  },
+  {
+    "episode": 50,
+    "source_sha256": "93a1df095b8ea3a42ca4367e0f4c29c8d35fa1c549fd281a4289f93f6a392c1b",
+    "status": "pass",
+    "reason": "The priest affair is a scroll hook, but the bargain resolves and the discovery cut needs omitted setup; intimacy also needs footage review."
+  }
+]

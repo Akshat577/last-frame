@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+prepared/
+model_run/
+rerun/
+new_results/
+*.zip
+.venv/
+.streamlit/secrets.toml
+.DS_Store

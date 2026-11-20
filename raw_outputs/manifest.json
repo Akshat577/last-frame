@@ -1,0 +1,302 @@
+[
+  {
+    "episode": 1,
+    "file": "episode-001-Episode 1671703.txt",
+    "sha256": "9787df1d0983957589fc407cb0f2cdc0a89fcde7100c022a4741b8abfeedfa81",
+    "beats": 95
+  },
+  {
+    "episode": 2,
+    "file": "episode-002-Episode 1671704.txt",
+    "sha256": "f0bdb98b40cdd1cd1458e4dbae99ee51c55130e75cd676e06a12ce04a9cbb111",
+    "beats": 74
+  },
+  {
+    "episode": 3,
+    "file": "episode-003-Episode 1671705.txt",
+    "sha256": "2a1df4c96f178a4784aef81dd6fe82e3a9d226d2443fe98629cfbc0c95dc14df",
+    "beats": 118
+  },
+  {
+    "episode": 4,
+    "file": "episode-004-Episode 1671706.txt",
+    "sha256": "65f7f9c356a21c86dddfd4808bbdbc65dcd22f0ce220cc2de2cbcdc0371fc51b",
+    "beats": 110
+  },
+  {
+    "episode": 5,
+    "file": "episode-005-Episode 1671707.txt",
+    "sha256": "0dc648aeee02b1eebdd200144e70386f1dd101e820f96e3a5da65b527a43c9db",
+    "beats": 62
+  },
+  {
+    "episode": 6,
+    "file": "episode-006-Episode 1671708.txt",
+    "sha256": "11131c5019b2c7021f376b17cfd99d6c876b8594da0ea4fe5abffda6f4db19de",
+    "beats": 97
+  },
+  {
+    "episode": 7,
+    "file": "episode-007-Episode 1671709.txt",
+    "sha256": "d6125d1e308e9ea7993e1e22a4452e1f940bc384a13b621acdb5b3709bf96494",
+    "beats": 58
+  },
+  {
+    "episode": 8,
+    "file": "episode-008-Episode 1671710.txt",
+    "sha256": "e2482244be533ae60b42cae3032208cf0bede3b2427639797a6323995dafeccb",
+    "beats": 63
+  },
+  {
+    "episode": 9,
+    "file": "episode-009-Episode 1671711.txt",
+    "sha256": "faea423ecdc00a4677d0cfe44deea27f2353120a682104faf07c073e99589e9e",
+    "beats": 89
+  },
+  {
+    "episode": 10,
+    "file": "episode-010-Episode 1671712.txt",
+    "sha256": "474a02d035632a75787ddf6796abafcb7a5dac806f9739e25b3de09e0de5841f",
+    "beats": 60
+  },
+  {
+    "episode": 11,
+    "file": "episode-011-Episode 1671713.txt",
+    "sha256": "839ae70b822b9ae862ea9b0625a372d2a03660757d6556cd2dc1251d876654de",
+    "beats": 85
+  },
+  {
+    "episode": 12,
+    "file": "episode-012-Episode 1671714.txt",
+    "sha256": "d3c65e83677b3d1014a1e95dead2ea621ff2a81bf565462084f3ac9f5c0c6305",
+    "beats": 55
+  },
+  {
+    "episode": 13,
+    "file": "episode-013-Episode 1671715.txt",
+    "sha256": "b0880fe2f19304409a390837761474a741e366a571f3435abdb40c74a7929a18",
+    "beats": 75
+  },
+  {
+    "episode": 14,
+    "file": "episode-014-Episode 1671716.txt",
+    "sha256": "23e67fb015dbfbf003d1008f2fd5033dfa192100b1eced5d1bb3e28d31c3844d",
+    "beats": 51
+  },
+  {
+    "episode": 15,
+    "file": "episode-015-Episode 1671717.txt",
+    "sha256": "4820cb5f1dca8b09eb9b111eb828151ea39cb8d15da729b75acb08551f573b27",
+    "beats": 55
+  },
+  {
+    "episode": 16,
+    "file": "episode-016-Episode 1671718.txt",
+    "sha256": "f86c26df7397d86091056e44fe613c2f50abe7d221f7e015d8cdd5c4f8775e19",
+    "beats": 64
+  },
+  {
+    "episode": 17,
+    "file": "episode-017-Episode 1671719.txt",
+    "sha256": "25fad86cb46d505849d1247d92836e1176bf732e50699a00b1f34c0e14f28e27",
+    "beats": 75
+  },
+  {
+    "episode": 18,
+    "file": "episode-018-Episode 1671720.txt",
+    "sha256": "1e1ecab8f43c144862ef126eb707196478303c1af57186357ba1e25ea4c8e529",
+    "beats": 81
+  },
+  {
+    "episode": 19,
+    "file": "episode-019-Episode 1671721.txt",
+    "sha256": "45e16ab1556cb4afe16777d1538079263f933b85ecb63e1e44a462d33541fb24",
+    "beats": 63
+  },
+  {
+    "episode": 20,
+    "file": "episode-020-Episode 1671722.txt",
+    "sha256": "e6389a016e5aa432efca70d3bb2d64ec859200ad0e6aad207fa63a616ce12fa8",
+    "beats": 68
+  },
+  {
+    "episode": 21,
+    "file": "episode-021-Episode 1678574.txt",
+    "sha256": "00cb2e6c0b31ed3022212cc30d2fadd006e70516eb33be7d50aed31137d39db9",
+    "beats": 76
+  },
+  {
+    "episode": 22,
+    "file": "episode-022-Episode 1678575.txt",
+    "sha256": "516bd97dafb3753c10ac4a1a909aa7bccec17367050791e278e4102277cc3cc1",
+    "beats": 81
+  },
+  {
+    "episode": 23,
+    "file": "episode-023-Episode 1678576.txt",
+    "sha256": "2590fe65b7a4a8b4978992a4a857b46ba3c35d80f65ebdf0906e7f558107f1ca",
+    "beats": 67
+  },
+  {
+    "episode": 24,
+    "file": "episode-024-Episode 1678577.txt",
+    "sha256": "c211a90aef87daaf36182aaee95262b6121e962537fb25b37ef68260e4971259",
+    "beats": 69
+  },
+  {
+    "episode": 25,
+    "file": "episode-025-Episode 1678578.txt",
+    "sha256": "c80b5d5b0e2ddf2033dd07eb15242604859e9dd2fd24c64113a274aa29dd6962",
+    "beats": 95
+  },
+  {
+    "episode": 26,
+    "file": "episode-026-Episode 1678579.txt",
+    "sha256": "6ffdcf181c0b1067f4524a1696da17735a23b94498c443f342516aab7fe15966",
+    "beats": 51
+  },
+  {
+    "episode": 27,
+    "file": "episode-027-Episode 1678580.txt",
+    "sha256": "1d7ceb00a1cf58e1e97f31213bd40db884f5073f0abfc6b11bb2f6650882b63a",
+    "beats": 95
+  },
+  {
+    "episode": 28,
+    "file": "episode-028-Episode 1678581.txt",
+    "sha256": "c16039c9150b946989645a76291309ef7889e05e14a38451ad10630ef7f90d21",
+    "beats": 96
+  },
+  {
+    "episode": 29,
+    "file": "episode-029-Episode 1678582.txt",
+    "sha256": "bf00c3e50abaa8f00aebcb55c6a4520f26e9a987f22ab4975348ab092bdf6265",
+    "beats": 74
+  },
+  {
+    "episode": 30,
+    "file": "episode-030-Episode 1678583.txt",
+    "sha256": "5535a6b12dd9085ead17b3b19968ca9f25f6d862c822cea65a417972ea3c1265",
+    "beats": 71
+  },
+  {
+    "episode": 31,
+    "file": "episode-031-Episode 1681364.txt",
+    "sha256": "7c7df240ef6ad40a87f2d5514d857e60273642fba4a5bbbd0da899a68e969610",
+    "beats": 87
+  },
+  {
+    "episode": 32,
+    "file": "episode-032-Episode 1681365.txt",
+    "sha256": "e35aeb60acdaeebbbee43d680bf3c910d1b48a08c7c141a727cc0b8649b15b53",
+    "beats": 117
+  },
+  {
+    "episode": 33,
+    "file": "episode-033-Episode 1681366.txt",
+    "sha256": "0012ba24a8fa997a1df93165c06c90dacf5bab6c76ceef791533e8747aec4ad6",
+    "beats": 99
+  },
+  {
+    "episode": 34,
+    "file": "episode-034-Episode 1681367.txt",
+    "sha256": "76ed46ede7bbc0388279753e8d3e8da924141b43480b9f52243d1155003ca436",
+    "beats": 116
+  },
+  {
+    "episode": 35,
+    "file": "episode-035-Episode 1681368.txt",
+    "sha256": "07326970ef3d6f070ac1d6590c28721fda574046ea5e3885daec412a9f2d9ea6",
+    "beats": 72
+  },
+  {
+    "episode": 36,
+    "file": "episode-036-Episode 1681369.txt",
+    "sha256": "20e03164760e2aef2f6425e045f839e61841ebc2c378c7938803790bd19fc224",
+    "beats": 121
+  },
+  {
+    "episode": 37,
+    "file": "episode-037-Episode 1681370.txt",
+    "sha256": "a76d8261a5e8423038f50c4f78f9dfd15fe90fbbc900e06f579de5e943163e2e",
+    "beats": 79
+  },
+  {
+    "episode": 38,
+    "file": "episode-038-Episode 1681371.txt",
+    "sha256": "03e0ee85f8752256ba57786e7857c8c7e9f49b24b40d8ae900c4a6f5a00b5926",
+    "beats": 57
+  },
+  {
+    "episode": 39,
+    "file": "episode-039-Episode 1686799.txt",
+    "sha256": "9880b70ecdcada1fcb110b33761a1bdfdf96ccad454ef181cd47d641bb68e500",
+    "beats": 59
+  },
+  {
+    "episode": 40,
+    "file": "episode-040-Episode 1686800.txt",
+    "sha256": "9b116fc10ed5209d6d3a109f10f574cd6f4a1b680f5e1cf66a99e6f02b7b51e0",
+    "beats": 51
+  },
+  {
+    "episode": 41,
+    "file": "episode-041-Episode 1686801.txt",
+    "sha256": "80e99739af6910a1947da7e3b729f9a79f1acc371d8d09c2f8028786b1c3a6ef",
+    "beats": 53
+  },
+  {
+    "episode": 42,
+    "file": "episode-042-Episode 1686802.txt",
+    "sha256": "338a2e4416e23ccbdd35fce7a7bef8fe67e442cb023bacc55ae9a3f512aca696",
+    "beats": 37
+  },
+  {
+    "episode": 43,
+    "file": "episode-043-Episode 1686803.txt",
+    "sha256": "38bc44fd0e20af8d7d020f5616476647014c1fb0e0dff1bd0a59f77cf36d9bb9",
+    "beats": 87
+  },
+  {
+    "episode": 44,
+    "file": "episode-044-Episode 1686804.txt",
+    "sha256": "d6578a980e20d1c89412d7828db835a3076dbe6b8555a2d0cdb7b54ad747e256",
+    "beats": 54
+  },
+  {
+    "episode": 45,
+    "file": "episode-045-Episode 1686805.txt",
+    "sha256": "3424e374024cd00f62363ff74cc760257a974bf2c966796922d6ee99beade3db",
+    "beats": 74
+  },
+  {
+    "episode": 46,
+    "file": "episode-046-Episode 1688395.txt",
+    "sha256": "0be3f531f43e86d3e33d345721484e16c73d7c066a20333d08f888a60d957e14",
+    "beats": 75
+  },
+  {
+    "episode": 47,
+    "file": "episode-047-Episode 1688396.txt",
+    "sha256": "fff9175ab2120638b955660a5b8cdf11c5f6cdfaf8e0d40d313c7f1a8a54b63a",
+    "beats": 70
+  },
+  {
+    "episode": 48,
+    "file": "episode-048-Episode 1688397.txt",
+    "sha256": "877b9ef4386e0bdc3b9103964979388eca1eb9c5341f835d6b203412fc6db624",
+    "beats": 43
+  },
+  {
+    "episode": 49,
+    "file": "episode-049-Episode 1688398.txt",
+    "sha256": "7b96649d2e272da28d82c5cf18c7915d4f09117e5d7632a04625a333d554016e",
+    "beats": 63
+  },
+  {
+    "episode": 50,
+    "file": "episode-050-Episode 1697563.txt",
+    "sha256": "93a1df095b8ea3a42ca4367e0f4c29c8d35fa1c549fd281a4289f93f6a392c1b",
+    "beats": 40
+  }
+]

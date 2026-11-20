@@ -1,0 +1,35 @@
+EPISODE NUMBER: Episode 101
+EPISODE LOGLINE: An original synthetic mystery used only to demonstrate the app.
+--- SCRIPT START ---
+**MARA:**
+Start: (00:00.00) | End: (00:04.00)
+"That wedding ring was buried with my daughter."
+
+**ACTION:**
+Start: (00:04.00) | End: (00:07.00)
+Mara points at the ring on the hand of the bride standing beside her son.
+
+**BRIDE:**
+Start: (00:07.00) | End: (00:11.00)
+"My mother gave it to me this morning."
+
+**MARA:**
+Start: (00:11.00) | End: (00:15.00)
+"Your mother? My daughter died twenty years ago."
+
+**SON:**
+Start: (00:15.00) | End: (00:19.00)
+"Mum, tell me you are mistaken."
+
+**ACTION:**
+Start: (00:19.00) | End: (00:21.00)
+The bride hides a photograph behind her back.
+
+**MARA:**
+Start: (00:21.00) | End: (00:24.50)
+"Then who is the woman you brought into our family?"
+
+**ACTION:**
+Start: (00:24.50) | End: (00:28.00)
+A knock interrupts them. Everyone turns toward the locked front door.
+--- SCRIPT END ---

@@ -1,0 +1,62 @@
+/* Last Frame: a clear workspace for upload, discovery and editorial review. */
+:root{--ink:#18243e;--muted:#65738c;--blue:#3858df;--violet:#7953cd;--teal:#157d72;--orange:#dd7c35}
+.stApp{background:#f4f6fb;color:var(--ink)}
+.block-container{max-width:1220px;padding-top:2rem;padding-bottom:4rem}
+h1,h2,h3{letter-spacing:-.035em!important}
+[data-testid="stSidebar"]{background:#eaf0fc;border-right:1px solid #d7e0f4}
+[data-testid="stSidebar"] h3{font-size:1.1rem;color:#253b72}
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"]{color:#61708d;font-size:.78rem}
+[data-testid="stSidebar"] input,[data-testid="stSidebar"] textarea{background:#fff;color:var(--ink)}
+[data-testid="stSidebar"] hr{border-color:#cdd8ef}
+.hero{position:relative;overflow:hidden;padding:34px 38px 29px;border-radius:22px;background:linear-gradient(115deg,#172743 0%,#29386a 55%,#55438a 100%);color:#fff;margin:0 0 24px;box-shadow:0 14px 35px #24376a18}
+.hero:after{content:'';position:absolute;width:250px;height:250px;border:44px solid #ffffff08;border-radius:50%;right:-70px;top:-85px;pointer-events:none}
+.eyebrow{font-size:.71rem;font-weight:750;letter-spacing:.15em;color:#c9d4ff;text-transform:uppercase}
+.hero h1{font-size:clamp(2rem,3.6vw,3.2rem)!important;line-height:1.1;margin:13px 0 14px;max-width:700px;font-weight:750!important;color:white}
+.hero p{color:#dce3f8;font-size:1rem;line-height:1.65;max-width:685px;margin:0 0 24px}
+.steps{display:flex;gap:10px;flex-wrap:wrap}
+.steps span{font-size:.75rem;background:#ffffff10;border:1px solid #ffffff25;border-radius:30px;padding:6px 12px;color:#e8ecff}
+.steps b{color:#a9c9ff;margin-right:6px}
+.panel-label{font-size:.68rem;letter-spacing:.13em;font-weight:800;text-transform:uppercase;margin-bottom:6px}
+.panel-blue{color:#3858df}.panel-orange{color:#b56a28}.panel-purple{color:#7953cd}.panel-green{color:#157d72}
+.st-key-upload_panel{background:#fff;border:1px solid #d5def8!important;border-top:4px solid #5274ed!important;border-radius:15px;padding:20px;min-height:256px;box-shadow:0 5px 18px #24376a06}
+.st-key-demo_panel{background:#fff5e9;border:1px solid #f0d8b6!important;border-top:4px solid #e5a04e!important;border-radius:15px;padding:20px;min-height:256px}
+.st-key-upload_panel h3,.st-key-demo_panel h3{font-size:1.25rem;margin-top:0;padding-top:0}
+[data-testid="stFileUploaderDropzone"]{background:#f0f4ff;border:1px dashed #a5b7ed;border-radius:10px}
+.st-key-demo_panel button{border-color:#dfb77e;background:#fffcf7;color:#86521d}
+.st-key-demo_panel button:hover{border-color:#b67931;color:#86521d;background:#ffedd5}
+button[kind="primary"]{background:#3e5edf;border:0;box-shadow:0 4px 12px #3e5edf20;border-radius:10px;font-weight:650}
+button[kind="primary"]:disabled{background:#dde4f6;color:#7b89ae;box-shadow:none}
+[data-testid="stMetric"]{padding:18px 21px;background:#fff;border:1px solid #dce3f0;border-radius:14px;border-top:4px solid #6380e9;box-shadow:0 3px 10px #24376a04}
+.st-key-metric_promos [data-testid="stMetric"]{background:#edf9f4;border-color:#c7e9da;border-top-color:#2c9e81}
+.st-key-metric_passes [data-testid="stMetric"]{background:#f6f0ff;border-color:#dfd1f2;border-top-color:#9770d0}
+[data-testid="stMetricValue"]{font-weight:750;letter-spacing:-.04em}
+[data-baseweb="tab-list"]{gap:8px;background:#e8edf7;padding:6px;border-radius:12px;margin:15px 0 12px}
+button[data-baseweb="tab"]{border-radius:8px;padding:10px 17px;height:auto;color:#63718c;font-weight:600}
+button[data-baseweb="tab"][aria-selected="true"]{background:#fff;color:#3b56b9;box-shadow:0 2px 7px #253b7210}
+[data-baseweb="tab-highlight"],[data-baseweb="tab-border"]{display:none}
+.promo-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:.72rem;font-weight:700;letter-spacing:.035em;color:#71809a;margin-bottom:8px}
+.rank-badge{background:#eaf0ff;color:#3e5bb7;border-radius:7px;padding:5px 9px}
+.score-badge{margin-left:auto;background:#f0eafd;color:#7950b6;border-radius:20px;padding:5px 10px;letter-spacing:0}
+.quote-box{padding:17px 18px;border-radius:12px;min-height:125px;margin:3px 0 7px}
+.quote-box.hook{background:#edf5ff;border:1px solid #d8e7fb;border-left:4px solid #5b8cdb}
+.quote-box.cliff{background:#fff0f1;border:1px solid #f5d7df;border-left:4px solid #d97a94}
+.quote-label{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:8px}
+.hook .quote-label{color:#3b69a7}.cliff .quote-label{color:#a74c69}
+.quote-box p{font-size:.98rem;line-height:1.65;margin:0;color:#283952;white-space:pre-wrap;overflow-wrap:anywhere}
+[class*="st-key-promo_card_"]{background:#fff;border:1px solid #dce3f0!important;border-radius:16px!important;padding:21px;margin-bottom:8px;box-shadow:0 5px 15px #24376a06}
+[class*="st-key-promo_card_"] h3{font-size:1.35rem;line-height:1.4}
+[class*="st-key-promo_card_"] [data-testid="stCode"]{border-radius:9px}
+.st-key-editor_intro{background:#f2ecfc;border:1px solid #e1d4f4;border-left:4px solid #956acb;border-radius:12px;padding:18px 20px;margin:8px 0 18px;color:#523d70}
+.st-key-download_intro{background:#ebf7f3;border:1px solid #c9e6dc;border-left:4px solid #2b937c;border-radius:12px;padding:18px 20px;margin:8px 0 18px;color:#285e52}
+[data-testid="stAlert"]{border-radius:11px}
+[data-testid="stExpander"]{background:#ffffff90;border-radius:10px}
+@media(max-width:750px){.block-container{padding-top:1rem}.hero{padding:27px 23px}.hero h1{font-size:2.2rem!important}.steps{gap:6px}.steps span{font-size:.68rem}.st-key-upload_panel,.st-key-demo_panel{min-height:0}.quote-box{min-height:0}button[data-baseweb="tab"]{padding:8px;font-size:.75rem}}
+/* Keep Streamlit's outer container from adding a second border around our cards. */
+[data-testid="stVerticalBlockBorderWrapper"]:has(>.st-key-upload_panel),
+[data-testid="stVerticalBlockBorderWrapper"]:has(>.st-key-demo_panel),
+[data-testid="stVerticalBlockBorderWrapper"]:has(>[class*="st-key-promo_card_"]){border:0!important;padding:0!important}
+@media(max-width:1100px){
+[data-testid="stHorizontalBlock"]:has(.st-key-upload_panel){flex-direction:column!important;gap:18px!important}
+[data-testid="stHorizontalBlock"]:has(.st-key-upload_panel)>[data-testid="stColumn"]{width:100%!important;flex:1 1 100%!important;min-width:100%!important}
+.hero{padding:28px}.hero p{font-size:.94rem}.st-key-upload_panel,.st-key-demo_panel{min-height:0}
+}

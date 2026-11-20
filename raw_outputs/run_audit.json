@@ -1,0 +1,18 @@
+{
+  "episodes": 50,
+  "parsed_cues": 3727,
+  "selected": 15,
+  "passed": 35,
+  "structurally_valid": 15,
+  "duration_range_seconds": [
+    25.2,
+    45.0
+  ],
+  "replay_wall_seconds": 0.0273,
+  "synthetic_tests_passed": 9,
+  "live_api_tested": false,
+  "semantic_review": "Codex in authoring chat; not independent human evaluation",
+  "input_format": "provided timestamp-block screenplay",
+  "input_zip_sha256": "5d66d780f55480372977e13a278e26537adaed4936215a6afa6b0bcc108b4ccf",
+  "final_decisions_sha256": "5177c956ede295bf8efbb2dc3fb360ed03e76e48efb00175bd21b522bab9731a"
+}
