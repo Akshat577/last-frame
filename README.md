@@ -3,7 +3,7 @@
 Two workspaces, with **Sample results** selected by default:
 
 - **Sample results · 50 episodes:** immediately browse the validated assignment output:
-  50 decisions, ranked promos and explicit editorial passes. No upload, API key or new model
+  50 decisions, 15 ranked promos and 35 explicit passes. No upload, API key or new model
   call is needed to review results and inspect grounded source evidence.
 - **New analysis:** upload another set of timestamped scripts, connect your own AI model,
   and find new promos. The result, cache and editor conversation are independent of the
@@ -99,7 +99,7 @@ must be provided only in an approved private recruiting environment.
 python3 -m unittest discover -s tests -v
 ```
 
-36 tests pass: 23 core/AI, five networking and eight UI checks. API tests use controlled
+37 tests pass: 24 core/AI, five networking and eight UI checks. API tests use controlled
 responses and integration mocks. All 50 episodes have been evaluated and verified end-to-end
 against the live Google Gemini API.
 

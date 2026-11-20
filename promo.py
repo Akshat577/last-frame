@@ -50,6 +50,13 @@ def read_pack(path):
 def spoken(b):
     return b['kind'].split(' (')[0].upper() not in TECH
 
+def is_valid_evidence_cue(b):
+    """Evidence for hook and cliffhanger must be a spoken line or character action; camera and sound cues are excluded."""
+    kind = b['kind'].split(' (')[0].strip().upper()
+    if kind in {'CAMERA', 'SOUND FX', 'MUSIC', 'SFX', 'SOUND', 'AUDIO', 'TRACK'}:
+        return False
+    return spoken(b) or kind == 'ACTION'
+
 def prepare(pack, out):
     episodes = read_pack(pack); out = Path(out); out.mkdir(parents=True,exist_ok=True)
     (out/'requests').mkdir(exist_ok=True)
@@ -100,6 +107,10 @@ def validate(episodes, rows):
         for key in ('hook_id','cliff_id'):
             if row[key] not in included: raise ValueError(f"{key} '{row[key]}' is outside selected clip segments")
         hook=ids[row['hook_id']]; cliff=ids[row['cliff_id']]
+        if not is_valid_evidence_cue(hook):
+            raise ValueError(f"Hook cue {hook['id']} is a '{hook['kind']}' cue. Hook evidence must be a spoken line or character action; camera and sound cues are excluded.")
+        if not is_valid_evidence_cue(cliff):
+            raise ValueError(f"Cliff cue {cliff['id']} is a '{cliff['kind']}' cue. Cliffhanger evidence must be a spoken line or character action; camera and sound cues are excluded.")
         if not seconds(segments[0]['start'])<=seconds(hook['start'])<seconds(segments[0]['start'])+3:
             raise ValueError(f"Hook cue {hook['id']} starts at {hook['start']}, but clip starts at {segments[0]['start']}. Hook must begin in first 3 seconds of the clip.")
         if seconds(cliff['end']) != seconds(segments[-1]['end']):
@@ -118,10 +129,10 @@ def validate(episodes, rows):
             open_question=row['open_question'],why=row['reason'],flags=flags,
             evidence=list({b['id']:b for b in selected}.values())))
     if seen!=set(by_ep): raise ValueError(f'Missing episode decisions: {sorted(set(by_ep)-seen)}')
-    promos.sort(key=lambda x:(-x['score'],x['episode']))
+    promos.sort(key=lambda x: (-x['score'], -x['ratings']['cliff'], -x['ratings']['hook'], x['duration_seconds'], x['episode']))
     for rank,p in enumerate(promos,1): p['rank']=rank
     return dict(version=VERSION,mode='AI editorial decisions + deterministic validation',
-        score_note='Editorial rubric, not predicted CTR; ties use episode number.',
+        score_note='Editorial rubric: 40% hook + 40% cliffhanger + 20% standalone clarity; ties broken by cliffhanger tension, hook strength, and punchier duration.',
         coverage=coverage,promos=promos)
 
 

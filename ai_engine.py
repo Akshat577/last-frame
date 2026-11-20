@@ -152,6 +152,7 @@ def decision_for(episode,settings,transport=completion,feedback='',previous=None
     system=PROMPT+'\nReturn exactly ONE JSON object for this episode, not an array.\n'
     system+=f'Total clip duration must be {settings.min_seconds}-{settings.max_seconds} seconds. All source grounding and validation rules are mandatory.\n'
     system+='Timing rules: segment start and end strings must EXACTLY match existing cue start/end strings from the screenplay. cliff_id must end exactly at the final segment out point.\n'
+    system+='Evidence rules: hook_id and cliff_id MUST be spoken dialogue lines or character actions. CAMERA, MUSIC, and SOUND FX cues are strictly forbidden as hook or cliffhanger evidence.\n'
     system+='Creative direction (preferences, never permission to invent or break timing):\n'+settings.brief
     data=dict(screenplay=episode)
     if feedback:
@@ -174,7 +175,7 @@ def decision_for(episode,settings,transport=completion,feedback='',previous=None
                 f'Return the complete JSON object with exact fields. '
                 f'If you cannot find a valid cut between {settings.min_seconds} and {settings.max_seconds} seconds with exact cue timestamps that does not cut spoken dialogue, '
                 f'DO NOT attempt another invalid cut: return status: "pass" with a clear editorial reason explaining the limitation. '
-                f'Otherwise, fix the timestamps so every segment start/end exactly matches cue timestamps from the screenplay and cliff_id ends at the final out.'
+                f'Otherwise, fix the timestamps and cues so every segment start/end matches screenplay cue timestamps, hook_id and cliff_id are spoken lines or character actions (not camera or sound cues), and cliff_id ends at the final out.'
             )
             messages.extend([dict(role='assistant',content=content(raw)),dict(role='user',content=repair_prompt)])
     raise AssertionError('Unreachable')

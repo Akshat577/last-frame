@@ -65,6 +65,13 @@ class PipelineTests(unittest.TestCase):
         row=copy.deepcopy(self.row);row['segments'][0]['end']='00:28.00';row['cliff_id']='E001B005'
         # Structural validity does not prove a cliffhanger; deliberately keep this known limitation visible.
         self.assertEqual(len(self.run_rows([row])['promos']),1)
+    def test_camera_or_sound_evidence_rejected(self):
+        row=copy.deepcopy(self.row);row['hook_id']='E001B001'
+        with self.assertRaisesRegex(ValueError,'Hook evidence must be a spoken line or character action'):
+            self.run_rows([row])
+        row2=copy.deepcopy(self.row);row2['segments'][0]['end']='00:20.00';row2['cliff_id']='E001B003'
+        with self.assertRaisesRegex(ValueError,'Cliffhanger evidence must be a spoken line or character action'):
+            self.run_rows([row2])
     def test_compatible_api_adapter_with_mock_not_live(self):
         raw={'choices':[{'message':{'content':json.dumps(self.row)}}]}
         class Response(io.BytesIO):
