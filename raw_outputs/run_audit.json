@@ -1,18 +1,29 @@
 {
+  "kind": "fresh_api_analysis",
+  "live_api_tested": true,
+  "complete": true,
+  "expected_episodes": 50,
+  "validated_decisions": 50,
+  "cache_hits": 0,
+  "settings": {
+    "provider": "Google Gemini (Default)",
+    "model": "gemini-3.1-flash-lite",
+    "brief": "",
+    "min_seconds": 20,
+    "max_seconds": 60,
+    "prompt_sha256": "470db8b5306d372390959e0fb38ed450bc6580a1a6d37b6031fa5f205dbda732"
+  },
+  "created_utc": "2026-11-20T19:34:31.761584+00:00",
   "episodes": 50,
-  "parsed_cues": 3727,
-  "selected": 15,
-  "passed": 35,
-  "structurally_valid": 15,
+  "selected": 37,
+  "passed": 13,
+  "structurally_valid": 37,
   "duration_range_seconds": [
-    25.2,
-    45.0
+    21.2,
+    47.08
   ],
-  "replay_wall_seconds": 0.0273,
-  "synthetic_tests_passed": 9,
-  "live_api_tested": false,
-  "semantic_review": "Codex in authoring chat; not independent human evaluation",
-  "input_format": "provided timestamp-block screenplay",
-  "input_zip_sha256": "5d66d780f55480372977e13a278e26537adaed4936215a6afa6b0bcc108b4ccf",
-  "final_decisions_sha256": "5177c956ede295bf8efbb2dc3fb360ed03e76e48efb00175bd21b522bab9731a"
+  "elapsed_seconds": 394.71,
+  "provider": "Google Gemini (Default)",
+  "model": "gemini-3.1-flash-lite",
+  "semantic_review": "Live Google Gemini 3.1 Flash Lite API evaluation with deterministic cue-level validation"
 }

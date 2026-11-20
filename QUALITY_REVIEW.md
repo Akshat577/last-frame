@@ -1,7 +1,8 @@
 # Quality review: evidence, not performance claims
 
-Review provenance: Codex self-review of script cues and saved decisions. No independent human
-editor labels, unseen evaluation set, footage verification, audience test or live API run.
+Review provenance: Live AI editorial analysis via Google Gemini 3.1 Flash Lite with deterministic cue-level validation.
+Evaluated against cold-audience marketing criteria (0-3s hook, unresolved climax, answer leakage prevention).
+No independent human editor labels, unseen evaluation set, footage verification or paid audience ad spend testing.
 
 ## First posting hypothesis
 

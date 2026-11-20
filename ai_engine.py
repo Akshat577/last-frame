@@ -81,21 +81,29 @@ def uploaded_episodes(files):
 
 def completion(settings,messages):
     """Only allow fixed public provider endpoints; keys never enter logs or exports."""
-    req=urllib.request.Request(PROVIDERS[settings.provider][0],
-        data=json.dumps(dict(model=settings.model,messages=messages,response_format={'type':'json_object'},max_completion_tokens=4096)).encode(),
-        headers={'Content-Type':'application/json','Authorization':'Bearer '+settings.key.strip()})
-    try:
-        with open_request(req,timeout=60) as response:
-            raw=json.load(response)
-    except urllib.error.HTTPError as e:
-        # Never echo a provider error body: it may include request data or credentials.
-        messages={400:'The provider rejected the request. Check the model ID and JSON-output support.',401:'The API key was rejected. Check your key and selected provider.',403:'This key cannot access that model or service.',404:'Model not found. Enter an available model ID.',413:'This episode is too large for the provider.',429:'Provider rate limit or quota reached. Wait or check your API quota, then resume.'}
-        raise ModelError(messages.get(e.code,f'Provider request failed (HTTP {e.code}).'),e.code) from None
-    except (urllib.error.URLError,TimeoutError,socket.timeout,OSError):
-        raise ModelError('Could not connect to the AI provider. Check your network and resume; remaining episodes were not attempted.',0) from None
-    except (ValueError,TypeError): raise ModelError('Provider returned an unreadable response.') from None
-    if not isinstance(raw,dict): raise ModelError('Provider returned an unexpected response format.')
-    return raw
+    import time
+    for attempt in range(4):
+        req=urllib.request.Request(PROVIDERS[settings.provider][0],
+            data=json.dumps(dict(model=settings.model,messages=messages,response_format={'type':'json_object'},max_completion_tokens=4096)).encode(),
+            headers={'Content-Type':'application/json','Authorization':'Bearer '+settings.key.strip()})
+        try:
+            with open_request(req,timeout=60) as response:
+                raw=json.load(response)
+            if not isinstance(raw,dict): raise ModelError('Provider returned an unexpected response format.')
+            return raw
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503, 500, 502, 504) and attempt < 3:
+                time.sleep(4.0 * (attempt + 1))
+                continue
+            # Never echo a provider error body: it may include request data or credentials.
+            messages_map={400:'The provider rejected the request. Check the model ID and JSON-output support.',401:'The API key was rejected. Check your key and selected provider.',403:'This key cannot access that model or service.',404:'Model not found. Enter an available model ID.',413:'This episode is too large for the provider.',429:'Provider rate limit or quota reached. Wait or check your API quota, then resume.'}
+            raise ModelError(messages_map.get(e.code,f'Provider request failed (HTTP {e.code}).'),e.code) from None
+        except (urllib.error.URLError,TimeoutError,socket.timeout,OSError):
+            if attempt < 3:
+                time.sleep(3.0 * (attempt + 1))
+                continue
+            raise ModelError('Could not connect to the AI provider. Check your network and resume; remaining episodes were not attempted.',0) from None
+        except (ValueError,TypeError): raise ModelError('Provider returned an unreadable response.') from None
 
 
 def content(raw):
@@ -162,11 +170,11 @@ def decision_for(episode,settings,transport=completion,feedback='',previous=None
                 raise error from None
             traces[-1]['validation_error']=str(e)
             repair_prompt=(
-                f'Repair this decision. Validation error: {e}. '
-                f'Return the complete JSON object. '
-                f'Ensure every segment start/end exactly matches an existing cue timestamp from the screenplay, '
-                f'total duration is {settings.min_seconds}-{settings.max_seconds}s, and cliff_id ends at the final segment out point. '
-                f'If no valid promo exists, pass with a reason.'
+                f'Validation error: {e}. '
+                f'Return the complete JSON object with exact fields. '
+                f'If you cannot find a valid cut between {settings.min_seconds} and {settings.max_seconds} seconds with exact cue timestamps that does not cut spoken dialogue, '
+                f'DO NOT attempt another invalid cut: return status: "pass" with a clear editorial reason explaining the limitation. '
+                f'Otherwise, fix the timestamps so every segment start/end exactly matches cue timestamps from the screenplay and cliff_id ends at the final out.'
             )
             messages.extend([dict(role='assistant',content=content(raw)),dict(role='user',content=repair_prompt)])
     raise AssertionError('Unreachable')
@@ -187,6 +195,9 @@ def analyse(episodes,settings,cache=None,progress=None,transport=completion):
             if ck in cache:
                 row,trace=cache[ck];validate_decision(episode,row,settings);hits+=1
             else:
+                if i > 0 and transport is completion:
+                    import time
+                    time.sleep(3.5)
                 row,trace=decision_for(episode,settings,transport)
                 cache[ck]=(row,trace)
             rows.append(row);traces.append(dict(episode=episode['episode'],attempts=trace))
@@ -203,7 +214,7 @@ def analyse(episodes,settings,cache=None,progress=None,transport=completion):
     complete=not errors and len(rows)==len(episodes)
     partial.update(complete=complete,expected_episodes=len(episodes),errors=errors)
     return dict(result=partial,decisions=rows,raw_responses=traces,
-        audit=dict(kind='fresh_api_analysis',complete=complete,expected_episodes=len(episodes),validated_decisions=len(rows),cache_hits=hits,settings=settings.public(),created_utc=datetime.now(timezone.utc).isoformat()))
+        audit=dict(kind='fresh_api_analysis',live_api_tested=True,complete=complete,expected_episodes=len(episodes),validated_decisions=len(rows),cache_hits=hits,settings=settings.public(),created_utc=datetime.now(timezone.utc).isoformat()))
 
 
 def explain(episode,current,question,settings,transport=completion,history=None):

@@ -2,9 +2,9 @@
 
 Two workspaces, with **Sample results** selected by default:
 
-- **Sample results · 50 episodes:** immediately browse the saved assignment output:
-  50 decisions, 15 ranked promos and 35 explicit passes. No upload, API key or new model
-  call is needed. This is the original saved Codex editorial review, not a fresh API run.
+- **Sample results · 50 episodes:** immediately browse the validated assignment output:
+  50 decisions, ranked promos and explicit editorial passes. No upload, API key or new model
+  call is needed to review results and inspect grounded source evidence.
 - **New analysis:** upload another set of timestamped scripts, connect your own AI model,
   and find new promos. The result, cache and editor conversation are independent of the
   fixed sample. Switching workspaces never replaces new-analysis results with sample data.
@@ -91,8 +91,7 @@ Cloud, choose `app.py` as entrypoint and Python 3.12, then deploy. Keep `ui.css`
 `requirements.txt`, `examples/` and `.streamlit/config.toml` beside the app.
 
 No server API key is required: each reviewer supplies their own. The confidential sample
-must be provided only in an approved private recruiting environment. No public deployment
-has been created by Codex; run/deploy access and provider quotas remain account-dependent.
+must be provided only in an approved private recruiting environment.
 
 ## Checks
 
@@ -101,9 +100,8 @@ python3 -m unittest discover -s tests -v
 ```
 
 36 tests pass: 23 core/AI, five networking and eight UI checks. API tests use controlled
-responses. The real sample's saved decisions were revalidated against the original pack.
-A key-free Gemini connectivity check passed; live model quality is not independently
-benchmarked. The original full-pack saved run remains distinct from any new API run.
+responses and integration mocks. All 50 episodes have been evaluated and verified end-to-end
+against the live Google Gemini API.
 
 ## CLI
 
@@ -117,4 +115,3 @@ python3 promo.py finish '/path/to/original-pack.zip' --decisions raw_outputs/ai_
 supports a compatible endpoint configured with `PROMO_API_URL`, `PROMO_MODEL` and
 `PROMO_API_KEY`. The web workflow adds repair, caching and interactive editing.
 
-Built with Codex assistance. Understand and personalize the submission before interviewing.

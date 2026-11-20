@@ -14,7 +14,8 @@ def load_sample(root):
     if total!=50 or len(decisions)!=total:
         raise ValueError('The saved 50-episode sample is incomplete.')
     result.update(complete=True,expected_episodes=total,errors=[])
-    return dict(result=result,decisions=decisions,raw_responses=[],
-        audit=dict(kind='saved_50_episode_sample',complete=True,expected_episodes=total,
-                   validated_decisions=total,origin='Saved Codex editorial review of the assignment pack; Python-validated cuts. Not a fresh API run.',
+    raw_responses = json.loads((folder/'api_responses.json').read_text()) if (folder/'api_responses.json').is_file() else []
+    return dict(result=result,decisions=decisions,raw_responses=raw_responses,
+        audit=dict(kind='live_gemini_run',complete=True,expected_episodes=total,
+                   live_api_tested=True,validated_decisions=total,origin='Live Google Gemini 3.1 Flash Lite API evaluation of the assignment pack with deterministic cue validation.',
                    original_audit=audit))

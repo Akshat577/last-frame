@@ -23,11 +23,14 @@ class AppTests(unittest.TestCase):
         app.session_state['run']=ai_engine.analyse([ep],settings(),transport=lambda *_:response(row(ep)))
         app.run();self.assertFalse(app.exception);return app
     def test_sample_is_default_with_fifty_decisions_and_no_key(self):
+        import json
+        with open(ROOT/'raw_outputs/promos.json') as f:
+            expected_promos=str(len(json.load(f)['promos']))
         with patch('ai_engine.analyse') as call:
             app=self.app()
         self.assertEqual(app.radio(key='workspace').value,'Sample results · 50 episodes')
         self.assertEqual(app.metric[0].value,'50/50')
-        self.assertEqual(app.metric[1].value,'15')
+        self.assertEqual(app.metric[1].value,expected_promos)
         self.assertFalse(any(t.label=='API key' for t in app.text_input))
         self.assertFalse(any(b.label.startswith('Find promos') for b in app.button))
         self.assertEqual(call.call_count,0)

@@ -1,0 +1,2679 @@
+[
+  {
+    "episode": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":1,\"source_sha256\":\"9787df1d0983957589fc407cb0f2cdc0a89fcde7100c022a4741b8abfeedfa81\",\"status\":\"select\",\n \"reason\":\"High-stakes emotional betrayal with a clear 'public humiliation' hook and a sharp transition from grief to resolve that sustains viewer curiosity.\",\n \"segments\":[{\"start\":\"00:09.80\",\"end\":\"00:32.80\"}],\n \"hook_id\":\"E001B006\",\"cliff_id\":\"E001B020\",\n \"ratings\":{\"hook\":5,\"cliff\":4,\"context\":5},\n \"open_question\":\"Will Juliana take vengeance for this public humiliation?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNRS5dj4VkckvcItfDMU/03vRCwyHWsDJNey/5Z953xiBIQv2sZOmVibrkOxeAv4XT+ey6v7PEG+2PYoDPdVtiSP8QVA0mXId88/+SYjF/Qv05wx11R8hIFTjhPmAViWnYqQX7FCm7VQmAUXP/DOSb+CMmsVy+1nrZT8tnWGBas89GzLNIbB4068k1fvyyquSZToGkyKF9yI2A="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202885,
+          "id": "PZ8Aa__ZJLv1694Ph6rtgA8",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 190,
+            "prompt_tokens": 7382,
+            "total_tokens": 7572
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":2,\"source_sha256\":\"f0bdb98b40cdd1cd1458e4dbae99ee51c55130e75cd676e06a12ce04a9cbb111\",\"status\":\"select\",\"reason\":\"The clip provides a high-stakes humiliation hook followed by a compelling, high-tension comeback, creating immediate viewer engagement regarding the character's status and the inevitable retribution.\",\"segments\":[{\"start\":\"01:12.80\",\"end\":\"01:50.00\"}],\"hook_id\":\"E002B053\",\"cliff_id\":\"E002B074\",\"ratings\":{\"hook\":5,\"cliff\":4,\"context\":4},\"open_question\":\"Will Juliana's public reclamation of her dignity lead to a total downfall for her former groom and the family that betrayed her?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNCaIa0rvJ40jMl+0E2LI0ViMjTjuYEQ3Xyn5ZbicvGY0atQ1OL74HX1o1JVxnvd72uyAddZwUblr8q5veRKgSPVeDUHvmsHFc3JyBZ3D0ULZdKiZ7HHzuKHqZZWI2Ahk5pm3djJkmRinxbl0ZC8UIRRLC4v+VIaB4BTipGy/XD4omJpB74QmCGf0aU8q+DrG02vJMO8ixAPPM="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202891,
+          "id": "SZ8Aa9LlE7v1694Ph6rtgA8",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 206,
+            "prompt_tokens": 6094,
+            "total_tokens": 6300
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 3,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 3,\n  \"source_sha256\": \"2a1df4c96f178a4784aef81dd6fe82e3a9d226d2443fe98629cfbc0c95dc14df\",\n  \"status\": \"select\",\n  \"reason\": \"The dramatic intervention of a mysterious stranger offering a ring to a scorned bride provides a high-stakes, satisfying emotional reversal perfect for cold audiences.\",\n  \"segments\": [\n    {\n      \"start\": \"02:12.70\",\n      \"end\": \"02:25.75\"\n    }\n  ],\n  \"hook_id\": \"E003B111\",\n  \"cliff_id\": \"E003B118\",\n  \"ratings\": {\n    \"hook\": 5,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Will Lady Juliana accept the ring from the mysterious stranger and reclaim her dignity in front of her family?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMOMiawYE+JozrVlympZRc4HA4p9Bza6hMJIjRHVxUW2/51zzHsASSLI5BJnnnNZpPDMFPHf8gLhjWzX+7vht38s2KJWTn8vJ4HysLQTWAfnpbsDtIWTdjuvvK1wV1wL00BEk/Ks9u+ILuvcTib+rSDzSiW91yI5ESisMSjKTp9jicgdreB6dcDJ2OrIPY7uCwcGINRL8jkwkk="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202896,
+          "id": "T58Aa_T1CqT4694P_raB4Ac",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 266,
+            "prompt_tokens": 8982,
+            "total_tokens": 9248
+          }
+        },
+        "validation_error": "Episode 3: 13.05s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 3,\n  \"source_sha256\": \"2a1df4c96f178a4784aef81dd6fe82e3a9d226d2443fe98629cfbc0c95dc14df\",\n  \"status\": \"select\",\n  \"reason\": \"This sequence captures the climax of the humiliation-to-redemption arc, with a strong visual hook as the stranger kneels and a high-tension cliffhanger that leaves the viewer needing to see the outcome.\",\n  \"segments\": [\n    {\n      \"start\": \"02:07.40\",\n      \"end\": \"02:25.75\"\n    }\n  ],\n  \"hook_id\": \"E003B107\",\n  \"cliff_id\": \"E003B118\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Will Lady Juliana accept the ring from the stranger, or will she be dragged away by the guards?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRN2Zg1w0XdYkleNkI/MdLy7q5ii5fuu06ablzpIF0QEn5svgFETiOXW0P3gTrPNTsCwvSW/JjvBPoA7iogoWT+3teY/iAIS7fRE+XujGTlGbw0SjaLciIk8mX0jX4nUKumg7w42sWLUcypVUTwovXZ/UyTKlxcFeAXn4vmBHxZBeBbJDG0zc5/g3ay24201ozl3VBnjjChtkEU="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202901,
+          "id": "UZ8Aa-PsHZCQz7sPzPTSwQQ",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 279,
+            "prompt_tokens": 9358,
+            "total_tokens": 9637
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 4,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":4,\"source_sha256\":\"65f7f9c356a21c86dddfd4808bbdbc65dcd22f0ce220cc2de2cbcdc0371fc51b\",\"status\":\"select\",\"reason\":\"The clip captures a high-stakes, emotionally charged climax where the protagonist chooses a mysterious stranger over her abusive, judgmental family, culminating in a powerful disownment scene.\",\"segments\":[{\"start\":\"02:07.40\",\"end\":\"02:31.40\"}],\"hook_id\":\"E004B096\",\"cliff_id\":\"E004B110\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"What awaits Juliana as she walks out of the chapel to start a new life with a stranger who just married her after she was disowned by her powerful family?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMgxHhFvrndA7++ME7b4h7Rs9RAlniqKmIjnrlT7GXDYxgcIexYsDIs7eulKiecDBU/MSaly1JyIS1+wL8BYMOV7woA9OEPhF3C1Z+VZIXA1RMvuYRUrTbrl4fjGDZD5Njx1LJsj+HTrviH/ibL/bt0LfHy/eVMXCX/3adSGtSNFSlRUiPq6WbR/JIWvBBPEjBauIM3PLv/xxw="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202907,
+          "id": "WZ8Aa4_fLrLnqfkPn56R4Qw",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 210,
+            "prompt_tokens": 8198,
+            "total_tokens": 8408
+          }
+        },
+        "validation_error": "Cliff cue E004B110 ends at 02:29.00, but final cut segment ends at 02:31.40. Cliff cue must end exactly at the final out point."
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":4,\"source_sha256\":\"65f7f9c356a21c86dddfd4808bbdbc65dcd22f0ce220cc2de2cbcdc0371fc51b\",\"status\":\"select\",\"reason\":\"The final sequence provides a high-stakes emotional peak where the protagonist is disowned and walks out with her protector, creating a perfect cliffhanger ending.\",\"segments\":[{\"start\":\"02:07.40\",\"end\":\"02:26.50\"}],\"hook_id\":\"E004B096\",\"cliff_id\":\"E004B106\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will Juliana be able to survive the world outside her family's protection after being publicly disowned?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROAf3PTHB3flsroxiIxcCAzHlM91kLLC+QJIkUGnWuJvSM2jPlAC/hc0N922OyPczkaWTU3ivQ9HLW6EJOsqDV/YZmH5Tms+hnEn6QbWWS2hV8+5I+MULFCKVH0m7L4mFIhYFsUrxR+Y0/MSFOMER23YtcLpDN2+YVeNUefSm/Gt4k/qeNSCELNUZoEWALPaTwNftzxD5KcWzk="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202909,
+          "id": "W58Aa5moKb_ZjNAP6Nv58Ac",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 195,
+            "prompt_tokens": 8547,
+            "prompt_tokens_details": {
+              "cached_tokens": 6067
+            },
+            "total_tokens": 8742
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 5,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":5,\"source_sha256\":\"0dc648aeee02b1eebdd200144e70386f1dd101e820f96e3a5da65b527a43c9db\",\"status\":\"select\",\"reason\":\"The scene presents a high-stakes emotional confrontation and a compelling 'beggar's wife' status shift that sustains tension through to the final exit.\",\"segments\":[{\"start\":\"01:31.00\",\"end\":\"01:50.50\"}],\"hook_id\":\"E005B054\",\"cliff_id\":\"E005B061\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will Juliana reclaim her dignity and standing, and what power does the mysterious book hold?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROfahS9lMtYhKGdGeQDwkZs/OCTgeM16Zlfg5CqeOGom9H9DFhrQpZ9+azw0I1VhxWf9QnVQnJnfTkT5Sm/Z1/RC5yWHkNIWiCRT9NRxcaiAA+ALXuHG6riFf/YJ56sZmdo8pzPeOxjLaV1IwoGKwIwQIGY021vLNFGiH8vxS51dnAHdPwEEOfrrzK8O7FTxb1Jr0Qvx7uDyUA="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202915,
+          "id": "YZ8Aa7yvNrvJz7sP5cPm4QI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 196,
+            "prompt_tokens": 5336,
+            "total_tokens": 5532
+          }
+        },
+        "validation_error": "Episode 5: 19.5s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":5,\"source_sha256\":\"0dc648aeee02b1eebdd200144e70386f1dd101e820f96e3a5da65b527a43c9db\",\"status\":\"select\",\"reason\":\"The confrontation between the disowned protagonist and the mocking antagonists creates high emotional stakes, and the transition into a cold departure provides a strong, unresolved hook for the audience.\",\"segments\":[{\"start\":\"01:25.50\",\"end\":\"01:50.50\"}],\"hook_id\":\"E005B049\",\"cliff_id\":\"E005B061\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will Juliana and her husband survive their exile and find vengeance for the public humiliation?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROp2lGb01SNKM5p1KqckKCCNP1jy04BPUmbY9T65UdsaLOktva0jPW1HtaDT1BG5AQ9b6k1SGeP6874O2HnloL69lM+HsnBgCeyiHR59JZkqM1eURhAClRO4B7F+Mul72fLjb/jb02ccNYx2tJBc4GrMX+T+sAobybECVq7Omlb/HXHzUsB6Zqj+Tx3aZYY/snbh0vkI+O7BSE="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202917,
+          "id": "ZJ8Aa-CWD7fY1_oP96Tn0QM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 5641,
+            "prompt_tokens_details": {
+              "cached_tokens": 2009
+            },
+            "total_tokens": 5839
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 6,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":6,\"source_sha256\":\"11131c5019b2c7021f376b17cfd99d6c876b8594da0ea4fe5abffda6f4db19de\",\"status\":\"pass\",\"reason\":\"The scene lacks the high-stakes conflict, betrayal, or extreme disruption required for a high-performing microdrama ad; it is a slow-paced, atmospheric character moment.\"}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROwfNTSCbg+wZJukIjXQ0iVGMqIpoBf5Rdgs36c8aK40aGhAKelAHzlCMgxktw9HMYldXjS27RDYzDGOaZaTkkxytl9N19rRx6b82GSxH/Uh70crQW0+FvbRzfrOoARBbDGXUX4Z3g+jXbqlwtOAYm39FfdSclxokuPlJdhPjk9TpFg+WKLtcmh7A1XW4Ln1hdsSb3WiNDUJ04="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202922,
+          "id": "aZ8Aa73jG-SJ694PjrS9qAY",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 110,
+            "prompt_tokens": 7469,
+            "total_tokens": 7579
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 7,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":7,\"source_sha256\":\"d6125d1e308e9ea7993e1e22a4452e1f940bc384a13b621acdb5b3709bf96494\",\"status\":\"select\",\n \"reason\":\"High-stakes confrontation where the antagonist's sudden terror creates a compelling moment of power reversal, leaving the viewer intrigued by the husband's mysterious aura.\",\n \"segments\":[{\"start\":\"01:05.20\",\"end\":\"01:31.50\"}],\n \"hook_id\":\"E007B031\",\"cliff_id\":\"E007B047\",\n \"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\n \"open_question\":\"What is the source of the husband's terrifying influence over the antagonist?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPry370QWdiz7uY3jCQzBo1liUXwou3igT12/WEnJ9vwmEB5RpinRdj6SOOQzNdRZgyx+q/ZQ4qtXRE4lxdYkWgVjgYq9++5OdnbzMEGGWJM+xx7YuvPmGA6XvOqX50jEb4meNLZLY+pskcamxB1kqYR0ioiFM/DoKObJAeqxBXPhxB6LCH8Hyskx0FAX/LEqoX7K9NT8ZS4p4="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202928,
+          "id": "bp8Aa6uVOsej694Pj-i36AI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 208,
+            "prompt_tokens": 4979,
+            "total_tokens": 5187
+          }
+        },
+        "validation_error": "Cliff cue E007B047 ends at 01:31.40, but final cut segment ends at 01:31.50. Cliff cue must end exactly at the final out point."
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":7,\"source_sha256\":\"d6125d1e308e9ea7993e1e22a4452e1f940bc384a13b621acdb5b3709bf96494\",\"status\":\"select\",\"reason\":\"High-stakes confrontation where the antagonist's sudden terror creates a compelling moment of power reversal, leaving the viewer intrigued by the husband's mysterious aura.\",\"segments\":[{\"start\":\"01:05.20\",\"end\":\"01:31.40\"}],\"hook_id\":\"E007B031\",\"cliff_id\":\"E007B047\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"What is the source of the husband's terrifying influence over the antagonist?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNS6D8bv1U+DbD3MzKieEdDpG7FqFl+iocpomq9mef20p0rsO+dJ9hZgEyxK08nnOLY0d+S9r3vdWHiNR1x0k9Y2sZS0OBdwj4n4ldZbheQi/yqNdsu8oDF/S6IVXWvdyTjk1Fw0NZjg+uCDpb+1pYp078Ht84tZQrL1CP0QOFwtt1/SW4jGyxHWpO3553MChAAvbnZQTy7//c="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202930,
+          "id": "cJ8Aa62sPPTi3LUP69SXqAo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 5326,
+            "prompt_tokens_details": {
+              "cached_tokens": 2007
+            },
+            "total_tokens": 5524
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 8,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 8,\n  \"source_sha256\": \"e2482244be533ae60b42cae3032208cf0bede3b2427639797a6323995dafeccb\",\n  \"status\": \"pass\",\n  \"reason\": \"This episode consists of low-stakes domestic dialogue and character bonding; it lacks the high-tension conflict, immediate threat, or cliffhanger necessary for a high-converting cold audience ad.\"\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROtgtx0OLThfkxglidVc7iadcC67VAxhxC0yveOEbXBWvtpOHeuhDhwWFfT7WfsIEW5gLlTunnXPNnzuH9sj4kKSk/KJ3QMYkGyNMK5MicRas4IBe33hwRbA4JdU7jITvwBubY52HDfJotAC6OVcnwzBllbS+5fIJBNx3WEhT/41IObU2japf9B8g8+oRH8NKty8HcSAoE8ibs="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202936,
+          "id": "d58Aa7WaC_uA694PsPfk-Qc",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 129,
+            "prompt_tokens": 5141,
+            "total_tokens": 5270
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 9,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":9,\"source_sha256\":\"faea423ecdc00a4677d0cfe44deea27f2353120a682104faf07c073e99589e9e\",\"status\":\"select\",\"reason\":\"The final segment provides a high-stakes reveal regarding a hidden identity and a threatening rumor, creating a strong mystery cliffhanger that invites immediate viewer interest.\",\"segments\":[{\"start\":\"01:35.00\",\"end\":\"01:55.50\"}],\"hook_id\":\"E009B076\",\"cliff_id\":\"E009B089\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Is the war veteran actually the presumed-dead Duke, and how will the nobleman respond to this threat?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRO5E+M7EE0G5xtMdyzSRgeijpRzrHAMJATOH4yScYwzFxqCfx7+UTfyg3ADEPsND01jwZ7S5iRwfMbFTDNK7fbaGk9VZ9tSG1pf/6I/er2PFvKo6WxljI3hwpX8852Ixbph4DMOqoXrzvjgPtXTFkWZ6z6qtyiV2lfnJNVuWAExcbePMOg7AOa/qCGM12sDALjt0fwo6/WO4I4="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202941,
+          "id": "fJ8Aa6PiCN3XqfkP9v-EqAk",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 6960,
+            "total_tokens": 7158
+          }
+        },
+        "validation_error": "Cut splits dialogue E009B075 in episode 9"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":9,\"source_sha256\":\"faea423ecdc00a4677d0cfe44deea27f2353120a682104faf07c073e99589e9e\",\"status\":\"select\",\"reason\":\"The segment focuses on a high-stakes discovery regarding a potential impostor or returning noble, creating an effective cliffhanger with the nobleman's visible panic.\",\"segments\":[{\"start\":\"01:32.00\",\"end\":\"01:55.50\"}],\"hook_id\":\"E009B074\",\"cliff_id\":\"E009B089\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Is the war veteran actually the presumed-dead Duke, and what will the nobleman do to protect his secret?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROif0aFuMw5azx1UzpDjDziaQUVx9sH62e2XlxkPzE1xkj6txWTJpRijFf2RZkeRfBuOVBlxw9MHt99wJduX3HKonkxinfNPag2J9XXB207gmbKaGGJToDXtsVIHY42knKqUrCCALglSuclqpRZLwU6AZdt5eD3G1r2Wdx5X9yyKEqmxVqdMtSIFSUiDX/WI9aqbEDrWXpZKHo="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202943,
+          "id": "fp8Aa5zyDdSGz7sP5NKb-QM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 200,
+            "prompt_tokens": 7264,
+            "total_tokens": 7464
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 10,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 10, \"source_sha256\": \"474a02d035632a75787ddf6796abafcb7a5dac806f9739e25b3de09e0de5841f\", \"status\": \"pass\", \"reason\": \"The scene is a romantic, low-tension domestic drama rather than a high-stakes, conflict-driven promo suitable for cold traffic.\"}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMkGW4EtkodgwTG+EA2Ecj889JArXa44PwI9vVtoTOKzkmcKj5wlYJ/bT6eAv1ZYbz6ldwGACZLtqWYPXF3CYUnlJEBdSctfJWJS5IRkRdZITxtZSPRq5935KZBQN83HVWnM8FWqaZvKMBisCFN3Ze0Ez/12llyqP3VGUKXi2+V+rHGeWgfxzqwrIVJUs6WM4sNyQDIOIEs2sg="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202948,
+          "id": "g58Aa-6WNPCC694P29TA6AI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 111,
+            "prompt_tokens": 4981,
+            "total_tokens": 5092
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 11,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":11,\"source_sha256\":\"839ae70b822b9ae862ea9b0625a372d2a03660757d6556cd2dc1251d876654de\",\"status\":\"select\",\n \"reason\":\"High-stakes confrontation with a clear setup, escalation, and a devastating cliffhanger revelation that demands further viewing.\",\n \"segments\":[{\"start\":\"01:31.00\",\"end\":\"01:52.75\"}],\n \"hook_id\":\"E011B075\",\"cliff_id\":\"E011B085\",\n \"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\n \"open_question\":\"How will Alexander prove his innocence after being so expertly framed by Gerald?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPxrIwIAHq9ZkC296aua660T247DXF+VVk/DDzHAZI2ZH0nzI6MdWK2cmqKtuoienWTbXQunrJ6Yt+fEghAAgawnipjzOq1BZXIyjfuv5+nQ1VSlVjFYU2KWpX3B97rZFmghgO0iIwtzSS+4wdcLfoYwHU9QsiUTMpMcMlo0hkbq7ljQ1zvEjWbXpoAbBca6+DGCfF6Wg5AJdU="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202954,
+          "id": "iJ8Aa5SbPODy4-EP3euEkQQ",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 6719,
+            "total_tokens": 6917
+          }
+        },
+        "validation_error": "Hook cue E011B075 starts at 01:29.80, but clip starts at 01:31.00. Hook must begin in first 3 seconds of the clip."
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":11,\"source_sha256\":\"839ae70b822b9ae862ea9b0625a372d2a03660757d6556cd2dc1251d876654de\",\"status\":\"select\",\n \"reason\":\"High-stakes confrontation with a clear setup, escalation, and a devastating cliffhanger revelation that demands further viewing.\",\n \"segments\":[{\"start\":\"01:29.80\",\"end\":\"01:52.75\"}],\n \"hook_id\":\"E011B075\",\"cliff_id\":\"E011B085\",\n \"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\n \"open_question\":\"How will Alexander prove his innocence after being so expertly framed by Gerald?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROkub9/UiLva8C8NOJSscIsaZw1xbezFl4rO6BoO+r4OqsK2XjTkytqClCLE0SlUKMPZhEEdAj4vnpTeQIUWxvbUASA4ee9g0+k/aRVgOpJTWPzQrKFz+hMKwoQUW0bODxRyeyMWKQjg79bR9P5CVUSW9yvxGu/g0UIJlMYYRE+NWwA1ijG52Jrs3ffDMnKoDs42Jxw5dCfS8I="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202956,
+          "id": "i58Aa9y8CvDyz7sPv-y2mAo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 7055,
+            "prompt_tokens_details": {
+              "cached_tokens": 4034
+            },
+            "total_tokens": 7253
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 12,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":12,\"source_sha256\":\"d3c65e83677b3d1014a1e95dead2ea621ff2a81bf565462084f3ac9f5c0c6305\",\"status\":\"select\",\"reason\":\"The episode features a strong, high-stakes emotional ultimatum where the protagonist must choose between self-mutilation and her husband's life, providing a perfect hook and cliffhanger for a microdrama promo.\",\"segments\":[{\"start\":\"01:03.20\",\"end\":\"01:27.21\"}],\"hook_id\":\"E012B042\",\"cliff_id\":\"E012B055\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"Will Juliana successfully retrieve the ring from the thorns and save her husband, or is this a trap from which they cannot escape?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNt2M0J5FvxqiZDrobyWTJnmN5qWEIOs78m5xnq/rvPfY77JYY0DGX4pb6g0MIDu6zvAj70WpCNjjuMi82ZbnzOU6qoDWvsxFaPrcJW1kNU5ArdaMdPOABlYkVJI3qaj16vaItpofq+GcWmQXIFXO7mjgRguf2qdweb86SK66yxP6eF7kyxt15ULgp/uiwSPe68K5bPrfKDBxQ="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202964,
+          "id": "kJ8Aa9WEL5mz694Pi6mZgAM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 218,
+            "prompt_tokens": 4753,
+            "total_tokens": 4971
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 13,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":13,\"source_sha256\":\"b0880fe2f19304409a390837761474a741e366a571f3435abdb40c74a7929a18\",\"status\":\"select\",\"reason\":\"The high-stakes physical sacrifice combined with the visual of the bloodied hands gripping the prize provides an visceral, high-tension hook that demands a payoff.\",\"segments\":[{\"start\":\"01:43.00\",\"end\":\"01:58.88\"}],\"hook_id\":\"E013B068\",\"cliff_id\":\"E013B075\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"Will Juliana be able to escape the thorns with the ring to save Alexander, and what happens when she reveals it?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROnjLxBc1G2BCUh7LzBPWcCtKCP2TQrpr3KqMRStpS/JNvdCrV/gSaeV6SKkh3wjX+DXSpcerBw22+7Pe0KaKDCQjeILf1Cq3LgKKxJKtGu4zi4hbvpLnTabvcquO+TxQFo2IW+8pLy8krjstmrD5p8Qvc/btE4iMjlgIZeFRvSWcdkM7j22SKc5gJsrKhSPacYKsYZ91ts4aU="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202970,
+          "id": "mJ8Aa9L6Ipqk694PzvG78QI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 209,
+            "prompt_tokens": 6090,
+            "total_tokens": 6299
+          }
+        },
+        "validation_error": "Episode 13: 15.88s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":13,\"source_sha256\":\"b0880fe2f19304409a390837761474a741e366a571f3435abdb40c74a7929a18\",\"status\":\"select\",\"reason\":\"The scene creates high tension with the protagonist's visceral sacrifice to save her partner, ending on a cliffhanger that requires the viewer to know if she succeeds in retrieving the object.\",\"segments\":[{\"start\":\"01:37.00\",\"end\":\"01:58.88\"}],\"hook_id\":\"E013B065\",\"cliff_id\":\"E013B075\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will Juliana successfully retrieve the ring to secure Alexander's freedom, or will the briars kill her first?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPCcB1AbSHdeQSNCoVT5D/f68ih/aOhTJeNGxeT9XmkjF0m1naQ3gTzZS0h5F4FcghYuknpSiODSv+G06U/3FKrd77vunxqnBzBYiS7viWI9rPmmrv/jW1EX/tx/ofSoF7g3tN+SFR7zPQetBdWLI2wrT35wYr/XVvlytwqik1lfQs+SSOjnW+mP3dspzFsjKWODb5xmRKdJMg="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202973,
+          "id": "mp8Aa8urOOLf694Pn4nhmQI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 213,
+            "prompt_tokens": 6410,
+            "total_tokens": 6623
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 14,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 14, \"source_sha256\": \"23e67fb015dbfbf003d1008f2fd5033dfa192100b1eced5d1bb3e28d31c3844d\", \"status\": \"select\", \"reason\": \"The sequence effectively captures the high-stakes rescue and transition to a dark, vow-driven promise of vengeance that works well for genre ads.\", \"segments\": [{\"start\": \"01:16.00\", \"end\": \"01:27.63\"}], \"hook_id\": \"E014B046\", \"cliff_id\": \"E014B051\", \"ratings\": {\"hook\": 4, \"cliff\": 4, \"context\": 4}, \"open_question\": \"What extreme actions will Alexander take to fulfill his vow of vengeance against those who hurt his wife?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROITI5WbwNwLm70yeIWN/NSE3cAPfTXJWiLd798vjuVPVOQ1b4pQaiUfyaMQT2dD4Cv+1Ait4LxexgNR83AozOqpkcffAQeZZ7CFL/17YtvnOiN9bi4v94Jz10aptPpgHUMag+HWLCAZHcH75qBKV/OLBu5s+mDdT5m2+MLKJ+mWyTg8sX8oD7fW+SvOV5DBFr7Qwu4XHJhmZg="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202978,
+          "id": "oZ8Aa_m5Ga2B694PuvXesQg",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 221,
+            "prompt_tokens": 4485,
+            "total_tokens": 4706
+          }
+        },
+        "validation_error": "Episode 14: 11.63s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 14, \"source_sha256\": \"23e67fb015dbfbf003d1008f2fd5033dfa192100b1eced5d1bb3e28d31c3844d\", \"status\": \"select\", \"reason\": \"The sequence from the rescue to the final vow of vengeance works as a compelling micro-drama promo. The segment length is 32.13s, well within the required duration.\", \"segments\": [{\"start\": \"00:55.50\", \"end\": \"01:27.63\"}], \"hook_id\": \"E014B035\", \"cliff_id\": \"E014B051\", \"ratings\": {\"hook\": 4, \"cliff\": 4, \"context\": 4}, \"open_question\": \"What extreme actions will Alexander take to fulfill his vow of vengeance against those who hurt his wife?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROKnECgOvaFxILEh5XuqtyZ3C/4ibXyA3ZB+fO87iwFFzacg93Zq4x3ESlODoSSrqE6y4r/gwwmnU3Wij0r21IBJK97NqDah4qZJFgG3lt394531CEtjgxbvgm3aegDUlxdXzDQXlZ1WaVnUnsEYhC2OzOJgg6GfIxqEILVABnF+FeV2k2PgvBVEApfINUcDTnrpHn9P1T9BhI="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202980,
+          "id": "o58Aa-eKG7TE694Pz4b06QI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 231,
+            "prompt_tokens": 4817,
+            "prompt_tokens_details": {
+              "cached_tokens": 2003
+            },
+            "total_tokens": 5048
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 15,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 15,\n  \"source_sha256\": \"4820cb5f1dca8b09eb9b111eb828151ea39cb8d15da729b75acb08551f573b27\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features high-stakes physical conflict, a clear 'innocent vs. aggressor' setup, and a perfect arrival-of-the-protector cliffhanger that drives immediate curiosity about the upcoming fight.\",\n  \"segments\": [\n    {\n      \"start\": \"01:02.00\",\n      \"end\": \"01:26.00\"\n    }\n  ],\n  \"hook_id\": \"E015B044\",\n  \"cliff_id\": \"E015B055\",\n  \"ratings\": {\n    \"hook\": 5,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Will Alexander defeat the three thugs, and what is the extent of his fighting prowess?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRN88SF3Nt17JgRg2sYR2dI2tWYnr2h3wubDNgreQIWuHOABBtvNy+LQOoUU7bu0GCDs8a/YKdcnl7al35cC2TJzXHLGqttjqtx9FqwZ7fMVE9DpzEykZSmsc/fDa5qLqy925W28VFC+i+kjJzgrv6vYqwazrgFLR2lIGGy4Y9lB1ay24EM9QX6K7Gz49orvOFv//awr0bvSpyY="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202986,
+          "id": "qJ8Aa_LGO4OU4t4Px6Oe8Qg",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 279,
+            "prompt_tokens": 4783,
+            "total_tokens": 5062
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 16,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 16,\n  \"source_sha256\": \"f86c26df7397d86091056e44fe613c2f50abe7d221f7e015d8cdd5c4f8775e19\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features high-stakes physical conflict, a satisfying demonstration of the protagonist's combat prowess, and a heavy emotional reveal (the betrayal by Gerald), all contained within a tight, high-tension sequence.\",\n  \"segments\": [\n    {\n      \"start\": \"00:40.80\",\n      \"end\": \"00:52.80\"\n    }\n  ],\n  \"hook_id\": \"E016B034\",\n  \"cliff_id\": \"E016B043\",\n  \"ratings\": {\n    \"hook\": 5,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"How will Juliana reconcile the devastating betrayal by Gerald, and what will Alexander do next now that he knows who ordered the attack?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROoBUvjZIFsl/7nM1eZd3vqC05lt9IWMNGdkrO3lXuVYUzfzbvAfUK3eOJwb8utl5uImEaHbICJxPn4mgqwUa9QBYQHkQeEUPIgV+RBG1h0FfxMSf791b2MQC7bMQqyXn/De4WR/Rc6qVXC3T3W0s9nTlYmiCPcp7rRI3s8WTAt4NrnRuJScFZG4RasquGwj57FYSCZ98g333c="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202992,
+          "id": "rp8Aa8ygFbmE3LUP1eyFgQI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 289,
+            "prompt_tokens": 5330,
+            "total_tokens": 5619
+          }
+        },
+        "validation_error": "Episode 16: 12.0s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 16,\n  \"source_sha256\": \"f86c26df7397d86091056e44fe613c2f50abe7d221f7e015d8cdd5c4f8775e19\",\n  \"status\": \"select\",\n  \"reason\": \"This sequence contains an immediate hook as Alexander confronts the thugs, followed by a high-stakes interrogation that culminates in a major betrayal revelation, creating the necessary tension for a cliffhanger.\",\n  \"segments\": [\n    {\n      \"start\": \"00:40.80\",\n      \"end\": \"01:03.00\"\n    }\n  ],\n  \"hook_id\": \"E016B034\",\n  \"cliff_id\": \"E016B051\",\n  \"ratings\": {\n    \"hook\": 5,\n    \"cliff\": 4,\n    \"context\": 4\n  },\n  \"open_question\": \"With the identity of the mastermind revealed as Gerald, what will happen to Juliana and Alexander now that the betrayal has been exposed?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPNSE8nLU/bd6HWQL47NP881YJsAAuZZY5Or0/OxpfsqNSnS9rHvsVr5rT2zWyxMO+di9aq7ZUjo4Z0tSCMMx0arcQgoJQ6qo0Qd6TAyKsXONQA9wgD0csEra+1MxXSBWB6cLjJeKryExw5FjhRRqVJLZqsJt2jW3zlCyC2htjZVC27trreUHsqCAwnQFepYjA/SYWD/6D/YQM="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202994,
+          "id": "sJ8Aa6XZNv7M694Pl42LiQM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 283,
+            "prompt_tokens": 5729,
+            "prompt_tokens_details": {
+              "cached_tokens": 2010
+            },
+            "total_tokens": 6012
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 17,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":17,\"source_sha256\":\"25fad86cb46d505849d1247d92836e1176bf732e50699a00b1f34c0e14f28e27\",\"status\":\"pass\",\"reason\":\"The episode consists entirely of intimate, low-stakes domestic bonding and reflective character development, failing to provide the high-stakes narrative conflict or immediate, unresolved tension required for a cold-audience ad hook.\"}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROLYCczXYyGkR+6atnPqzSXJTQ9r4mrewHT9i7Ms+6ylxPocZSZXAkzHXY2GW6zdvPn5qr94Oj2witHyfX9OQBTX04xRYyfOGlBQVyxQPwfb0WBr4dGvDAX+nl7HbxyNlLRQJt83fpr1VXddwDeo2emq16+0VuFZv6CTd9x75ArLZ2kp8MsJ8VH427h9i53ZA/cXi/mcouG5Qk="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795202999,
+          "id": "tp8Aa5jrLeO2g8UPgrD-yAI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 121,
+            "prompt_tokens": 6092,
+            "total_tokens": 6213
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 18,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 18, \"source_sha256\": \"1e1ecab8f43c144862ef126eb707196478303c1af57186357ba1e25ea4c8e529\", \"status\": \"select\", \"reason\": \"The scene provides an immediate, high-stakes disaster hook (house fire) and maintains high tension throughout, ending on a strong, unresolved promise of vengeance that compels the viewer to watch the next episode.\", \"segments\": [{\"start\": \"00:00.00\", \"end\": \"00:33.00\"}], \"hook_id\": \"E018B001\", \"cliff_id\": \"E018B020\", \"ratings\": {\"hook\": 5, \"cliff\": 4, \"context\": 4}, \"open_question\": \"Who set the fire, and how will Alexander exact his revenge?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRN82nXy1f0tcN9ajmJP1YAen4II5VsGWEt9y8fahWX3Q5tyatpTy+QUmkfIvua/f5sFa4vGot9cbbsaw9q+BN7wJLOcjptn8Za9swJ+KRL7hxNRfi/fhbx4mb2oEFDFzME+GqmNl/MF3MoaJGN4oVP1yEWxb7rNCzkp2f5PThWtqrKWKRDXvSu8Ssd4otW2cst/btP1YBJWe90="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203005,
+          "id": "u58Aa7uNNomGjuMPjOHg2Qc",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 229,
+            "prompt_tokens": 6443,
+            "total_tokens": 6672
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 19,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 19,\n  \"source_sha256\": \"45e16ab1556cb4afe16777d1538079263f933b85ecb63e1e44a462d33541fb24\",\n  \"status\": \"select\",\n  \"reason\": \"The shift from the protagonist's personal tragedy to the political conspiracy plot creates a high-tension dynamic that works well for a cold audience advertisement.\",\n  \"segments\": [\n    {\n      \"start\": \"01:13.30\",\n      \"end\": \"01:23.80\"\n    }\n  ],\n  \"hook_id\": \"E019B040\",\n  \"cliff_id\": \"E019B046\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 4,\n    \"context\": 4\n  },\n  \"open_question\": \"How will Alexander take back his inheritance and save his mother while the world believes he is dead?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRN4G1ssF2gKPsVs8jw459v2jRLVXlWfsBYV9wn/YFqI4tzQYWZzWOQwlBMK0aj5Y5S2kn/1IdaElcyWVmXYFQAnemy3Gu3NBI5YhB1Ttxnvn+ctwbeSMrEFVQjbPIsGYRCAZChDooisXuCvWTr4KrdytHrD9XkDaWeqJW1sG8L4MpFWsF+p8uzp267X0t+ao/ASSyxoz4Kxxzo="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203012,
+          "id": "wZ8Aa7THFvD5694PtJiruAY",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 269,
+            "prompt_tokens": 5458,
+            "total_tokens": 5727
+          }
+        },
+        "validation_error": "Episode 19: 10.5s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 19,\n  \"source_sha256\": \"45e16ab1556cb4afe16777d1538079263f933b85ecb63e1e44a462d33541fb24\",\n  \"status\": \"select\",\n  \"reason\": \"The sequence effectively captures the high-stakes political intrigue and the 'returning hero/avenger' trope, providing a strong hook and cliffhanger within the required duration.\",\n  \"segments\": [\n    {\n      \"start\": \"01:13.30\",\n      \"end\": \"01:29.50\"\n    }\n  ],\n  \"hook_id\": \"E019B040\",\n  \"cliff_id\": \"E019B049\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 4,\n    \"context\": 4\n  },\n  \"open_question\": \"How will Alexander reclaim his stolen birthright while keeping his survival a secret?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROn1KBEMYTJvjnOyjSExmKi/KdnRp9tuMMVauGNzB8Tw4E2RIyU0/VHnjHKNJgrCZcSTp3CBlYaQbpdQDIYcn/PM3NECtXcGl1AReXVkcZDFHj/q9o7PhaHBTbzE1eJIT5x7ZnZphG56/X8kmeTMP0Id/DQxy1yZ/ajWEC42zZMA814nP/epbOA4L9eS3PWSyfIwYDW38vrfHE="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203014,
+          "id": "xJ8Aa773He2n694PqYG6sQU",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 269,
+            "prompt_tokens": 5837,
+            "prompt_tokens_details": {
+              "cached_tokens": 2010
+            },
+            "total_tokens": 6106
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 20,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":20,\"source_sha256\":\"e6389a016e5aa432efca70d3bb2d64ec859200ad0e6aad207fa63a616ce12fa8\",\"status\":\"select\",\n \"reason\":\"High-stakes villain monologue creates a compelling hook where the antagonists are actively conspiring to usurp an estate and eliminate a Dowager, while the parallel struggle of the heroine provides strong contrast.\",\n \"segments\":[{\"start\":\"00:30.20\",\"end\":\"00:56.00\"}],\n \"hook_id\":\"E020B020\",\"cliff_id\":\"E020B034\",\n \"ratings\":{\"hook\":5,\"cliff\":4,\"context\":4},\n \"open_question\":\"Will the conspirators succeed in their plot to eliminate the Dowager and seize the title of Lord of Ashbury before anyone intervenes?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROaUQYMIh36ZrZmGXv4YVbU97jktGijzYb3reDmASWnmcWu9aWxMy2UXFdn0fhY+bCvHcxyb3UT5le/F8q0RTjM5dErYL0xi7zBb7Q8PKwkrssUkxjDjQn9ZqCc8gQZfBOVneUnsjInk42m/GNCPLDuLlpFGimAjD3DDDLWEnA1hjZofCnrNsM1WtqxBuCi6wR7Vi4i/4V2d08="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203020,
+          "id": "yp8Aa6KENNel694PtYqN6QI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 220,
+            "prompt_tokens": 5694,
+            "total_tokens": 5914
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 21,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 21,\n  \"source_sha256\": \"00cb2e6c0b31ed3022212cc30d2fadd006e70516eb33be7d50aed31137d39db9\",\n  \"status\": \"select\",\n  \"reason\": \"The scene provides a high-stakes medical intervention followed by a compelling, ominous cliffhanger regarding the Dowager Duchess's mysterious illness.\",\n  \"segments\": [\n    {\n      \"start\": \"01:31.00\",\n      \"end\": \"01:54.00\"\n    }\n  ],\n  \"hook_id\": \"E021B063\",\n  \"cliff_id\": \"E021B076\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"What is the mysterious illness consuming the Dowager Duchess, and will Lady Juliana be drawn into the danger at the manor?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNg1uEFaM2fHvzI/UvXyRJGKFz2+bwAvvbxl4zqq2tpxeBXlviZ5c2iP0E9GBbvS60hSeHCLW5K50IYWr3qzpVStpBX0g2lDppNsiEjZU2P5cTbssrA8dj4n+vc1p4GgiXFOe7MSdzJBBKHrJvHyQrzJJzqNhP/HPWPh9HqTdVB+SUWlO2VQSqwIf6rsrkJw0kdHYl0HM6KjQg="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203026,
+          "id": "0J8Aa-DuL-64juMP5a-laA",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 269,
+            "prompt_tokens": 6450,
+            "total_tokens": 6719
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 22,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":22,\"source_sha256\":\"516bd97dafb3753c10ac4a1a909aa7bccec17367050791e278e4102277cc3cc1\",\"status\":\"select\",\"reason\":\"A high-stakes infiltration premise leads into a dramatic medical mystery reveal at the cliffhanger that demands viewers watch the next episode to identify the poisoner.\",\"segments\":[{\"start\":\"02:03.00\",\"end\":\"02:11.00\"}],\"hook_id\":\"E022B075\",\"cliff_id\":\"E022B081\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Who is poisoning the Dowager Duchess?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNcK9qBg7/ws2+LtRVFAYch7Hy8FR4m4h3M5Oh8gSAalRp4QqH2KerLJCKxzVeUia9Suiv7lZdjHmSw2dNybPZPjG2cGX4Bsv7PC40DjJG9TcnAJZ4v1vaUINnW74XnD55w7DM2HqcI6tymrmVfSUEEdoxo35Eqey123H996wOfp6Le4dXmYOSJAL2PTGHe3v8/jR68xxM/ih8="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203032,
+          "id": "1p8Aa9TCHbqM694PjsrwqQI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 186,
+            "prompt_tokens": 6457,
+            "total_tokens": 6643
+          }
+        },
+        "validation_error": "Episode 22: 8.0s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":22,\"source_sha256\":\"516bd97dafb3753c10ac4a1a909aa7bccec17367050791e278e4102277cc3cc1\",\"status\":\"select\",\"reason\":\"The segment captures the tension of the infiltration, the discovery of the mystery illness, and the high-stakes cliffhanger regarding the poisoning, meeting all timing and structural criteria.\",\"segments\":[{\"start\":\"01:45.50\",\"end\":\"02:11.00\"}],\"hook_id\":\"E022B064\",\"cliff_id\":\"E022B081\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Who is poisoning the Dowager Duchess?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPDiOZ35Z/ZqrM15rAydLrQMSGEnaVqWhxEMVFmFasNr4p2uWl9l/bq+GbKrbKeXZF+oemYjhlHl/7woSHFTnAuv1wyKJb9NiFfU9zXcnDSt84Er8yNAKaKxPmenwUGFIWK+QRJyz/c7tl9GdBg3fs3JFDOVFVBTNVuiL/yGizblFJWm/c4hodKGkbBukoP6PQhSTPj8rXir2o="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203035,
+          "id": "2J8Aa5aJOZ7f694P4ai6gQ0",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 190,
+            "prompt_tokens": 6752,
+            "prompt_tokens_details": {
+              "cached_tokens": 4031
+            },
+            "total_tokens": 6942
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 23,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":23,\"source_sha256\":\"2590fe65b7a4a8b4978992a4a857b46ba3c35d80f65ebdf0906e7f558107f1ca\",\"status\":\"select\",\"reason\":\"The sequence presents a strong mystery hook regarding the poisoning of the Duchess, sustained tension, and a high-stakes interruption at the door, ensuring the viewer must see who enters.\",\"segments\":[{\"start\":\"01:52.20\",\"end\":\"02:11.50\"}],\"hook_id\":\"E023B058\",\"cliff_id\":\"E023B067\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"Who is entering the room while Lady Juliana is trying to save the poisoned Duchess?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROi6R8tHMS5ep7LPx7pETFyL1HdD5phE5/sUIPNElBJx8rWlw+Rc7eiVeYMkswjPKeqZOimA0SUm3SzwXov0QJWvmz8t6Sc0h28KKYZPMVJ7gVDNyJI9PwBunXAIl0a+04PX3DWoKwsN9XosLjfOSknPwOFEnl8apcIYT92aZKXJBAu0wVcFGPU9bcVvIuMRhR1blP5RCQwkvw="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203043,
+          "id": "358Aa8ScGa-K694PjbPxkQM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 205,
+            "prompt_tokens": 5542,
+            "total_tokens": 5747
+          }
+        },
+        "validation_error": "Episode 23: 19.3s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":23,\"source_sha256\":\"2590fe65b7a4a8b4978992a4a857b46ba3c35d80f65ebdf0906e7f558107f1ca\",\"status\":\"select\",\"reason\":\"The segment creates a high-stakes, self-contained thriller moment by focusing on the discovery of the poison and the immediate danger of an intruder, meeting all duration and timing criteria.\",\"segments\":[{\"start\":\"01:37.50\",\"end\":\"02:11.50\"}],\"hook_id\":\"E023B051\",\"cliff_id\":\"E023B067\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Who is entering the room while Lady Juliana is trying to prepare the antidote for the poisoned Duchess?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRO9Z8Mr8mQ5EK0jeQZi9rjGB5iyLeT8YgzPPUzJZgUjdwqUWHDEJCAe5kbPL3G5UxAEcHc1uSn1R72ysqzii3wnsu50z1b/uLyKVSnnEdDGYken3Y6ZO8YVLd98afRGbDH+Bw9ldN3tj4q4b/0AOE4FtIg8f3kHrWNoQjtQaalqHwGXQdoBJz3E48SBccOxNueu195zermZqWE="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203047,
+          "id": "5J8Aa4K7GPLN694PuZuL4AI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 208,
+            "prompt_tokens": 5856,
+            "total_tokens": 6064
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 24,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":24,\"source_sha256\":\"c211a90aef87daaf36182aaee95262b6121e962537fb25b37ef68260e4971259\",\"status\":\"select\",\"reason\":\"The clip features a high-stakes power struggle, immediate physical abuse, and a defiant internal monologue that promises revenge, making it a compelling hook for new viewers.\",\"segments\":[{\"start\":\"01:03.80\",\"end\":\"01:32.00\"}],\"hook_id\":\"E024B047\",\"cliff_id\":\"E024B068\",\"ratings\":{\"hook\":5,\"cliff\":4,\"context\":4},\"open_question\":\"Will Juliana be able to use her secret medical knowledge to save the Duchess despite the noblewoman's oppression?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNMoqROHXZv9uQuCRRbuM24sFyYkxEwkZagPYXikPuGbXMIpgBfrR0J7caxq+o5+fq2j0aCRjMQj8h88j83f3+kujOGMhP00TcG4S4Jd7ZNq+u8KLPmZWBJHLP5PEyqGo68AQO32BYKK4lPffPkWlc9P3Ek24TKmhjU9vlugZCrDRTPSREL4Ay0ZUqoWQfOdFoA/RlUC1DUeYU="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203052,
+          "id": "658Aa5PcIcbC694PoPvUwAY",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 205,
+            "prompt_tokens": 5770,
+            "total_tokens": 5975
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 25,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 25,\n  \"source_sha256\": \"c80b5d5b0e2ddf2033dd07eb15242604859e9dd2fd24c64113a274aa29dd6962\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features a high-stakes confrontation revealing a dangerous poisoning mystery, providing a clear hook and sustained dramatic tension.\",\n  \"segments\": [\n    {\n      \"start\": \"00:13.20\",\n      \"end\": \"00:32.80\"\n    }\n  ],\n  \"hook_id\": \"E025B009\",\n  \"cliff_id\": \"E025B020\",\n  \"ratings\": {\n    \"hook\": 5,\n    \"cliff\": 4,\n    \"context\": 4\n  },\n  \"open_question\": \"Who is poisoning the Dowager Duchess and what will Alexander do to stop them?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPP8SoCgqNB+4CKu4sq31BpbyIdCLlLSZ5OqL/DKGEBCb72Kzpj+1hqfcHAL5Ld2thwgEHVKF2JtheUYsm50K3b25yWC8KgT4IOjcxR8nCizmX947r5G5Iz6u6pZwSPOHltKAdNjbz2xnd8kZeZmT2+EWAr5bt1uy5msmqLgeJ5MFWkOZvy4SznY+2mfpeqrPb8DOwP1cZoH4s="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203062,
+          "id": "8Z8Aa4KsCpfI3LUP4PriyQk",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 259,
+            "prompt_tokens": 7167,
+            "total_tokens": 7426
+          }
+        },
+        "validation_error": "Episode 25: 19.6s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 25, \"source_sha256\": \"c80b5d5b0e2ddf2033dd07eb15242604859e9dd2fd24c64113a274aa29dd6962\", \"status\": \"select\", \"reason\": \"The clip captures a high-stakes discovery of a physical injury and the immediate reveal of a poisoning plot, maintaining high tension for a cold audience.\", \"segments\": [{\"start\": \"00:13.20\", \"end\": \"00:41.20\"}], \"hook_id\": \"E025B009\", \"cliff_id\": \"E025B026\", \"ratings\": {\"hook\": 5, \"cliff\": 4, \"context\": 4}, \"open_question\": \"What is the motive behind Lady Catherine poisoning the Dowager Duchess?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNcmI1+cKuVBWx2E6DubirvvH2J6UKsryLdZDDMxhPf4C9O2NbvPwjHvuQNXnGfhSiGbUmb8tkCbcScDmxAjc+WEKW4aeF+KJTxRxa09It/CWC0epAvmT1cKdSrz1V3jc+3uuAPnFKAUSe9xcjvWnljLRZ7brnKQnss4FHRwHoDZuP9rSl8Pi6xUn/CfyCHeCa4rGlUI42JdxE="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203064,
+          "id": "958Aa93dDNXh3LUP-qW3mQ0",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 218,
+            "prompt_tokens": 7536,
+            "prompt_tokens_details": {
+              "cached_tokens": 4038
+            },
+            "total_tokens": 7754
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 26,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":26,\"source_sha256\":\"6ffdcf181c0b1067f4524a1696da17735a23b94498c443f342516aab7fe15966\",\"status\":\"select\",\"reason\":\"The segment builds strong tension around a hidden identity revealed by a ring, culminating in an urgent, high-stakes cliffhanger that demands immediate resolution regarding the protagonist's true lineage.\",\"segments\":[{\"start\":\"01:30.80\",\"end\":\"02:00.88\"}],\"hook_id\":\"E026B037\",\"cliff_id\":\"E026B051\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"What is the connection between the protagonist's signet ring and the Dowager Duchess?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNBJXCy2UrfivF84rQ1iz+ohiZGuhjbSIDhnyQI2TOQ3bNVIaVk0BPOI7Hdq8z3VHYQJCGZczLlDoDJmelokeBgvjh6ByMeYKr3ONQhic9lQIKihr43JPfUji8C/Rf6gt+8F0KI4GgMd9/qfMGa1enenF0btZEdehugEAHhjV24Tg1vS4f6h0Ozy5hEvzwfj+RFUwBBiw4tt6k="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203070,
+          "id": "_Z8Aa-TTAZXbg8UPrKKr8Qo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 206,
+            "prompt_tokens": 4645,
+            "total_tokens": 4851
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 27,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":27,\"source_sha256\":\"1d7ceb00a1cf58e1e97f31213bd40db884f5073f0abfc6b11bb2f6650882b63a\",\"status\":\"select\",\"reason\":\"The sequence presents a high-stakes confrontation where the protagonist is framed for poisoning, creating immediate tension and a clear cliffhanger that forces the viewer to wonder if she will be executed for her attempt to save the Duchess.\",\"segments\":[{\"start\":\"01:47.80\",\"end\":\"02:30.50\"}],\"hook_id\":\"E027B065\",\"cliff_id\":\"E027B095\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will Juliana be able to prove she is innocent of poisoning the Duchess before she is executed for her 'crime'?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPvYeFtIS4QBCCz6HVOqiSkkPJOe7CAmrnSSJtQzGouTpuAmjB0Wk0jdDuPPlKazdRbbaUmrMXKJHOhawpycbKbOSSWYKwCntuvYZfhvRgyml6Zh5b32HSHutklaTHL5f4ZwI97dkkCBXNm/R2x/mBO4/z+Devi+korsCXjnJWswFslM5OMnt2iClC+4+dZxtj0RSlSh+gNU40="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203076,
+          "id": "A6AAa9WqDtS1694P0vKrkAg",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 217,
+            "prompt_tokens": 7350,
+            "total_tokens": 7567
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 28,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":28,\"source_sha256\":\"c16039c9150b946989645a76291309ef7889e05e14a38451ad10630ef7f90d21\",\"status\":\"select\",\"reason\":\"The clip starts with an intense, high-stakes confrontation and leads to a powerful cliffhanger regarding the protagonist's identity and impending doom.\",\"segments\":[{\"start\":\"01:35.00\",\"end\":\"02:18.50\"}],\"hook_id\":\"E028B070\",\"cliff_id\":\"E028B096\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"Will Juliana be able to survive the gallows and clear her name now that her true identity and her mother's life work have been weaponized against her?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPFdOoGNpbMexSw4W2h+mAryGaz+gPf9Hzr9oIrfxvwppAugLyxxF4zeFAlADlfxTkUbno33Fh7Turw9kuOEgXY2k3O5cJ4U6DI9OQBfUV9qLjBIX/l/+R7FglCfHygKcNuM1K00sOBB6+sc2MHgZEG5gy1Mg/3MjOP3vIN2FMZeXJ43ooXwfqUe8MX2LG8U6BSP5bElCa+HE4="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203082,
+          "id": "CKAAa_6WH72L694PipfpuQQ",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 215,
+            "prompt_tokens": 7472,
+            "total_tokens": 7687
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 29,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":29,\"source_sha256\":\"bf00c3e50abaa8f00aebcb55c6a4520f26e9a987f22ab4975348ab092bdf6265\",\"status\":\"select\",\"reason\":\"The scene presents a high-stakes conflict involving a wrongful imprisonment and a threat to destroy a legacy, with a strong emotional arc ending in a cliffhanger that sets up a revenge/rescue premise.\",\"segments\":[{\"start\":\"01:18.50\",\"end\":\"01:26.50\"}],\"hook_id\":\"E029B049\",\"cliff_id\":\"E029B056\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will Juliana survive the dungeon, and can her husband actually reach her in time to save her from the false accusation?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRN6okzH882HqeL4FgZBpDW1p8VSP76F/KN3j6qwux3PKn+ehGyR9Po/ytLo7rAHU5Y5drSnvSMgpm9gFrM5Extd3pQQShmCR8EHZU6guqiUqFSgxZMVWEhowjqjCTFHLNS3loNezigMvpDtHRTHj7+vbApcYE6+F7nRLU62Xm+VVChc0GQ3fKwVmys7lj015CZq0WhQTdZO/2E="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203088,
+          "id": "DqAAa4-XNc_7z7sPp8L1-Q4",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 213,
+            "prompt_tokens": 6007,
+            "total_tokens": 6220
+          }
+        },
+        "validation_error": "Episode 29: 8.0s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":29,\"source_sha256\":\"bf00c3e50abaa8f00aebcb55c6a4520f26e9a987f22ab4975348ab092bdf6265\",\"status\":\"select\",\"reason\":\"The segment captures the immediate emotional and physical stakes of the protagonist being thrown into a dungeon after being threatened, creating a strong standalone hook and a definitive cliffhanger regarding her survival.\",\"segments\":[{\"start\":\"01:11.80\",\"end\":\"01:42.50\"}],\"hook_id\":\"E029B045\",\"cliff_id\":\"E029B064\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will Juliana escape the cell and clear her name after being falsely accused of witchcraft?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNeznMWIdy58EoZR4LHzfDtilWnGKb7CjyGOJsnPZrI2ko2C2q+9OjhyUL5na3GAEHecIiR4BXRq4YSg/J9Xwt4ib9WWl6XpkeYJpGMTa48ln/xU8OdLQs9F/OBHuOjCGMDGFw271aP8FYFkorkJwxF/aUdbremfzs3KGZW6P2gTsyIwZDmMjh4Ih9cYei8DntLuGmXZij2HUw="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203091,
+          "id": "EaAAa9zRDYOU4t4Px6Oe8Qg",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 201,
+            "prompt_tokens": 6328,
+            "prompt_tokens_details": {
+              "cached_tokens": 4027
+            },
+            "total_tokens": 6529
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 30,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":30,\"source_sha256\":\"5535a6b12dd9085ead17b3b19968ca9f25f6d862c822cea65a417972ea3c1265\",\"status\":\"select\",\"reason\":\"The scene presents a high-stakes conspiracy that immediately establishes a clear, life-or-death ultimatum for the protagonist, fueling a strong cliffhanger regarding her imminent execution.\",\"segments\":[{\"start\":\"00:33.40\",\"end\":\"00:39.80\"}],\"hook_id\":\"E030B017\",\"cliff_id\":\"E030B019\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will the conspirators successfully manufacture a witchcraft charge to hang the protagonist, or will she survive the immediate threat?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRN27Sv6GxxXk49ny9PuIgfCqjbBeEfTp3IGpwalI7/n2i59jr/g2NzBNdsV80ePleHLRaug7CCr7mROItLTNloI1tqbrpx6+1Y5jcos+RZT5GkajNucxJavhhfht2nfdrnNjzNbYjqK/rJPajnMYdP8HbPE8iMdD+4es8hzH/kBpDB2caxdatQt7YyT9fArjyUje2OSijUjM7w="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203097,
+          "id": "F6AAa7eREpuW3LUPjrT9sAQ",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 207,
+            "prompt_tokens": 5906,
+            "total_tokens": 6113
+          }
+        },
+        "validation_error": "Episode 30: 6.4s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":30,\"source_sha256\":\"5535a6b12dd9085ead17b3b19968ca9f25f6d862c822cea65a417972ea3c1265\",\"status\":\"select\",\"reason\":\"This segment captures the immediate escalation and villainous conspiracy to frame the protagonist for witchcraft, ending on a high-stakes moment of dread before the cut to her trapped state.\",\"segments\":[{\"start\":\"00:33.40\",\"end\":\"00:54.60\"}],\"hook_id\":\"E030B017\",\"cliff_id\":\"E030B026\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will the conspirators successfully manufacture a witchcraft charge to execute the protagonist?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROaraIOuA02CVu0CpJ/I/jwdyhQ5GbN1h+KYGTtE/umVwhCPDZI+aMiL7/0o4OXn1v6SrKsKgA28qh/0fmNt/RKPG7idp4+ARbvI0K2KYkWwHWbxGvV2oP4aj9fsTTlD/0BB+cg0Vcc/eGVYv14AKryX072Ec9A+4twZIYongbVsm3K3ZCoTzwbFvFDXnSxCh3Oxf4vk0X2YAE="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203100,
+          "id": "GqAAa7jVG5qk694PzvG78QI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 199,
+            "prompt_tokens": 6222,
+            "total_tokens": 6421
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 31,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 31, \"source_sha256\": \"7c7df240ef6ad40a87f2d5514d857e60273642fba4a5bbbd0da899a68e969610\", \"status\": \"select\", \"reason\": \"The scene provides an immediate high-stakes confrontation with a clear power dynamic shift, culminating in a visceral, high-tension cliffhanger.\", \"segments\": [{\"start\": \"02:31.20\", \"end\": \"02:40.00\"}], \"hook_id\": \"E031B085\", \"cliff_id\": \"E031B087\", \"ratings\": {\"hook\": 5, \"cliff\": 5, \"context\": 4}, \"open_question\": \"Will Catherine brand Juliana, or will Juliana's resolve force a different outcome?\", \"flags\": [\"graphic violence\"]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMc5y3snnptMe8a0EbmoAyWkOrIms2Riim1J4gquGlIqhN/9gsdfrUw5omnN+bdzjyaH9xeh27ChWoxPO8aXEGbex3g0SKHXDt5s970VKGZ9x5U1TSkX2jgIw6Oe5AdzJ65XKOHdxXT8wW6wOwy0eVtV8AxPbSvCzovxb6i5B2GJ0+1Q0JlLx0eiVSU2PWhkMKEg6ye9RCaxWM="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203107,
+          "id": "IKAAa6rnKZKzg8UP65ybkAQ",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 221,
+            "prompt_tokens": 7013,
+            "total_tokens": 7234
+          }
+        },
+        "validation_error": "Episode 31: 8.8s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 31,\n  \"source_sha256\": \"7c7df240ef6ad40a87f2d5514d857e60273642fba4a5bbbd0da899a68e969610\",\n  \"status\": \"select\",\n  \"reason\": \"The sequence starting from the psychological breaking point through the final threat creates a high-tension, standalone promo that satisfies the 20-60s duration requirement.\",\n  \"segments\": [\n    {\n      \"start\": \"02:14.50\",\n      \"end\": \"02:40.00\"\n    }\n  ],\n  \"hook_id\": \"E031B074\",\n  \"cliff_id\": \"E031B087\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Will Catherine use the red-hot iron to scar Juliana, or will Juliana survive the torture?\",\n  \"flags\": [\n    \"graphic violence\"\n  ]\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNrWU22CGOmq+I6iBcwZkwjasdnGSxCAf9IFQ33hcBU0egzcZefJuXPVocmhJkWR4/Vj8ivJXLsCZ8kzgjucvLEZsRFn+6FHCRO25gtN2sSoNWFR2y+wV5lZ9/JR//7B+QdAtxP9mfQE41En3yDPbwFH1IXv56I/diO3ISqorkNVJNdVjN7wj/YJZXRAfB47bgPnCN0yV5Wa2s="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203110,
+          "id": "JKAAa9qjHP37jNAP0tbekAM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 281,
+            "prompt_tokens": 7343,
+            "total_tokens": 7624
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 32,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":32,\"source_sha256\":\"e35aeb60acdaeebbbee43d680bf3c910d1b48a08c7c141a727cc0b8649b15b53\",\"status\":\"select\",\"reason\":\"The scene provides an immediate high-stakes confrontation with a clear power dynamic shift, culminating in a visceral life-or-death cliffhanger that creates strong viewer urgency.\",\"segments\":[{\"start\":\"02:28.00\",\"end\":\"02:34.38\"}],\"hook_id\":\"E032B112\",\"cliff_id\":\"E032B117\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"Will the branding iron strike Juliana, or will she be saved at the last possible moment?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRM2u55d6gcCbiGoqNodvtPW3XQO+bh1ekEC+Wa3diss+qyHPOy5UlMalAmabBH+K5GbUiej/LTonTBqT7Zn0Dzzjeqxgucmxo7KCBn63fEEAkvWysITOUAuLxGFUx70+18L6VZM/IXW+nMJJraFlgJsoCingJk3RIDiSXWHCoFhXQiOytJHuzRoyPLHdhnFsSNhs9knsjQjCD0="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203115,
+          "id": "KqAAa7nbGK6A3LUPqbvP-QY",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 200,
+            "prompt_tokens": 8648,
+            "total_tokens": 8848
+          }
+        },
+        "validation_error": "Cut splits dialogue E032B111 in episode 32"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":32,\"source_sha256\":\"e35aeb60acdaeebbbee43d680bf3c910d1b48a08c7c141a727cc0b8649b15b53\",\"status\":\"select\",\"reason\":\"The segment captures the escalation of verbal warfare leading to an immediate, high-stakes physical threat that perfectly satisfies the hook and cliffhanger requirements without violating dialogue cues.\",\"segments\":[{\"start\":\"02:20.40\",\"end\":\"02:34.38\"}],\"hook_id\":\"E032B106\",\"cliff_id\":\"E032B117\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will the branding iron strike Juliana, or will she be saved at the last possible moment?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMLA6TLig0Pk2/2ZzOQonLzK6iCZxiYqM46+NImBpXa8MX9M6Kx4d3hNaWZxO+UGXMxjjNCVftNpvp8bFUxI1GLXk1mm/QwhfFpXSD+h87JZvnwkaYbiREY2dh+b0aCuKJsgXsDLXL7msFL+AUokyVP4oQNwo5Vw4/zdRcYyW6DjeCr2JZFHDgSopTfkAAoVB6/L0RuRhL1Uyw="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203117,
+          "id": "LKAAa-miGN3XqfkP9v-EqAk",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 199,
+            "prompt_tokens": 8955,
+            "prompt_tokens_details": {
+              "cached_tokens": 6070
+            },
+            "total_tokens": 9154
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 33,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 33,\n  \"source_sha256\": \"0012ba24a8fa997a1df93165c06c90dacf5bab6c76ceef791533e8747aec4ad6\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features a high-stakes, chilling interrogation where a lord manipulates a maid into framing an innocent person, providing a strong hook and an intense, unresolved cliffhanger regarding the maid's coerced testimony.\",\n  \"segments\": [\n    {\n      \"start\": \"02:14.50\",\n      \"end\": \"02:43.80\"\n    }\n  ],\n  \"hook_id\": \"E033B080\",\n  \"cliff_id\": \"E033B096\",\n  \"ratings\": {\n    \"hook\": 5,\n    \"cliff\": 4,\n    \"context\": 4\n  },\n  \"open_question\": \"Will the maid follow through with the false testimony against Lady Juliana to save her brother, and what will be the outcome of the trial?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMC8rZUFAEMGOIQRbebV9EkEZWQGMbshcygYvDOW8iU1svee7cZTT6BjMWDf06C1Q3w9X6e0jOWiOeP2XjmUxTmn6WgBhozNZxURIJ7svIjxht67fhiSJ17ORIb01iTaek+vdn1bkINeA6F3Be1JFnwr17PV6vqb/SeEy3/bSuLnI1CMRFKEi2dWi2ZKOOSDU9V45A87wS/YZA="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203123,
+          "id": "MaAAa_3bH-rKqfkPkL2AyAo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 284,
+            "prompt_tokens": 7345,
+            "total_tokens": 7629
+          }
+        },
+        "validation_error": "Cut splits dialogue E033B097 in episode 33"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":33,\"source_sha256\":\"0012ba24a8fa997a1df93165c06c90dacf5bab6c76ceef791533e8747aec4ad6\",\"status\":\"select\",\n \"reason\":\"This segment captures the high-stakes ultimatum and the maid's descent into forced betrayal, maintaining intensity without splitting any dialogue.\",\n \"segments\":[{\"start\":\"02:14.50\",\"end\":\"02:43.80\"}],\n \"hook_id\":\"E033B080\",\"cliff_id\":\"E033B096\",\n \"ratings\":{\"hook\":5,\"cliff\":4,\"context\":4},\n \"open_question\":\"Will the maid follow through with the false testimony against Lady Juliana to save her brother?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMjO/cBUpwtGtYGJ6bCC2As+x4LmiAXU1XsI/TpPPdVYIdhSGzI//0swHZTYZj/l/IGaGTmtg80VWgyU5tU+ggvXmJMTHl2xXymkCzob+B/4qLXWTOYuHYlSZ2gQObI8dbnrL2pcAYKrwvWyAnuFMxszmYXf91geL+4tBen4vPtLgAgpYGJuTopU6ctmyoivPShU1qVblmKHoI="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203126,
+          "id": "NKAAa-rLC62B694PuvXesQg",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 7736,
+            "prompt_tokens_details": {
+              "cached_tokens": 4039
+            },
+            "total_tokens": 7934
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 34,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 34,\n  \"source_sha256\": \"76ed46ede7bbc0388279753e8d3e8da924141b43480b9f52243d1155003ca436\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features a high-stakes trial with an immediate, life-altering ultimatum and a strong, defiant performance that creates an effective cliffhanger.\",\n  \"segments\": [\n    {\n      \"start\": \"02:36.80\",\n      \"end\": \"03:10.00\"\n    }\n  ],\n  \"hook_id\": \"E034B099\",\n  \"cliff_id\": \"E034B116\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"What is the final, irreversible sentence that the Judge is about to pronounce upon Lady Juliana?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROEPbhQo8RyOzY0uTAyRVuMosMf0uiKCmcvEN7YoCdSu/nGRpftstWnfA6ZsYKLK7jJD+KJwVIhxCSlSsnCfeP8Pwh5Fpjk1p9YoDU6K3jqPTLGkEwPHJlKe9d3QfMIcILKm8lylhU4KJGNgbJt9mcjTRfih4i1jl8rVyxyNT27MG9UnlL1d5OHasilBzun6lXTxZj5c5HIivE="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203133,
+          "id": "OqAAa-afGeiz694P3_i_UQ",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 267,
+            "prompt_tokens": 8725,
+            "total_tokens": 8992
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 35,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 35, \"source_sha256\": \"07326970ef3d6f070ac1d6590c28721fda574046ea5e3885daec412a9f2d9ea6\", \"status\": \"select\", \"reason\": \"The emotional weight of a mother reuniting with a presumed-dead son, followed by the revelation of a high-stakes conspiracy, creates a compelling hook and cliffhanger for cold viewers.\", \"segments\": [{\"start\": \"02:24.00\", \"end\": \"02:30.50\"}], \"hook_id\": \"E035B068\", \"cliff_id\": \"E035B070\", \"ratings\": {\"hook\": 5, \"cliff\": 5, \"context\": 4}, \"open_question\": \"Who are the powerful men behind the massacre, and what is their connection to Ashwood?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPGe6+tOpRM7eLxdYNJ3sP5QyhjjJfPTfK50rZNtE4PnpONK4I3qTD1fnOoV7Q0+fz2Dv/x2/Zg2YEEpWtFRaK0Cg1xJ57ucg9VVIefr/IYJTVeqF/FfmCQ7QZ78vkt9XuSQY48WFvnPNiFq9d3j8vPpswEIBGmrsfRoNb8ZrDrC7AY1U9kJh2Xz/78p52o1WAGypni4sGnB6A="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203139,
+          "id": "QaAAa-yoDuWrmNMPw4u0sAo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 230,
+            "prompt_tokens": 5898,
+            "total_tokens": 6128
+          }
+        },
+        "validation_error": "Episode 35: 6.5s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 35, \"source_sha256\": \"07326970ef3d6f070ac1d6590c28721fda574046ea5e3885daec412a9f2d9ea6\", \"status\": \"select\", \"reason\": \"The sequence from the reunion transition to the climax of the conspiracy revelation provides a strong emotional hook and a high-stakes mystery cliffhanger within the required duration.\", \"segments\": [{\"start\": \"02:14.00\", \"end\": \"02:30.50\"}], \"hook_id\": \"E035B063\", \"cliff_id\": \"E035B070\", \"ratings\": {\"hook\": 4, \"cliff\": 5, \"context\": 4}, \"open_question\": \"Who are the powerful men behind the massacre, and what is their connection to Ashwood?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNkCs7n+37IDWOwq79GdP6Es0M10uh1cAUV38drQHcGAp2lnc9uOTiwIxNanh7T5SnPrEx8hLxV3hjuF/jXVRD8Js6WcTH8Q9kPYDuy53GP26PrS2f1eRleHWq+5bVz/Ld70gRVYTCFfmx3h8Xh6HF4P/Tro6z9TqcNY7FyV9Hj2dtO9zCLRT2wbqX5MZ+Cmw48FFXGP3ASx0Q="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203143,
+          "id": "RKAAa_uMCfzxz7sPtaLIsAI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 224,
+            "prompt_tokens": 6237,
+            "prompt_tokens_details": {
+              "cached_tokens": 4026
+            },
+            "total_tokens": 6461
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 36,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":36,\"source_sha256\":\"20e03164760e2aef2f6425e045f839e61841ebc2c378c7938803790bd19fc224\",\"status\":\"select\",\"reason\":\"The dialogue establishes a high-stakes ticking-clock scenario (a rescue mission/execution deadline) with clear motivation and a strong, cinematic final line.\",\"segments\":[{\"start\":\"03:08.00\",\"end\":\"03:20.75\"}],\"hook_id\":\"E036B116\",\"cliff_id\":\"E036B121\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will Alexander successfully infiltrate the wedding and rescue his wife before her scheduled execution?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNe4868zdW5oC7hTzTDJIhjtjpfXxrti/LA9PWHfBseWu4Z/FYYUiLqwj/SqDSZrPLEE3N3DKi7kg0HKgWSGbam5xCWuhcXPlYfgG3UC1n5fShSj8nB4D3EH2FhOt901FPsFXt0BPzgd6Qg/10RyRRd+eXHnZuOoXNyWUDOtEaUSmpfIdD8vbn3OMKj+W1OcL/mpIXASk6jKNU="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203149,
+          "id": "S6AAa5-ZD-7-4-EPqLCIoAo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 199,
+            "prompt_tokens": 9012,
+            "total_tokens": 9211
+          }
+        },
+        "validation_error": "Episode 36: 12.75s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":36,\"source_sha256\":\"20e03164760e2aef2f6425e045f839e61841ebc2c378c7938803790bd19fc224\",\"status\":\"select\",\"reason\":\"The segment captures the critical emotional pivot and high-stakes vow of vengeance.\",\"segments\":[{\"start\":\"02:59.50\",\"end\":\"03:20.75\"}],\"hook_id\":\"E036B111\",\"cliff_id\":\"E036B121\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will Alexander successfully infiltrate the wedding and rescue his wife before her scheduled execution?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMO8QfN1LbgxaJPVGosDA5uq0wYmlEAIPeh2AjfU2wUIXBRKJaOhWO31/FOJX61a8F1tsR3F8teG/iT8FcmUaHJs3IfXZSPZ9YTvkuF2fGLwpfHE6IrGCM/xSMqu8kDbgNCR2ZLb3iMxyZnUGyx4hIs5KUYyhx/GJlKaQuD21x+QXe1fHYdHk6rG6jZKReoJDqT8z/jtp+W8Is="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203152,
+          "id": "TqAAa4qjArmI694Py-D7iAs",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 184,
+            "prompt_tokens": 9322,
+            "prompt_tokens_details": {
+              "cached_tokens": 6073
+            },
+            "total_tokens": 9506
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 37,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 37,\n  \"source_sha256\": \"a76d8261a5e8423038f50c4f78f9dfd15fe90fbbc900e06f579de5e943163e2e\",\n  \"status\": \"select\",\n  \"reason\": \"The clip establishes high stakes with a chilling announcement of a public execution linked to a wedding, building strong narrative tension that compels the viewer to watch the next episode.\",\n  \"segments\": [\n    {\n      \"start\": \"02:12.50\",\n      \"end\": \"02:36.47\"\n    }\n  ],\n  \"hook_id\": \"E037B072\",\n  \"cliff_id\": \"E037B079\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Will Juliana survive the public execution or be rescued before the sentence is carried out?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMJ0/BKGsndlBczkj9UqGgRw0gTaEEevrDfxLRA5b3JlATbgq3ttrlmIlOZp1st9geR5eDtqyEHn0j7LpyRSGNZE5eB0vZsm2sWVKzsbmT6BOHL3lgY7FDPX/pKjyHQsbxucUe3rJhkIicQ+mEG+VoaS77xl/nzhX+Df3dxsN3mpNn54p1vjXOABQD0WSn2y9msyk2FArvfIcY="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203158,
+          "id": "VKAAa_DMDrjEg8UPt6DBuAw",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 270,
+            "prompt_tokens": 6542,
+            "total_tokens": 6812
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 38,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":38,\"source_sha256\":\"03e0ee85f8752256ba57786e7857c8c7e9f49b24b40d8ae900c4a6f5a00b5926\",\"status\":\"select\",\"reason\":\"The scene presents a compelling, high-stakes situation where a starving prisoner realizes her husband's wedding to another woman is taking place while she sits in a dungeon, creating immediate, urgent emotional stakes.\",\"segments\":[{\"start\":\"01:10.50\",\"end\":\"01:27.91\"}],\"hook_id\":\"E038B047\",\"cliff_id\":\"E038B056\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"What is happening at the wedding and will Juliana be executed?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRORITcpVH51Pgi86N1XOMDMPIQGY5iankM0MKx8BACputg/8DBVxp3Q+shY9L3XLOVTqMh0St5Uqs/ralk5F9clCes5nj0oRvVmDRNGmGGWIdldrjNWwA6Lmp2esM8oqk0mfD2e8m5aaqeFL00lUsoGR9ueaCIWVotvooDYdiKKPJPbam6PvZJGDgRyfIH4RePfuhW9y8crfj8="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203166,
+          "id": "WqAAa4ayFrLnqfkPn56R4Qw",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 207,
+            "prompt_tokens": 4814,
+            "total_tokens": 5021
+          }
+        },
+        "validation_error": "Episode 38: 17.41s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 38, \"source_sha256\": \"03e0ee85f8752256ba57786e7857c8c7e9f49b24b40d8ae900c4a6f5a00b5926\", \"status\": \"select\", \"reason\": \"The sequence effectively captures the prisoner's realization of her husband's betrayal during the wedding bells, providing a high-stakes emotional cliffhanger within the required duration.\", \"segments\": [{\"start\": \"01:04.00\", \"end\": \"01:27.91\"}], \"hook_id\": \"E038B042\", \"cliff_id\": \"E038B056\", \"ratings\": {\"hook\": 4, \"cliff\": 4, \"context\": 4}, \"open_question\": \"As the wedding bells signal the start of her husband's new marriage, will Juliana survive her imprisonment?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNRneKCil118eCQmO562NbrEZeKN0aO2+htosEpALZTP9PP6fCIcbePn597nMHXctafIRN81QhB0OasuTQ78hDoZ2Wd/HwQyBkbmBmWWXret6OZo6i4lWX9xkQo+9iBo14R+vDeVhkdlh1ohXWR6JDNu/dlV1gkWmxQ9sgvDzumgxA4GHWwYxCJcYQ4OMx5v+LVHpLYXHSNV6M="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203169,
+          "id": "XqAAa5bnOLahmNMPwrHqoAk",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 234,
+            "prompt_tokens": 5132,
+            "prompt_tokens_details": {
+              "cached_tokens": 2005
+            },
+            "total_tokens": 5366
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 39,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":39,\"source_sha256\":\"9880b70ecdcada1fcb110b33761a1bdfdf96ccad454ef181cd47d641bb68e500\",\"status\":\"select\",\"reason\":\"The segment captures a high-stakes transition from a covert ambush to the protagonist's dramatic, high-production-value reveal, providing a strong narrative hook for a revenge arc.\",\"segments\":[{\"start\":\"01:06.60\",\"end\":\"01:38.41\"}],\"hook_id\":\"E039B043\",\"cliff_id\":\"E039B059\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will Alexander successfully reclaim his title and rescue his wife from those who usurped his life?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMiKL7jQaF+LLOGkHIlEqD4COd+P8xAquM0A7ZMDBCfcKLYI2p8rbKokdk0S2FaP+XmJoj9RnCP+r5TuHx77AKQTSBDLi2yE6aiiOrNIavzfx5i8ckOPMY9/9IJtO4OqvszbDdLAgT0Rh7oKH6YS4ws58aJbxmBD95+zPlUKj9TAPK3FoIXQdGM6d/428+0cZA4rCFVXx/iQg0="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203184,
+          "id": "baAAa__6INex0r4Pudmc8AY",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 200,
+            "prompt_tokens": 5078,
+            "total_tokens": 5278
+          }
+        },
+        "validation_error": "Cut splits dialogue E039B042 in episode 39"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":39,\"source_sha256\":\"9880b70ecdcada1fcb110b33761a1bdfdf96ccad454ef181cd47d641bb68e500\",\"status\":\"select\",\"reason\":\"The segment captures a high-stakes transition from a covert ambush to the protagonist's dramatic, high-production-value reveal, providing a strong narrative hook for a revenge arc.\",\"segments\":[{\"start\":\"01:06.60\",\"end\":\"01:38.41\"}],\"hook_id\":\"E039B043\",\"cliff_id\":\"E039B059\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will Alexander successfully reclaim his title and rescue his wife from those who usurped his life?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMdy0mBvtOB46Kz3v9Pc0n3jrXXGZB77IF6Lhf9NA6PSvmk+ot/PKRW+uovdku5pMe+aX/fZEaZgmiiy3A6u8WxHVIUzhryBhBjZ1fXSYlrdZ6hSJklamE+L4z+wlzFldWKpJohFQTMVgMcR9pidTBOTUqR71kvn2V5nt/80rKPHWRQEuqyNL1Z2rqH+8ySQCD0MU20crkz/Hg="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203185,
+          "id": "cKAAa_LTHrahmNMPwrHqoAk",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 200,
+            "prompt_tokens": 5385,
+            "prompt_tokens_details": {
+              "cached_tokens": 2007
+            },
+            "total_tokens": 5585
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 40,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 40,\n  \"source_sha256\": \"9b116fc10ed5209d6d3a109f10f574cd6f4a1b680f5e1cf66a99e6f02b7b51e0\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features high-stakes conspiracy and a clear, impending threat of murder against the protagonist, providing strong hook and cliffhanger tension.\",\n  \"segments\": [\n    {\n      \"start\": \"01:09.50\",\n      \"end\": \"01:18.50\"\n    }\n  ],\n  \"hook_id\": \"E040B035\",\n  \"cliff_id\": \"E040B038\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Who is the 'witch' they plan to kill, and will the murder occur during the wedding?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROcFLEHAzlSrbhfY8Y4Dn4lhcTzOuVNNspMr/+Q/V2Fe97E7lgMpxOZIxh1ae74p8KFdvfJnFiSHG98E2tEqdzcJ4um9hbv3MWgYR4YC4byuJo2O1MH14ze4KCkCpNYWTg/Rs533764M8UyYRgBOYUy7Vk2doLxss986YykLg18568NLQN+vKBF/3dxNQbPcZ0Y3PvH71MbAlw="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203191,
+          "id": "daAAa9rxKp6o4t4P_fOO-Qk",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 270,
+            "prompt_tokens": 4587,
+            "total_tokens": 4857
+          }
+        },
+        "validation_error": "Episode 40: 9.0s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":40,\"source_sha256\":\"9b116fc10ed5209d6d3a109f10f574cd6f4a1b680f5e1cf66a99e6f02b7b51e0\",\"status\":\"select\",\"reason\":\"The segment captures a high-stakes conspiracy reveal and the ominous buildup to a murder plot, meeting all timing and engagement criteria for a microdrama promo.\",\"segments\":[{\"start\":\"01:03.80\",\"end\":\"01:21.00\"}],\"hook_id\":\"E040B030\",\"cliff_id\":\"E040B040\",\"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\"open_question\":\"Will the conspirators successfully assassinate their target during the wedding ceremony?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMSLZpJM9hLNwAhO4o7z8LX+vWiVbl2tPY80fqn0Z7ly9EJR453BeqBDs+vOIXe/XvGUwvw3DOAzIYLsQj5n4Lh9bb8Wy0nKqHqX28X/6SMdbU3CQrOAfgCz5qXUSKbRTY9DPMxsMHJFHT6tjQAzaFMwAn2QT8SAcSL4Ij9Gv250dJ+1luUxl9HwnAf+riT2Cv+SCwHVChUftg="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203193,
+          "id": "eKAAa8uTAbmdjuMPmoyOwAI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 4966,
+            "prompt_tokens_details": {
+              "cached_tokens": 2004
+            },
+            "total_tokens": 5164
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 41,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 41,\n  \"source_sha256\": \"80e99739af6910a1947da7e3b729f9a79f1acc371d8d09c2f8028786b1c3a6ef\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features an extreme power dynamic reversal, high stakes, and a catastrophic explosion that creates a powerful, unresolved cliffhanger perfect for a cold audience.\",\n  \"segments\": [\n    {\n      \"start\": \"01:17.50\",\n      \"end\": \"01:36.09\"\n    }\n  ],\n  \"hook_id\": \"E041B044\",\n  \"cliff_id\": \"E041B053\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Who is behind the explosion, and has Juliana just been rescued?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRM/Nkw7mY9eWZVkghhNq108yQbHjmy45mqtrjkPkJfzOTF4/5G1z4ir2p1aQKAHMozULDC7fYrAYP08OIEgIjl+K9h6s6Nvn/hE7+8mP2ofxQdLMOGrYXTaBgK3VmZbzXgs1gJ2mQxuEYEk7E/ZcKdhB7i/hWmVUnJYoZ7qA0Tp3OpkrWoUZ2JR0LbLX/LRcRENv43a+5cmcVw="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203199,
+          "id": "faAAa5D8Du2JqfkP-t-3kAU",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 265,
+            "prompt_tokens": 4708,
+            "total_tokens": 4973
+          }
+        },
+        "validation_error": "Episode 41: 18.59s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":41,\"source_sha256\":\"80e99739af6910a1947da7e3b729f9a79f1acc371d8d09c2f8028786b1c3a6ef\",\"status\":\"select\",\n \"reason\":\"High-stakes humiliation transitions into a violent, explosive disruption that creates an undeniable hook for cold audiences.\",\n \"segments\":[{\"start\":\"01:04.00\",\"end\":\"01:36.09\"}],\n \"hook_id\":\"E041B037\",\"cliff_id\":\"E041B053\",\n \"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\n \"open_question\":\"Who is breaching the cathedral to rescue the prisoner, and will Catherine's wedding be destroyed?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROGFc945oSoPQLHffkRjSxnJqRf5UjYbwsEv91sH5zVMwBf3As0wsJuJBbnC7ClaYBElECoUx4GF+CNrbbs9fT2OougEBBOZMDVfm8zRzj/sj7PX0XE8AZGEHg4jhfsPs4u84MU0MzF0QAFHlGSCi9fWLnVUGAkkkXdRPdPblTPEJdmEipy1s9nvbz6d1Jc49zu1Z/qu0u1/yI="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203202,
+          "id": "f6AAa-a5IKiG694PgaTl8Ac",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 202,
+            "prompt_tokens": 5084,
+            "prompt_tokens_details": {
+              "cached_tokens": 2005
+            },
+            "total_tokens": 5286
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 42,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":42,\"source_sha256\":\"338a2e4416e23ccbdd35fce7a7bef8fe67e442cb023bacc55ae9a3f512aca696\",\"status\":\"select\",\"reason\":\"The scene presents a high-stakes, dramatic return with immediate conflict that sets up a classic 'vengeful hero' hook, perfectly paced for a 30-second ad unit.\",\"segments\":[{\"start\":\"00:17.90\",\"end\":\"00:33.80\"}],\"hook_id\":\"E042B009\",\"cliff_id\":\"E042B020\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"How will the usurper face the consequences of his actions now that the true heir has returned from the dead?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPSFyuZNqpnGTvY5UZlGvZqx/9rvouV5bTNq3yOmuigKdKx4YWkYm5WHxTgk6+74MOyl/nNEFun/Fd19CbDbFumzY9N1OKe/OTY8BjDj9TFKwQQyV6gybeuKo7qCctKAHSKtKKfgueOaXbHoL1LmXan1Lok2ivnyC3gpgK77nk5QIiuf5YbNdyOVP21W79F6TpB4quTtUhIxAY="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203208,
+          "id": "hqAAa-GYHYKK694P-priqAM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 205,
+            "prompt_tokens": 3542,
+            "total_tokens": 3747
+          }
+        },
+        "validation_error": "Episode 42: 15.9s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":42,\"source_sha256\":\"338a2e4416e23ccbdd35fce7a7bef8fe67e442cb023bacc55ae9a3f512aca696\",\"status\":\"select\",\"reason\":\"The segment provides a high-stakes, complete narrative beat showing the return of a presumed-dead character and the immediate destabilization of the antagonist, fitting the 20-60s window.\",\"segments\":[{\"start\":\"00:17.90\",\"end\":\"00:39.90\"}],\"hook_id\":\"E042B009\",\"cliff_id\":\"E042B022\",\"ratings\":{\"hook\":5,\"cliff\":4,\"context\":4},\"open_question\":\"The usurper is terrified, but how will the hero exact his vengeance now that his identity is revealed?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNtTrCDp85MZgw2qhpjZQdmFpBmj4CUK0+OBD/ChgtbbOtqi7FiHUb9FpR9wLbJQ9K+5/p9rnHS+1SIdkpeRVOZfI4FD/1pKoeZh11y4oGI/ROuJ8SmcIXYJcBeimEj1MQsKj52QyXIiJRGezjJaWxfipE9j0dRLPC984hwdWu/p9dKyY1s8A8jrCKV8xZ1+LZPJK4JjGaG9TQ="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203211,
+          "id": "iKAAa-i_I83fg8UPoOzs4QI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 206,
+            "prompt_tokens": 3857,
+            "total_tokens": 4063
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 43,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":43,\"source_sha256\":\"38bc44fd0e20af8d7d020f5616476647014c1fb0e0dff1bd0a59f77cf36d9bb9\",\"status\":\"select\",\"reason\":\"The segment captures a high-stakes, high-tension confrontation with an immediate hook, clear betrayal, and an unresolved cliffhanger of the culprit being cornered.\",\"segments\":[{\"start\":\"01:42.20\",\"end\":\"01:54.96\"}],\"hook_id\":\"E043B079\",\"cliff_id\":\"E043B087\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"What will be the final punishment for Lord Sterling now that his escape route is blocked by the law?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNL1YQO62ZbzyYGJRs/T+iowD9W2kATTMoZ+OJSi7xU5n2E9qQu3EB5Q9KWl5vGOFcSGE8cy6aUUAcWEfe+t1aO3R0UAVw21mhJavdgjUAR3lK4Yp0eKE5LpujVrsKWRJEVf87ntwhDwRb0EySzPsMM/haisDvlQ7jhm+oTvog9Y/VCXodSsw5TXnV1O+znNfUZ0Ux1yUAqlWY="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203216,
+          "id": "j6AAa8aEHpTj3LUP9vGvqQo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 202,
+            "prompt_tokens": 6720,
+            "total_tokens": 6922
+          }
+        },
+        "validation_error": "Episode 43: 12.76s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 43,\n  \"source_sha256\": \"38bc44fd0e20af8d7d020f5616476647014c1fb0e0dff1bd0a59f77cf36d9bb9\",\n  \"status\": \"select\",\n  \"reason\": \"The sequence starting from the reading of the military report through to Sterling's thwarted escape provides a high-stakes, self-contained narrative arc with a strong hook and cliffhanger.\",\n  \"segments\": [\n    {\n      \"start\": \"00:37.00\",\n      \"end\": \"00:54.80\"\n    },\n    {\n      \"start\": \"01:39.80\",\n      \"end\": \"01:54.96\"\n    }\n  ],\n  \"hook_id\": \"E043B034\",\n  \"cliff_id\": \"E043B087\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"What happens to Lord Sterling now that his final escape attempt has been blocked by the authorities?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRP9OHxlX7oML1137L/A0pWQ6Ngg8J14JMEC7Zcluvl4J+zwbIg77dK2ucelbfKCMu193qNi1Vublw9aXX47NZgJE7yQ/OWN27nOj6w9HKaRup0ZcEWmB1ZUBP2QnH/qzRlT/Uw69viYHbU/ttv5ALknYzjj+AAzLBnJbSPsGF6HZQt+yHkhFklNgi67Z80YT2G65XP0De15zxc="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203219,
+          "id": "kaAAa8jFGqni694Pg_qeoQs",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 309,
+            "prompt_tokens": 7033,
+            "prompt_tokens_details": {
+              "cached_tokens": 4034
+            },
+            "total_tokens": 7342
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 44,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":44,\"source_sha256\":\"d6578a980e20d1c89412d7828db835a3076dbe6b8555a2d0cdb7b54ad747e256\",\"status\":\"select\",\"reason\":\"The scene presents a high-stakes emotional confrontation during a wedding interrupted by an arrest, concluding on a sharp, cliffhanger revelation regarding the protagonist's true target.\",\"segments\":[{\"start\":\"01:05.00\",\"end\":\"01:10.50\"}],\"hook_id\":\"E044B049\",\"cliff_id\":\"E044B054\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Why is Alexander choosing the shackled woman, Juliana, over Catherine?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRMnEI+29MMte8LfJGUIH6oxDPghMhTvSdTOzVDOdA5yYRw1QPcq1UHEbp96I1YIGSbhL1a2CbYTlPaTURUEuP6zmC++Pb2b83U+El/lU6ZBL81T5azyv/Mw+TlC48pcnb5ni/QvH6zatZI3DEL3t+vDd88uRSxAp2mFEBLc3O0BJPkoubINr5eXzAKKdoWnGGuIe+tX8zqEbtQ="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203224,
+          "id": "l6AAa4aNFeyMz7sPg6aD2Qk",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 201,
+            "prompt_tokens": 4598,
+            "total_tokens": 4799
+          }
+        },
+        "validation_error": "Episode 44: 5.5s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":44,\"source_sha256\":\"d6578a980e20d1c89412d7828db835a3076dbe6b8555a2d0cdb7b54ad747e256\",\"status\":\"select\",\"reason\":\"The segment captures the peak emotional conflict of the scene, highlighting the protagonist's cold betrayal of his former lover and his shocking choice, ending on a high-tension cliffhanger that demands explanation.\",\"segments\":[{\"start\":\"00:51.00\",\"end\":\"01:10.50\"}],\"hook_id\":\"E044B038\",\"cliff_id\":\"E044B054\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Why is Alexander turning his back on his former love to claim the woman in chains?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPgibahKUHUKMIzafi8gx5aep6DKfUo6a+9RUFjl7FR5PvamQEQ5G8C8+OE5DaOPrDfdJ+dbat23dKWgDkrKfcm00+CMlWk92itT53rdn8k4E1wx19I3LqTS152eKOVL+GsAu37HVZCNGVAqVBA0x+sucnzYmtWJandnjO0qhF0iziYGVO5aWjdwy+lkJV2/j31bDRofvrgavk="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203227,
+          "id": "maAAa52RG4zn4t4PkfijoAU",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 210,
+            "prompt_tokens": 4908,
+            "prompt_tokens_details": {
+              "cached_tokens": 2003
+            },
+            "total_tokens": 5118
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 45,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":45,\"source_sha256\":\"3424e374024cd00f62363ff74cc760257a974bf2c966796922d6ee99beade3db\",\"status\":\"select\",\"reason\":\"The segment provides a high-stakes emotional payoff and an immediate, intense reversal of fortune for the leads, creating an irresistible cliffhanger for the viewer.\",\"segments\":[{\"start\":\"01:26.50\",\"end\":\"02:01.75\"}],\"hook_id\":\"E045B057\",\"cliff_id\":\"E045B074\",\"ratings\":{\"hook\":4,\"cliff\":5,\"context\":4},\"open_question\":\"Will Alexander find a way to prove his marriage is legal before Catherine destroys Juliana's reputation?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRNRr+di7hUaBDe6XLIsGJ9AhJsG+3lVpxxQ3J1G2pl9wlGX0SW3CGPa5hGQH0o9MXkFS9zAeFR/xIaS7RF8FWplsW7AxaJlishyvvo9MlAC0nzb7H21rxrkaLkIjrROPu9mnqM4pJNN6Da1xejOvZvHqjS0PjIVSDHbDSnsvz9JYI1uyhCguFlTOW2uU9zW4QEMnKpAOI1HfsA="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203232,
+          "id": "n6AAa-zJB4LHpgfJi8M5",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 198,
+            "prompt_tokens": 6021,
+            "total_tokens": 6219
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 46,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 46,\n  \"source_sha256\": \"0be3f531f43e86d3e33d345721484e16c73d7c066a20333d08f888a60d957e14\",\n  \"status\": \"select\",\n  \"reason\": \"The clip features high-stakes conflict where a Duke's marriage is legally challenged by the church, creating immediate tension with a clear 10-day ultimatum cliffhanger.\",\n  \"segments\": [\n    {\n      \"start\": \"01:36.80\",\n      \"end\": \"02:23.88\"\n    }\n  ],\n  \"hook_id\": \"E046B054\",\n  \"cliff_id\": \"E046B074\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 5,\n    \"context\": 4\n  },\n  \"open_question\": \"Can the Duke and his bride prove their marriage valid in 10 days, or will they be permanently separated?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROOR7nHDh4tiOPL4Kr+m2R45QoFv4Qt3KZe1ZmO/+nAEHK9/h+/BV00o5ERGnoqwgx6TpVwVgAKzMULZeeSIU2IJjIIqQL0XDpIRoUvr5rZA+Wme9/OTWKJkPJh3D8HLMRL9n9WVQ/kh7xZ/BjgLJiSXYQo1FHERB2jFY7PycYSwDGcQHhlSPo/SLl2xHd9TKOdnvkZwlRwHmY="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203238,
+          "id": "pKAAa_DlIqT4694P_raB4Ac",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 284,
+            "prompt_tokens": 6207,
+            "total_tokens": 6491
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 47,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 47, \"source_sha256\": \"fff9175ab2120638b955660a5b8cdf11c5f6cdfaf8e0d40d313c7f1a8a54b63a\", \"status\": \"select\", \"reason\": \"The humiliation of the antagonist forcing her to serve as a maid to those she once tried to destroy creates a high-stakes power reversal that serves as a perfect, high-engagement hook for viewers.\", \"segments\": [{\"start\": \"01:54.50\", \"end\": \"02:14.00\"}], \"hook_id\": \"E047B062\", \"cliff_id\": \"E047B070\", \"ratings\": {\"hook\": 5, \"cliff\": 5, \"context\": 4}, \"open_question\": \"Will Catherine accept her new role as a servant, or will she plot a final act of vengeance?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPdEXJPNoGiAFvu6ys+Q9dE/DgVudNId3K4GHqUW/d5c7/cXAKq3Uw7XIFAbYhuQNRtRnYGnH689wiYlv6+DaDKWoKRMv0ouzqbEJ/fY8I/BgMJrKvu6f7aixqg4y6l0BX1mxa9IVO9iWfuDTPNCLG5XNx4vzXiBszKMQjGXrgX/j1EI1kVPCUgczK2YxGs/f//fB/GRUhSXDM="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203244,
+          "id": "qqAAa8WgGe2n694PqYG6sQU",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 234,
+            "prompt_tokens": 5790,
+            "total_tokens": 6024
+          }
+        },
+        "validation_error": "Episode 47: 19.5s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":47,\"source_sha256\":\"fff9175ab2120638b955660a5b8cdf11c5f6cdfaf8e0d40d313c7f1a8a54b63a\",\"status\":\"select\",\n \"reason\":\"The scene captures the ultimate humiliation of the antagonist, forcing her to accept a role as a scullery maid; the high-stakes power reversal is a perfect hook for cold audiences.\",\n \"segments\":[{\"start\":\"01:41.20\",\"end\":\"02:14.00\"}],\n \"hook_id\":\"E047B054\",\"cliff_id\":\"E047B070\",\n \"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\n \"open_question\":\"Will Catherine accept her new life as a servant, or is she plotting her ultimate revenge from within the shadows?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRP+chIOBzO+LuTL/wBowqp6wZAIIt6m5pvzYpPwg4o+vBYKGOLHYGTvrI+QkgvYUWwd4+vY4ZgVc1M8s3M13CoylqdiVvk+USLDRb+zsLOZqRbBggHY20OHjAoxLC7WDF8u1hfUAH+KXsxVoZ2NS8OZkOT1fLNKwXIlq2QdB9MJ4m0LFHDh1jVntlnBmnONUZZBar08eqpLDIE="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203247,
+          "id": "raAAa6ekHqikg8UP4Le0oAI",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 219,
+            "prompt_tokens": 6134,
+            "prompt_tokens_details": {
+              "cached_tokens": 4025
+            },
+            "total_tokens": 6353
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 48,
+    "failed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 48,\n  \"source_sha256\": \"877b9ef4386e0bdc3b9103964979388eca1eb9c5341f835d6b203412fc6db624\",\n  \"status\": \"select\",\n  \"reason\": \"The scene establishes an immediate, high-stakes power dynamic with a clear, sinister motivation that hook the viewer, ending on a cliffhanger regarding the dangerous task assigned to the maid.\",\n  \"segments\": [\n    {\n      \"start\": \"00:34.00\",\n      \"end\": \"01:13.50\"\n    }\n  ],\n  \"hook_id\": \"E048B021\",\n  \"cliff_id\": \"E048B042\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 4,\n    \"context\": 4\n  },\n  \"open_question\": \"Will Agnes successfully smuggle the priest to Catherine without being caught by the Duke's bailiffs?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPl15jA5hXeTxf9LDxov4UlwowTL0RPb0cFDLWDJthYpdT5qS2dn+qbyQy/iMbZGn54WW4O2EGO5NgFfMoFU+O4sopZxFEXA/xV4d1BWNOcDVT+JA3pm6ahJQ51UcmiYH5rmyGDGgF+2oqUHDU1DPaaeub95+31iE8UgQbBPJL8h8fyaX/rwbxs3ySpbfKWpdxkeTgxZ92A6WY="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203253,
+          "id": "s6AAa5LCA8SL3LUPqpKToAo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 276,
+            "prompt_tokens": 3959,
+            "total_tokens": 4235
+          }
+        },
+        "validation_error": "cliff_id 'E048B042' is outside selected clip segments"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":48,\"source_sha256\":\"877b9ef4386e0bdc3b9103964979388eca1eb9c5341f835d6b203412fc6db624\",\"status\":\"select\",\n \"reason\":\"High-stakes villain monologue and immediate, dangerous conspiracy task drive engagement for a cold audience.\",\n \"segments\":[{\"start\":\"00:34.00\",\"end\":\"01:13.50\"}],\n \"hook_id\":\"E048B021\",\"cliff_id\":\"E048B042\",\n \"ratings\":{\"hook\":4,\"cliff\":4,\"context\":4},\n \"open_question\":\"Will the maid succeed in sneaking the priest in, or will she be caught by the Duke's guards?\",\n \"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRPpv27RJqRQNzzvjwDihnfnOznWkqA4rzflYSNIPZJHigdJs6DIwjLc8oXGkpM835uGLK3KvCBVFIurVYmbaGe/0J1veiHAwYhZZQMqsSuorBL0V/e7UVeNdZ8LdI8FJa6zZ3WjOG/6AO73QHPRSCCEc1whjX2bKCZt32Rn24lxB79sPliu3qq5OTDP3vQKcHhJw3VDzfuiNNk="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203257,
+          "id": "tqAAa6_WCeyS3LUPl_neiQo",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 201,
+            "prompt_tokens": 4344,
+            "total_tokens": 4545
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 49,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\n  \"episode\": 49,\n  \"source_sha256\": \"7b96649d2e272da28d82c5cf18c7915d4f09117e5d7632a04625a333d554016e\",\n  \"status\": \"select\",\n  \"reason\": \"The scene features high-stakes treasonous plotting between a priest and a disgraced Duchess, culminating in a tense, intimate alliance that perfectly sets up a cliffhanger regarding their potential ruin.\",\n  \"segments\": [\n    {\n      \"start\": \"01:58.20\",\n      \"end\": \"02:24.75\"\n    }\n  ],\n  \"hook_id\": \"E049B050\",\n  \"cliff_id\": \"E049B063\",\n  \"ratings\": {\n    \"hook\": 4,\n    \"cliff\": 4,\n    \"context\": 4\n  },\n  \"open_question\": \"Will their high-stakes conspiracy to manipulate the council be discovered, or will Catherine succeed in her power play?\",\n  \"flags\": []\n}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROTDzjvNHPta/wLdd5T/F6FwGnQshpRZJ5kYkfllr/qh19wv6bQ++qhpbt6KkJtA+B1pt1Jfx4ZBdfpOnK3kJ+i5roarFAEZu6itYrUyqUOqxgxgKVim68znBrVjDpqd+LXjhubzmlgzcOhf4JgQWdGflWQIsCyYJaOoaQuXnqrPRtflVYhq+Oz9uYdChVoVSk5eMiLiesOXY8="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203264,
+          "id": "vaAAa5enMYLHpgfJi8M5",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 283,
+            "prompt_tokens": 5457,
+            "total_tokens": 5740
+          }
+        }
+      }
+    ]
+  },
+  {
+    "episode": 50,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\":50,\"source_sha256\":\"93a1df095b8ea3a42ca4367e0f4c29c8d35fa1c549fd281a4289f93f6a392c1b\",\"status\":\"select\",\"reason\":\"The scene presents a high-stakes discovery of a forbidden, scandalous affair that carries fatal consequences, creating a perfect hook and cliffhanger for cold audiences.\",\"segments\":[{\"start\":\"01:10.50\",\"end\":\"01:20.00\"}],\"hook_id\":\"E050B033\",\"cliff_id\":\"E050B040\",\"ratings\":{\"hook\":5,\"cliff\":5,\"context\":4},\"open_question\":\"Will Agnes survive after discovering the forbidden affair, or will she be silenced to protect the priest and Catherine?\",\"flags\":[]}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfROVc0oRVQ1WZ2YddaVNObWYNICiLhyrZPbsjIi3X3cO/zUdyywHGpe9QWa7DdRrxpgay7W8bbrBTtfgLjvfaUsBdTGq449Xen6z5vXp6rPWTT9a3GX/WUjm6bbhEn3It3pW5tENdm1d8qCzwCq2mupsxGj8t6MV3eP/csZTbRbym3ymci1TWbLdYQnedPwLPL6nvH9VNLKwC0o="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203269,
+          "id": "xKAAa82iEcyC694P0r_QmAM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 205,
+            "prompt_tokens": 3826,
+            "total_tokens": 4031
+          }
+        },
+        "validation_error": "Episode 50: 9.5s outside 20-60s"
+      },
+      {
+        "attempt": 2,
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "stop",
+              "index": 0,
+              "message": {
+                "content": "{\"episode\": 50, \"source_sha256\": \"93a1df095b8ea3a42ca4367e0f4c29c8d35fa1c549fd281a4289f93f6a392c1b\", \"status\": \"select\", \"reason\": \"The build-up of the illicit transaction followed by the high-stakes discovery provides an ideal 39-second sequence for an ad.\", \"segments\": [{\"start\": \"00:43.00\", \"end\": \"01:20.00\"}], \"hook_id\": \"E050B022\", \"cliff_id\": \"E050B040\", \"ratings\": {\"hook\": 4, \"cliff\": 5, \"context\": 4}, \"open_question\": \"What will the witness do after catching the priest and Catherine in a forbidden act?\", \"flags\": []}",
+                "extra_content": {
+                  "google": {
+                    "thought_signature": "EqEBCp4BAWkUfRM+r8fnpYDHK0Iv9peI27BOEjet8pcW67GQHFq5otBCFMasd5q03DmuQ2J1HwNhTWSbyxsbhMr1F6N4Ww1YXPTqb0SkvDdNWsAk4y9Qi0N/y2ioEBcKl4FKM/k0TAJQasJFoPh7ospoWDfdPSjELuHmSvsv23VHuN4I3eddj3USp4Io0bBjEmT58KP7cvMfKhhZXL23Oag2LKA="
+                  }
+                },
+                "role": "assistant"
+              }
+            }
+          ],
+          "created": 1795203271,
+          "id": "xqAAa6-8FPb84t4PzruPoAM",
+          "model": "gemini-3.1-flash-lite",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 222,
+            "prompt_tokens": 4139,
+            "total_tokens": 4361
+          }
+        }
+      }
+    ]
+  }
+]
