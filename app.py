@@ -45,7 +45,9 @@ else:
         default_key=PROVIDERS[provider][2] if len(PROVIDERS[provider])>2 else ''
         model=st.text_input('Model ID',value=default_model,key='model_'+provider,
             placeholder='Enter a model available to your API account')
-        key=st.text_input('API key',value=default_key,type='password',key='api_key_'+provider,placeholder='Paste your own key')
+        key_input=st.text_input('API key',value='',type='password',key='api_key_'+provider,
+            placeholder='Using pre-configured server key' if default_key else 'Paste your own key')
+        key=key_input.strip() or default_key
         st.caption('Your key is used by this app server to contact the selected provider. It is kept in this session, not written to files or downloads. Use only a deployment you trust.')
         if provider.startswith('Google Gemini'):
             st.link_button('Get a Gemini API key','https://aistudio.google.com/apikey')

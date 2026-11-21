@@ -78,5 +78,9 @@ class AppTests(unittest.TestCase):
         with patch('sample_data.load_sample',return_value=None):app=self.app()
         self.assertTrue(any('private submission bundle' in x.value for x in app.warning))
         self.assertEqual(len(app.metric),0)
+    def test_frontend_does_not_render_server_key_value(self):
+        app=self.new()
+        key_input=next(t for t in app.text_input if t.label=='API key')
+        self.assertEqual(key_input.value,'')
 
 if __name__=='__main__':unittest.main()
