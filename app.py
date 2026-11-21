@@ -1,9 +1,15 @@
 """Last Frame: upload a new screenplay, connect your model, explore and refine cuts."""
 import hashlib
 import html
+import importlib
 import json
 from pathlib import Path
 import streamlit as st
+
+import ai_engine
+if not hasattr(ai_engine, 'default_key_for') or not hasattr(ai_engine, 'rank_comparative'):
+    importlib.reload(ai_engine)
+
 from ai_engine import (Settings,PROVIDERS,ModelError,uploaded_episodes,analyse,
                        decision_for,explain,export_zip,validate_decision,cache_id,default_key_for,rank_comparative)
 from promo import validate
