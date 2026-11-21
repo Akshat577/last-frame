@@ -40,11 +40,13 @@ This is the primary semantic blind spot of automated tools: code checks timestam
 
 ## Technical checks and honest denominator
 
-The full pack contains 50 episodes. There are 50 decisions: 20 select, 30 pass. All 20
-selected cuts satisfy implemented structural checks. These are compliance counts, not
-precision or recall. Nine synthetic tests pass, including a mocked endpoint test and the
-known semantic limitation. The supplied decisions and exports are not hand-edited after
-the final run. The decisions are authored AI judgments; the generated outputs are deterministic.
+The full pack contains 50 episodes. There are 50 validated decisions: 20 select, 30 pass. All 20
+selected cuts satisfy implemented structural checks (20-60s duration, valid cue boundaries, dialogue
+not split, hook in 0-3s, cliff ending at final cut point, and camera/sound cues excluded from evidence).
+These are compliance counts, not precision or recall. Thirty-eight unit tests pass, covering core AI logic,
+networking, UI integration, and known semantic limitations (such as the Episode 16 reveal).
+The supplied decisions and exports are not hand-edited after the live run; all 50 live Gemini responses
+are preserved in `raw_outputs/api_responses.json` with execution hashes in `raw_outputs/run_audit.json`.
 
 ## Small next experiment
 
@@ -55,38 +57,44 @@ For approved creatives, run an equal-budget audience test with matched targeting
 three-second hold and story-start conversion, and compare cost per story start. No uplift
 or production volume assumption has been invented here.
 
-## Interactive upgrade
+## Interactive prototype & dual-workspace architecture
 
-The Streamlit app accepts new ZIP/TXT screenplay packs and makes fresh AI calls using a
-reviewer's own OpenAI/Gemini key. A creative brief and duration range guide selection;
-conversation can explain or reselect a single episode. Reselected cuts pass the same
-source/timing checks. One repair attempt is allowed; persistent failures are explicit.
-Session-scoped caches prevent accidental repeated calls when resuming unchanged inputs.
+The Streamlit app provides two distinct, fully isolated workspaces:
 
-23 core/AI checks pass, using controlled API responses. These include unseen episode
-numbers, malformed cuts and repair, authentication failures, partial coverage, preference
-cache invalidation, explanation/refinement context, ZIP errors, and key-free downloads.
-The original 50-episode pack was reparsed through the new upload adapter and its saved
-15-promo result revalidated. This remains a replay, not a fresh API evaluation.
+1. **Sample results · 50 episodes (Default):**
+   Immediately loads the 50 validated decisions (20 ranked promos, 30 passes) from the live Gemini run.
+   Evaluators can explore interactive promo cards, verify cue-by-cue source evidence, search by hook or
+   open question, and download the full run bundle (JSON + CSV + HTML + API traces) without uploading files
+   or providing an API key.
 
-Fresh model quality and real provider availability remain unverified until a reviewer
-supplies a valid key. The synthetic demo is labelled prewritten and makes no model calls.
-No confidential Kuku excerpts are bundled in the public deployment source.
+2. **New analysis:**
+   Accepts uploaded screenplay files (individual TXT or ZIP packs up to 100 episodes / 10 MB) and executes
+   fresh AI analysis against Google Gemini or OpenAI. Evaluators can customize the creative brief and
+   duration range (20–60s), chat with the AI editor about decisions, or request refined cuts on specific episodes.
+   Session-scoped caching (`st.session_state['cache']`) ensures valid decisions are preserved, allowing seamless
+   resumption after any connection or rate limit interruption.
 
-Final UI verification: all six Streamlit smoke tests passed on Python 3.12 / Streamlit 1.45.1,
-for 29 total passing tests. The initial-state, demo, key-enabled analysis action (mocked model),
-explanation chat, refinement/history and clear-session flows are covered. The actual local app
-was opened in a browser and its labelled synthetic result, source-backed cut and sidebar were
-visually checked. This still does not constitute a live AI-provider or hosted deployment test.
+## Deployment, credential safety & error resilience
 
-## Final simplified workspaces
+1. **Frontend Credential Protection:**
+   Pre-configured server keys (set via Streamlit Community Cloud Secrets or local `.streamlit/secrets.toml`)
+   are never rendered into the browser DOM (`value=''`). The UI displays `"Using pre-configured server key"`,
+   and falls back to the server secret automatically behind the scenes.
+2. **Dynamic Secret Detection (`default_key_for`):**
+   Secrets are resolved dynamically on every rerun across common environment and TOML aliases (`GEMINI_API_KEY`,
+   `gemini_api_key`, `GOOGLE_API_KEY`, `API_KEY`). Adding a secret in Streamlit Cloud takes effect instantly
+   without requiring container restarts.
+3. **Defensive Input Sanitization:**
+   Outer quotes (`"`, `'`), extraneous whitespace, and accidental `Bearer ` prefixes are stripped automatically
+   before sending requests to provider endpoints, eliminating common HTTP 400 Bad Request errors.
+4. **Transparent Error Mapping:**
+   Provider HTTP error codes are translated into actionable diagnostic guidance (e.g. rate limit resets for 429,
+   authentication warnings for 401/400 key rejections), while network errors halt the batch explicitly without
+   inventing synthetic cuts or leaving orphaned unattempted states.
 
-The app now defaults to the saved 50-episode sample (15 promos, 35 passes), with no key
-or model call. New analysis is a separate upload/API workspace. There is no run-history
-feature. The new-run state is never overwritten by switching to the sample. Eight UI
-checks pass, including default sample counts, mode isolation and clear-session behavior;
-total passing tests are 36 (23 core/AI, five network, eight UI).
+## Test verification summary
 
-The sample continues to use the original saved editorial review. A later user-triggered
-Gemini API attempt validated two episodes before HTTP 503; that partial attempt is not
-presented as the full 50-episode sample or an audience-quality benchmark.
+All 38 test suite checks pass cleanly on Python 3.12:
+- **24 Core & AI tests (`test_ai_engine.py`):** Schema validation, repair loop, cue timing, prompt hashing, export structure, and semantic edge cases.
+- **5 Network tests (`test_network.py`):** IPv4 priority, IPv6 fallback, bounded timeout retry, and TLS enforcement.
+- **9 UI Integration tests (`test_app.py`):** Default sample loading, workspace switching isolation, fresh analysis execution, chat explanation, cut refinement, session reset, DOM key hiding, and missing sample guards.

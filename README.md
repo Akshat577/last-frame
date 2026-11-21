@@ -85,13 +85,23 @@ Kuku scripts or confidential sample results in a public repository or public app
 
 ## Deploy
 
-Upload the code-only files to a GitHub repository, connect it to Streamlit Community
-Cloud, choose `app.py` as entrypoint and Python 3.12, then deploy. Keep `ui.css`,
-`sample_data.py`, `network.py`, `ai_engine.py`, `promo.py`, `JUDGE_PROMPT.txt`,
+Upload the code-only files to a GitHub repository (or use [Akshat577/last-frame](https://github.com/Akshat577/last-frame)),
+connect it to Streamlit Community Cloud, choose `app.py` as entrypoint and Python 3.12, then deploy.
+Keep `ui.css`, `sample_data.py`, `network.py`, `ai_engine.py`, `promo.py`, `JUDGE_PROMPT.txt`,
 `requirements.txt`, `examples/` and `.streamlit/config.toml` beside the app.
 
-No server API key is required: each reviewer supplies their own. The confidential sample
-must be provided only in an approved private recruiting environment.
+### Setting up Secrets (Streamlit Cloud)
+To allow evaluators to run fresh analyses without manually entering an API key:
+1. In your Streamlit Cloud app dashboard, go to **Settings** $\rightarrow$ **Secrets**.
+2. Add your provider key:
+   ```toml
+   GEMINI_API_KEY = "your-gemini-api-key"
+   ```
+3. The app dynamically detects this key at runtime (`default_key_for`). When present, the frontend
+   hides the key value entirely from the browser DOM, displaying `"Using pre-configured server key"`
+   and seamlessly using it behind the scenes.
+4. If an evaluator provides their own key in the sidebar, input sanitization automatically strips
+   any accidental quotes (`"`, `'`), extra whitespace, or `Bearer ` prefixes.
 
 ## Checks
 
@@ -99,9 +109,9 @@ must be provided only in an approved private recruiting environment.
 python3 -m unittest discover -s tests -v
 ```
 
-37 tests pass: 24 core/AI, five networking and eight UI checks. API tests use controlled
+38 tests pass: 24 core/AI, five networking and nine UI checks. API tests use controlled
 responses and integration mocks. All 50 episodes have been evaluated and verified end-to-end
-against the live Google Gemini API.
+against the live Google Gemini API (20 selected, 30 explicit passes).
 
 ## CLI
 
