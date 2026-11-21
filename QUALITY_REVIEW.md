@@ -21,17 +21,18 @@ When an AI evaluates each episode in isolation on 0–5 integers, three structur
 2. **Score quantization:** Combining three coarse integer ratings through $8 \times \text{hook} + 8 \times \text{cliff} + 4 \times \text{context}$ leaves only 4 discrete totals among all 20 selected promos: 96 (5 promos), 92 (1 promo), 88 (7 promos), and 80 (7 promos).
 3. **Arbitrary tie-breakers:** Because 5 promos tied at 96 and 7 tied at 88, any single-pass ranking within those clusters ends up following arbitrary tie-breakers (such as clip duration or chronological episode order).
 
-### The Solution: 2nd-pass comparative forced ranking tournament
+### The Solution: 2nd-pass comparative forced ranking tournament & score removal
 
 Large language models struggle with absolute scalar calibration, but excel at pairwise and relative comparison (*"Which of these 20 candidate clips is stronger for a cold audience?"*). 
 
-To eliminate ties without arbitrary heuristics, we implemented a second-stage comparative ranking pass (`rank_comparative` in `ai_engine.py`):
+To eliminate ties and overcome coarse single-pass score quantization, we implemented a second-stage comparative ranking pass (`rank_comparative` in `ai_engine.py`):
 This pass is fully wired into the end-to-end pipeline: `ai.analyse()` executes it automatically whenever candidate promos are shortlisted, the Streamlit app triggers it on fresh uploads and interactive cut refinements with live UI badges, and `promo.py` supports it via CLI (`rank` / `--rank`).
 
 1. **Fan-In Comparative Prompt:** After the per-episode screening stage selects the candidate clips, all candidates are bundled into a single second-pass prompt containing each clip's episode ID, duration, opening hook line, closing cliffhanger, open question, and dialogue excerpt (~14k tokens total, costing ~$0.003 on Gemini 3.1 Flash Lite).
 2. **Forced Total Ordering:** The model is required to return a strict 1-to-20 ranking with one sentence of comparative editorial justification per candidate. Ties are structurally prohibited.
 3. **Order-Bias Mitigation (Dual-Pass Shuffle):** LLMs suffer from position bias (favoring candidates presented early in the prompt). We run the comparative tournament twice with independently permuted candidate orders (Pass A seed 101, Pass B seed 202) and average the resulting positions ($\text{Rank}_{\text{final}} = \frac{\text{Rank}_A + \text{Rank}_B}{2}$).
 4. **Empirical Rank Stability Metric:** Comparing the two permuted passes yields a **Spearman rank correlation of $\rho = 0.811$**, confirming high cross-order stability and providing an objective confidence metric for the editor.
+5. **Score Removal (No Conflicting Badges):** Because single-pass scores carried almost no discriminative signal (only 4 score totals appeared across all 20 promos, and `context` was 4 for 19 of 20 promos) and produced blatant rank inversions (e.g. Rank 2 is Ep 45 at score 88 while Rank 3 is Ep 46 at score 96), we deliberately removed score badges and rating breakdowns from the UI, the HTML report, and `cuts.csv`. The system exclusively presents the true comparative tournament ranking with qualitative pairwise justification.
 
 **Live Comparative Ranking Results:**
 - **Rank 1: Episode 33** (Avg rank: 1.0, ranked #1 in both Pass A and Pass B) — *"Immediate high-stakes life-or-death coercion creates an instantaneous and visceral curiosity gap."*
@@ -40,6 +41,47 @@ This pass is fully wired into the end-to-end pipeline: `ai.analyse()` executes i
 - **Rank 4: Episode 28** (Avg rank: 4.5, A:6, B:3) — *"Sudden exposure of a secret identity serves as a classic, high-velocity hook."*
 - **Rank 5: Episode 12** (Avg rank: 5.5, A:3, B:8) — *"Immediate blackmail and a brutal physical threat against the husband provides strong narrative momentum."*
 - **Episode 16 demoted to Rank 15:** The comparative pass autonomously identified the answer leakage in Episode 16 (*"Gerald Harrington paid us!"*), dropping it from the top tier down to #15.
+
+## Detailed system limitations & deep failure analysis
+
+A critical, transparent audit of the 50-episode run reveals four distinct structural failure modes across the LLM and the validation harness:
+
+### 1. False-negative passes on high-potential episodes (LLM constraint hallucinations)
+The model passed several of the most dramatic, high-retention scenes in the entire screenplay collection on completely false grounds, claiming *"no valid 20–60s window exists"* or that cutting would split mid-sentence. When examined against the actual screenplay clock, perfectly valid, continuous windows exist:
+- **Episode 41 (The Cathedral Wedding Explosion):**
+  - *Model pass rationale:* *"The scene's high-stakes climax occurs at the very end of the episode. A clip meeting the 20-second minimum duration requirement while avoiding internal cuts to dialogue or violating cue timing is not possible for this segment."*
+  - *Screenplay reality:* An exceptional ~20.3s window exists from `01:15.80` to `01:36.09` (75.8s to 96.1s). Rupert gloats *"Nothing"* (E041B043), the priest begins *"Shall we?"* (E041B045), and at `01:21.00` an ear-splitting detonation blows the cathedral double doors into flying shrapnel and billowing smoke (E041B047/E041B048). Silhouetted armed figures emerge through the rubble as Juliana stares in shock (E041B053). It meets all cue boundaries and duration requirements without splitting any dialogue.
+- **Episode 32 (Branding Rod Frozen Inches from Skin):**
+  - *Model pass rationale:* *"Attempting to create a 20-60 second clip ending on the cliffhanger (E032B117) requires starting the clip mid-dialogue in the middle of a sentence, which violates the strict constraint against cutting spoken dialogue."*
+  - *Screenplay reality:* An intense ~25.8s window exists from `02:05.40` to `02:31.20` (125.4s to 151.2s). It opens cleanly at the exact start of Juliana's scathing dialogue cue E032B097: *"You want everyone to believe you are powerful... You have to threaten a chained woman to feel powerful!"* Catherine loses control, screaming *"Then let's see how brave you are when it touches your skin!"* (E032B114) and plunges the searing iron poker until it freezes an inch from Juliana's eye. There is zero mid-sentence cutting; the clip starts on an intact sentence boundary and ends on an extreme cliffhanger.
+- **Episode 35 (The "Someone Wanted Me Erased" Reveal):**
+  - *Model pass rationale:* *"The scene's high-stakes emotional peak (Alexander's revelation) cannot be cut into a 20-60 second segment without either violating cue boundaries, cutting through continuous dialogue sequences, or falling below the 20-second duration requirement."*
+  - *Screenplay reality:* A self-contained ~36.8s window exists from `01:54.00` to `01:50.80 / 02:30.80` (114.0s to 150.8s). Alexander starts: *"I crawled away from the battlefield, half dead, alone... Someone ordered my men to die. Someone wanted me erased. The men behind it... are the same men ruling Ashwood now."* (E035B054 through E035B070). The dialogue is continuous, high-stakes, within 20–60s, and snaps to exact cue boundaries.
+- *Root cause:* The LLM suffers from arithmetic myopia when estimating elapsed seconds from `MM:SS.SS` screenplay timestamps, combined with over-cautious refusal behavior when prompted with strict negative constraints ("never split dialogue"). These three scenes are likely stronger marketing hooks than several selected promos.
+
+### 2. Mechanical validation failures vs. editorial calls (11 of 30 passes)
+Of the 30 recorded passes, **11 were not editorial judgments**, but mechanical code validation failures where the model proposed a promo that tripped a strict formatting or cue-type check and failed the single-turn repair attempt:
+- **Sub-second endpoint mismatches (Ep 1, Ep 24):** In Ep 1, the closing cue `E001B027` ended at `00:41.20`, but the segment out-point was listed as `00:41.50` (a 0.3s discrepancy). In Ep 24, the cliff cue ended at `01:29.80` while the segment out-point was `01:32.00`.
+- **Micro-duration shortfalls (Ep 5, Ep 43):** In Ep 5, the proposed clip was 19.5s (0.5s below the 20.0s floor). In Ep 43, 18.46s.
+- **Camera cues selected for hook or cliff evidence (Ep 13, 18, 23, 27, 31):** The model selected a visual cue (`CAMERA`) as its evidence ID (e.g., `E013B075`, `E018B076`, `E023B049`, `E027B095`, `E031B087`). Because marketing requires spoken dialogue or physical character action in the hook/cliff, the validator rejected camera cues. In a single repair turn, the model failed to switch to the corresponding spoken dialogue or character action cue at the exact same timestamp.
+- *Code fixability:* All 11 cases are fixable in code without needing better LLM reasoning:
+  1. *Programmatic boundary snapping:* Automatically snapping segment start/end to the cited evidence cue boundary when within a $\pm 0.5\text{s}$ tolerance window.
+  2. *Automatic cue remapping:* If the LLM cites a `CAMERA` cue whose timestamp coincides with a `DIALOGUE` or `ACTION` cue, code can automatically remap the evidence ID to the valid spoken/action beat.
+  3. *Multi-turn repair or heuristic extension:* Allowing a 2nd repair attempt or automatically expanding a 19.5s cut to the adjacent cue boundary to clear the 20.0s threshold.
+
+### 3. The multi-segment stitching feature never fired (0 of 20 promos)
+Although the validator and data schema explicitly support 1 to 3 segments per promo (enabling dramatic montage cuts across separate scenes), **all 20 shortlisted promos are single continuous segments**.
+- In several rejected episodes (e.g., Ep 14, Ep 22, Ep 42), the model's explicit pass reason was: *"The only segments with high-stakes tension do not meet the 20-second minimum duration requirement..."* (Ep 14, 22) or *"The only high-intensity dialogue segments are too short (under 20s)"* (Ep 42).
+- Stitching two 10–12 second high-stakes beats from within the same episode would have resolved the duration constraint and yielded strong promos.
+- *Root cause:* LLMs have an intrinsic inductive bias toward continuous interval extraction. Without explicit few-shot prompting showing multi-segment stitching examples or a dedicated two-stage retrieval pass (finding separate high-stakes beats and joining them), the model never synthesizes non-contiguous segments.
+
+### 4. Coarse single-pass scores and rank contradiction
+- Single-pass ratings (0–5 integers for hook, cliff, context) combined via $8H + 8C + 4X$ generated only 4 distinct score totals across the entire run: 80, 88, 92, and 96.
+- The `context` metric collapsed to a constant value of 4 for 19 out of 20 promos, providing zero ranking variance.
+- When the 2nd-pass comparative tournament evaluated all candidates together, it produced an informed ranking that directly inverted the coarse rubric scores:
+  - **Rank 2 is Episode 45 with a single-pass score of 88**, while **Rank 3 is Episode 46 with a single-pass score of 96**.
+  - **Rank 5 is Episode 12 with a single-pass score of 80**, while **Rank 6 is Episode 44 with a single-pass score of 88**.
+- Presenting single-pass scores alongside comparative ranks creates confusion and gives a false impression of mathematical precision. Consequently, score badges were removed from the user-facing Streamlit app, HTML report, and CSV export.
 
 ## The headline failure: Episode 16 answer leakage
 

@@ -132,7 +132,7 @@ with m2:
     with st.container(key='metric_promos'):st.metric('Promos shortlisted',len(result['promos']))
 with m3:
     with st.container(key='metric_passes'):st.metric('Explicit passes',sum(r['status']=='pass' for r in run['decisions']))
-st.caption('Scores are AI editorial judgments, not predicted views or conversion. All displayed cuts passed code checks. An editor must check narrative truth and actual footage.')
+st.caption('Rankings reflect 2nd-pass comparative forced ranking across all shortlisted clips. All displayed cuts passed deterministic code checks. An editor must check narrative truth and actual footage.')
 
 if is_sample:
     tab_short,tab_all=st.tabs(['Ranked shortlist','All episodes & downloads'])
@@ -147,7 +147,7 @@ with tab_short:
     if not promos:st.info('No promos match. Check the episode decisions or ask the editor to reconsider a passed episode.')
     for p in promos:
         with st.container(border=True,key=f'promo_card_{p["episode"]}'):
-            st.markdown(f'<div class="promo-meta"><span class="rank-badge">#{p["rank"]:02d}</span> EPISODE {p["episode"]} &nbsp; · &nbsp; {p["duration_seconds"]:g}s <span class="score-badge">Editorial score {p["score"]:g}/100</span></div>',unsafe_allow_html=True)
+            st.markdown(f'<div class="promo-meta"><span class="rank-badge">#{p["rank"]:02d}</span> EPISODE {p["episode"]} &nbsp; · &nbsp; {p["duration_seconds"]:g}s</div>',unsafe_allow_html=True)
             st.subheader(p['open_question'])
             st.code(' + '.join(s['start']+' → '+s['end'] for s in p['segments']),language=None)
             hook_col,cliff_col=st.columns(2)
@@ -158,7 +158,6 @@ with tab_short:
             st.write(p['why'])
             if p.get('comparative_reason'):
                 st.markdown(f'<div class="comp-box" style="background:#eef6f3;border-left:4px solid #20776c;padding:8px 12px;margin:8px 0;border-radius:4px;font-size:13px;color:#182b29;"><b>Comparative verdict:</b> {html.escape(p["comparative_reason"])}</div>',unsafe_allow_html=True)
-            st.caption(' · '.join(f'{k.title()} {v}/5' for k,v in p['ratings'].items()))
             for flag in p['flags']:st.warning(flag)
             with st.expander('Verify the source evidence'):
                 st.dataframe([dict(cue=b['id'],start=b['start'],end=b['end'],kind=b['kind'],text=b['text']) for b in p['evidence']],hide_index=True,use_container_width=True)
