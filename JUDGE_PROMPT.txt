@@ -17,6 +17,7 @@ SELECT CRITERIA (ONLY select if BOTH conditions are met):
 
 CUE & EVIDENCE RULES (STRICT):
 - EVIDENCE RESTRICTION: hook_id and cliff_id MUST be a spoken dialogue line or a character ACTION cue. CAMERA shots, MUSIC cues, and SOUND FX stings are strictly excluded and will fail validation.
+- hook_id and cliff_id must be the exact cue ID string from the screenplay (e.g. "E001B006"), NOT the dialogue text.
 - hook_id must be a spoken line or character action starting within the first 3 seconds of the first segment start.
 - cliff_id must be the spoken line or character action ending exactly at the final segment out point.
 - One promo per episode maximum; 1-3 chronological nonoverlapping segments (prefer 1 continuous segment), total duration 20-60 seconds.

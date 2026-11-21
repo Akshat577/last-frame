@@ -10,16 +10,19 @@
     "model": "gemini-3.1-flash-lite",
     "brief": "",
     "min_seconds": 20,
-    "max_seconds": 60
+    "max_seconds": 60,
+    "prompt_sha256": "3e978c07bd3020733b749dd792930fb7232aba262e96bd9c60ac5a7417a50df9"
   },
+  "created_utc": "2026-11-21T00:43:46.923662+00:00",
   "episodes": 50,
-  "selected": 15,
-  "passed": 35,
-  "structurally_valid": 15,
+  "selected": 20,
+  "passed": 30,
+  "structurally_valid": 20,
   "duration_range_seconds": [
-    25.2,
-    45.0
+    20.2,
+    41.7
   ],
+  "elapsed_seconds": 428.02,
   "provider": "Google Gemini (Default)",
   "model": "gemini-3.1-flash-lite",
   "semantic_review": "Live Google Gemini 3.1 Flash Lite API evaluation with deterministic cue-level validation, excluding camera and sound cues from hook/cliff evidence."

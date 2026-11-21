@@ -105,7 +105,17 @@ def validate(episodes, rows):
         if not 20<=duration<=60: raise ValueError(f'Episode {ep}: {duration}s outside 20-60s')
         ids={b['id']:b for b in source['beats']}; included={b['id'] for b in selected}
         for key in ('hook_id','cliff_id'):
-            if row[key] not in included: raise ValueError(f"{key} '{row[key]}' is outside selected clip segments")
+            val = str(row.get(key, ''))
+            if val not in included:
+                found = None
+                for b in selected:
+                    if b['id'] == val or b['text'] == val or val.strip() in b['text'] or b['text'].strip() in val:
+                        found = b['id']
+                        break
+                if found:
+                    row[key] = found
+                else:
+                    raise ValueError(f"{key} '{row.get(key)}' is outside selected clip segments")
         hook=ids[row['hook_id']]; cliff=ids[row['cliff_id']]
         if not is_valid_evidence_cue(hook):
             raise ValueError(f"Hook cue {hook['id']} is a '{hook['kind']}' cue. Hook evidence must be a spoken line or character action; camera and sound cues are excluded.")

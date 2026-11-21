@@ -3,7 +3,7 @@
 Two workspaces, with **Sample results** selected by default:
 
 - **Sample results · 50 episodes:** immediately browse the validated assignment output:
-  50 decisions, 15 ranked promos and 35 explicit passes. No upload, API key or new model
+  50 decisions, 20 ranked promos and 30 explicit passes. No upload, API key or new model
   call is needed to review results and inspect grounded source evidence.
 - **New analysis:** upload another set of timestamped scripts, connect your own AI model,
   and find new promos. The result, cache and editor conversation are independent of the

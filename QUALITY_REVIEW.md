@@ -6,17 +6,17 @@ No independent human editor labels, unseen evaluation set, footage verification 
 
 ## First posting hypothesis
 
-1. Episode 12, 00:44.00-01:09.20, 25.2s: a sister makes bodily sacrifice the price of saving a husband. Strong immediate cruelty and explicit unresolved choice. Start here.
-2. Episode 27, 00:03.40-00:46.40, 43.0s: her supposedly penniless husband's ring belonged to a lost noble son. Tests identity mystery against cruelty.
-3. Episode 28, 00:15.30-00:47.00, 31.7s: the poisoning victim defends the maid, then cannot finish her accusation. Tests an interrupted witness.
-4. Episode 45, 01:14.80-01:53.00, 38.2s: declared Duchess, then told she is not lawfully married. Tests a status reversal. Tied rubric scores use earlier episode, not proven superiority.
-5. Episode 3, 00:58.30-01:23.90, 25.6s: guards drag a woman away; a stranger demands her release. The fight and identity stay outside the cut.
+1. Episode 33, 02:14.50-02:44.50, 30.0s: coerced perjury framing Juliana for witchcraft. Starts on "My testimony?!", cuts on "Save your tears for the trial." Visceral stakes and unyielding threat.
+2. Episode 46, 01:51.80-02:23.80, 32.0s: a ticking-clock standoff before witnesses. Starts on challenging forged seals, cuts on the High Priest's ominous "Ten days is plenty of time."
+3. Episode 39, 01:05.60-01:38.41, 32.8s: declaration of war upon returning from exile. Starts on "Today, he comes home", cuts on Alexander's burning, resolute stare into the camera.
+4. Episode 34, 02:31.80-03:10.00, 38.2s: courtroom drama with a life-or-death ultimatum. Cuts on the judge's raised hand before pronouncing sentence.
+5. Episode 28, 01:35.00-02:16.70, 41.7s: secret identity exposed, facing impending doom. Cuts on "...before he sends you to the gallows."
 
 All cut times refer to each episode's local screenplay clock. Footage may differ.
 
 ## The headline failure: Episode 16 answer leakage
 
-In the live Google Gemini API evaluation, the model selected **Episode 16** (`00:40.80 - 01:03.00`, 22.2s) as an approved promo.
+In the live Google Gemini API evaluation, the model selected **Episode 16** (`00:41.20 - 01:06.20`, 25.0s, Rank 17) as an approved promo.
 - At `00:42.50`, Alexander violently interrogates a captured attacker against the stone wall: *"Who sent you?!"*
 - At `00:49.80 - 00:52.20`, the thug breaks under his grip and screams: *"Harrington! Gerald Harrington paid us!"*
 - The cut then captures the thugs fleeing and Alexander flexing his knuckles.
@@ -24,23 +24,23 @@ In the live Google Gemini API evaluation, the model selected **Episode 16** (`00
 **Why this is a severe failure of the AI model:**
 Ending after the thug screams the culprit's name destroys the central tension of the scene. It cannot sell the mystery of *"Who sent the thugs?"* because the answer was just shouted aloud.
 Yet, Gemini rated the cliffhanger 4/5, rationalizing the spoiled resolution with an invented open loop:
-> *"With the identity of the mastermind revealed as Gerald, what will happen to Juliana and Alexander now that the betrayal has been exposed?"*
+> *"What will Juliana do now that she knows Gerald betrayed her, and what is Alexander's full history?"*
 
 **Why deterministic code passed it:**
-The cut snapped to valid cue timestamps, the duration was 22.2s (within 20–60s), dialogue was not split, and the closing cue was a character action (`E016B051`). Python verified the structure and emitted zero errors.
+The cut snapped to valid cue timestamps, the duration was 25.0s (within 20–60s), dialogue was not split, and the closing cue was a character line (`E016B053`). Python verified the structure and emitted zero errors.
 
 This is the primary semantic blind spot of automated tools: code checks timestamps and syntax; it cannot prove narrative suspense. The LLM readily justifies resolved plotlines as cliffhangers. This failure is why an editor must review every cut before ad spend is committed. The synthetic unit test `test_resolved_answer_is_semantic_blind_spot` deliberately verifies that the code accepts such clips, ensuring developers never falsely believe structural validity equals marketing quality.
 
 ## Additional failure modes and weak picks
 
-- **Context fragility in Episode 18:** Episode 18 (`00:58.00 - 01:26.20`, 28.2s) opens on Alexander shouting *"Leave it!"*. If the cold ad's first frame does not visibly show the mother's ledger in her hands, a cold viewer has no context for her refusal to flee. Its context rating is appropriately low (3/5), ranking it ninth.
+- **Context fragility in Episode 18:** Episode 18 opened on a camera cue before repair, requiring fallback when visual cues are excluded. When cut on dialogue, opening on shouting without visible props creates cold context fragility.
 - **Delayed hooks (Episode 26 & Episode 15):** The model previously rated scenes 5/5 for hook even when dialogue was delayed by 5.2 seconds of silent reaction (Episode 26) or 8.5 seconds of physical approach (Episode 15). For TikTok/Reels ads, 5 seconds of silence causes heavy swipe-away. Our updated validator excludes camera/sound cues from hook evidence, enforcing spoken dialogue or visceral action in seconds 0–3 and correctly passing Episode 26.
-- **Weak opening in Episode 43:** Although Episode 43 has a strong open loop (the betrayers' names under Crown seal), the opening consists of a report being handed over. It scores only 3/5 on hook and ranks twelfth.
-- **Mid-sentence pickup in Episode 36:** Episode 36 opens on a conjunction (*"...and killing my wife afterward"*). While high-stakes, spoken pickups without breathing room require editor audio crossfades.
+- **Weak opening in Episode 43:** Episode 43 failed the duration constraint during repair (18.46s < 20s) and was cleanly passed.
+- **Mid-sentence pickup in Episode 36:** Episode 36 opens on an action framing Alexander in the doorway. While high-stakes, spoken pickups without breathing room require editor audio crossfades.
 
 ## Technical checks and honest denominator
 
-The full pack contains 50 episodes. There are 50 decisions: 15 select, 35 pass. All 15
+The full pack contains 50 episodes. There are 50 decisions: 20 select, 30 pass. All 20
 selected cuts satisfy implemented structural checks. These are compliance counts, not
 precision or recall. Nine synthetic tests pass, including a mocked endpoint test and the
 known semantic limitation. The supplied decisions and exports are not hand-edited after
