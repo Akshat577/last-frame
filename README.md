@@ -68,8 +68,9 @@ Because single-pass integer ratings suffer from self-selection bias and cluster 
 totals (80, 88, 92, 96), the engine adds a **2nd-pass comparative forced-ranking tournament**
 (`rank_comparative`): all candidate clips are evaluated together in a forced 1-to-N ranking prompt.
 Running twice with permuted orders mitigates primacy bias, eliminating ties and providing an
-empirical rank stability score (Spearman rho = 0.811). One promo per episode, with up to three
-chronological segments. No cross-episode montage. An editor must check narrative truth and footage.
+empirical rank stability score (Spearman rho = 0.811). This tournament runs automatically at the end
+of `ai.analyse()`, in the web app on new uploads and interactive cut refinements, and via CLI (`promo.py rank` / `--rank`).
+One promo per episode, with up to three chronological segments. No cross-episode montage. An editor must check narrative truth and footage.
 
 The network client prefers IPv4 per request, with IPv6 fallback and bounded TCP attempts;
 TLS certificate verification stays enabled. A provider/connection failure stops the batch
@@ -112,7 +113,7 @@ To allow evaluators to run fresh analyses without manually entering an API key:
 python3 -m unittest discover -s tests -v
 ```
 
-40 tests pass: 26 core/AI, five networking and nine UI checks. API tests use controlled
+42 tests pass: 28 core/AI, five networking and nine UI checks. API tests use controlled
 responses and integration mocks. All 50 episodes have been evaluated and verified end-to-end
 against the live Google Gemini API (20 selected, 30 explicit passes), with dual-shuffled
 comparative ranking stability tested.
@@ -125,7 +126,13 @@ Replay the original saved decisions without a key:
 python3 promo.py finish '/path/to/original-pack.zip' --decisions raw_outputs/ai_decisions.json --out rerun
 ```
 
+Or run the comparative forced ranking tournament across validated decisions:
+
+```sh
+python3 promo.py rank '/path/to/original-pack.zip' --decisions raw_outputs/ai_decisions.json --out rerun
+```
+
 `promo.py prepare` still exports prompts for a manual AI-chat workflow; `promo.py judge`
 supports a compatible endpoint configured with `PROMO_API_URL`, `PROMO_MODEL` and
-`PROMO_API_KEY`. The web workflow adds repair, caching and interactive editing.
+`PROMO_API_KEY`. The web workflow adds repair, caching, 2-pass comparative ranking, and interactive editing.
 

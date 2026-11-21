@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import streamlit as st
 from ai_engine import (Settings,PROVIDERS,ModelError,uploaded_episodes,analyse,
-                       decision_for,explain,export_zip,validate_decision,cache_id,default_key_for)
+                       decision_for,explain,export_zip,validate_decision,cache_id,default_key_for,rank_comparative)
 from promo import validate
 from sample_data import load_sample
 
@@ -133,6 +133,9 @@ if is_sample:
 else:
     tab_short,tab_chat,tab_all=st.tabs(['Ranked shortlist','Talk to your AI editor','All episodes & downloads'])
 with tab_short:
+    comp_info = result.get('comparative_audit', run.get('audit', {}).get('comparative_ranking', {}))
+    if comp_info and comp_info.get('spearman_rho') is not None:
+        st.info(f"🏆 **Comparative Forced Ranking (Zero Ties):** Dual-pass shuffled tournament evaluated all candidate clips together (Spearman rank stability $\\rho = {comp_info.get('spearman_rho', 1.0):.3f}$).")
     query=st.text_input('Search your promos',placeholder='Search episode, hook, or unanswered question')
     promos=[p for p in result['promos'] if query.casefold() in json.dumps(p,ensure_ascii=False).casefold()]
     if not promos:st.info('No promos match. Check the episode decisions or ask the editor to reconsider a passed episode.')
@@ -147,6 +150,8 @@ with tab_short:
             with cliff_col:
                 st.markdown('<div class="quote-box cliff"><div class="quote-label">The unresolved ending</div><p>'+html.escape(p['cliffhanger']['text'])+'</p></div>',unsafe_allow_html=True)
             st.write(p['why'])
+            if p.get('comparative_reason'):
+                st.markdown(f'<div class="comp-box" style="background:#eef6f3;border-left:4px solid #20776c;padding:8px 12px;margin:8px 0;border-radius:4px;font-size:13px;color:#182b29;"><b>Comparative verdict:</b> {html.escape(p["comparative_reason"])}</div>',unsafe_allow_html=True)
             st.caption(' · '.join(f'{k.title()} {v}/5' for k,v in p['ratings'].items()))
             for flag in p['flags']:st.warning(flag)
             with st.expander('Verify the source evidence'):
@@ -180,6 +185,17 @@ if not is_sample:
                             new_result=validate([e for e in episodes if e['episode'] in ids],new_rows)
                             remaining=[e for e in result['errors'] if e['episode']!=focus]
                             new_result.update(complete=not remaining and len(ids)==len(episodes),expected_episodes=len(episodes),errors=remaining)
+                            if len(new_result.get('promos', [])) > 1:
+                                try:
+                                    ranked, rho, comp_audit = rank_comparative(new_result['promos'], settings)
+                                    if comp_audit.get('comparative', True):
+                                        new_result['promos'] = ranked
+                                        new_result['comparative_audit'] = comp_audit
+                                        run['audit']['comparative_ranking'] = comp_audit
+                                        if comp_audit.get('traces'):
+                                            run['raw_responses'].extend(comp_audit['traces'])
+                                except Exception:
+                                    pass
                             run['decisions']=sorted(new_rows,key=lambda r:r['episode']);run['result']=new_result
                             run['raw_responses'].append(dict(episode=focus,action='refine',attempts=traces))
                             run['audit'].setdefault('refinements',[]).append(dict(episode=focus,feedback=question,settings=settings.public()))

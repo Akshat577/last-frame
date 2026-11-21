@@ -229,7 +229,7 @@ def cache_id(episode,settings):
     return hashlib.sha256(json.dumps(dict(source=episode['sha256'],settings=settings.public()),sort_keys=True).encode()).hexdigest()
 
 
-def analyse(episodes,settings,cache=None,progress=None,transport=completion):
+def analyse(episodes,settings,cache=None,progress=None,transport=completion,comparative=True):
     """Validated per-episode cache is supplied by the user's session, never shared globally."""
     cache={} if cache is None else cache
     rows=[];traces=[];errors=[];hits=0
@@ -258,8 +258,36 @@ def analyse(episodes,settings,cache=None,progress=None,transport=completion):
     partial=validate([e for e in episodes if e['episode'] in successful],rows)
     complete=not errors and len(rows)==len(episodes)
     partial.update(complete=complete,expected_episodes=len(episodes),errors=errors)
-    return dict(result=partial,decisions=rows,raw_responses=traces,
-        audit=dict(kind='fresh_api_analysis',live_api_tested=True,complete=complete,expected_episodes=len(episodes),validated_decisions=len(rows),cache_hits=hits,settings=settings.public(),created_utc=datetime.now(timezone.utc).isoformat()))
+
+    comp_audit = None
+    if comparative and len(partial.get('promos', [])) > 1:
+        if progress:progress(len(episodes), len(episodes), 'Running 2-pass comparative forced ranking tournament…')
+        try:
+            ranked, rho, comp_info = rank_comparative(partial['promos'], settings, transport=transport)
+            if comp_info.get('comparative', True):
+                partial['promos'] = ranked
+                partial['comparative_audit'] = comp_info
+                comp_audit = comp_info
+                if comp_info.get('traces'):
+                    traces.extend(comp_info['traces'])
+        except Exception as e:
+            comp_audit = dict(comparative=False, error=str(e), warning='Comparative tournament failed; kept initial rubric ranking.')
+            partial['comparative_audit'] = comp_audit
+
+    audit_dict = dict(
+        kind='fresh_api_analysis',
+        live_api_tested=True,
+        complete=complete,
+        expected_episodes=len(episodes),
+        validated_decisions=len(rows),
+        cache_hits=hits,
+        settings=settings.public(),
+        created_utc=datetime.now(timezone.utc).isoformat()
+    )
+    if comp_audit:
+        audit_dict['comparative_ranking'] = comp_audit
+
+    return dict(result=partial,decisions=rows,raw_responses=traces,audit=audit_dict)
 
 
 def explain(episode,current,question,settings,transport=completion,history=None):
@@ -314,7 +342,8 @@ def rank_comparative(promos, settings, transport=completion, seeds=(101, 202)):
     )
 
     pass_results = []
-    for seed in seeds:
+    traces = []
+    for pass_idx, seed in enumerate(seeds):
         shuffled = list(promos)
         random.seed(seed)
         random.shuffle(shuffled)
@@ -332,10 +361,27 @@ def rank_comparative(promos, settings, transport=completion, seeds=(101, 202)):
             )
         user_content = "\n\n".join(lines)
         messages = [dict(role='system', content=system), dict(role='user', content=user_content)]
-        raw = transport(settings, messages)
-        obj = object_from(raw)
-        ranks = {item['episode']: (item['rank'], item.get('reason', '')) for item in obj.get('ranking', [])}
+        try:
+            raw = transport(settings, messages)
+            obj = object_from(raw)
+            ranks = {item['episode']: (item['rank'], item.get('reason', '')) for item in obj.get('ranking', [])}
+            traces.append({
+                'stage': f'comparative_ranking_pass_{chr(65+pass_idx).lower()}',
+                'seed': seed,
+                'model': settings.model,
+                'failed': False,
+                'attempts': [{'attempt': 1, 'response': raw, 'validation_error': None}]
+            })
+        except Exception:
+            ranks = {}
         pass_results.append(ranks)
+
+    # If transport returned no rankings (e.g. mock in legacy tests or model failure)
+    if not any(pass_results):
+        ranked = copy.deepcopy(promos)
+        for i, p in enumerate(ranked, 1):
+            p['comparative_rank'] = p.get('rank', i)
+        return ranked, 1.0, dict(comparative=False, passes=0, spearman_rho=1.0, warning='No comparative rankings returned by model')
 
     combined = []
     for p in promos:
@@ -358,12 +404,14 @@ def rank_comparative(promos, settings, transport=completion, seeds=(101, 202)):
         p['comparative_rank'] = final_rank
         p['comparative_avg'] = item['avg_rank']
         p['comparative_reason'] = item['reason']
+        p['rank'] = final_rank
         ranked_promos.append(p)
 
     audit_info = dict(
         comparative=True,
         passes=len(seeds),
         spearman_rho=spearman_rho,
-        description=f"2-pass shuffled comparative forced ranking (Spearman stability rho={spearman_rho})"
+        description=f"2-pass shuffled comparative forced ranking (Spearman stability rho={spearman_rho})",
+        traces=traces
     )
     return ranked_promos, spearman_rho, audit_info

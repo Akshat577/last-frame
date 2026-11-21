@@ -115,5 +115,44 @@ class EngineTests(unittest.TestCase):
         ranked, rho, audit = ai.rank_comparative(single, settings())
         self.assertEqual(len(ranked), 1)
         self.assertEqual(ranked[0]['comparative_rank'], 1)
+    def test_analyse_executes_comparative_ranking_pass(self):
+        eps = [episode(7), episode(88)]
+        def smart_model(s, messages):
+            content = messages[1]['content']
+            if 'Candidate Episode' in content:
+                return response(dict(ranking=[
+                    dict(rank=1, episode=88, reason='Superior narrative urgency'),
+                    dict(rank=2, episode=7, reason='Slightly slower hook')
+                ]))
+            data = json.loads(content)
+            return response(row(data['screenplay']))
+        run = ai.analyse(eps, settings(), transport=smart_model)
+        self.assertTrue(run['result']['complete'])
+        promos = run['result']['promos']
+        self.assertEqual(len(promos), 2)
+        self.assertEqual(promos[0]['episode'], 88)
+        self.assertEqual(promos[0]['rank'], 1)
+        self.assertEqual(promos[0]['comparative_rank'], 1)
+        self.assertEqual(promos[1]['episode'], 7)
+        self.assertEqual(promos[1]['rank'], 2)
+        self.assertIn('comparative_ranking', run['audit'])
+        self.assertTrue(run['audit']['comparative_ranking']['comparative'])
+        self.assertTrue(any(t.get('stage') == 'comparative_ranking_pass_a' for t in run['raw_responses']))
+    def test_promo_validate_preserves_and_sorts_by_comparative_rank(self):
+        import promo
+        e1 = episode(1); e2 = episode(2)
+        r1 = row(e1); r2 = row(e2)
+        r1['ratings'] = dict(hook=5, cliff=5, context=5)
+        r2['ratings'] = dict(hook=5, cliff=5, context=5)
+        r2['comparative_rank'] = 1
+        r2['comparative_reason'] = 'Tighter hook'
+        r1['comparative_rank'] = 2
+        r1['comparative_reason'] = 'Slightly slower'
+        res = promo.validate([e1, e2], [r1, r2])
+        self.assertEqual(res['promos'][0]['episode'], 2)
+        self.assertEqual(res['promos'][0]['rank'], 1)
+        self.assertEqual(res['promos'][0]['comparative_rank'], 1)
+        self.assertEqual(res['promos'][1]['episode'], 1)
+        self.assertEqual(res['promos'][1]['rank'], 2)
 
 if __name__=='__main__':unittest.main()

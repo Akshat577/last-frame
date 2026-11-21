@@ -133,16 +133,23 @@ def validate(episodes, rows):
         if len(segments)>1: flags.append('JOIN: editor must verify continuity')
         if any(seconds(b['start'])<seconds(segments[0]['start'])<seconds(b['end']) for b in source['beats'] if not spoken(b)):
             flags.append('IN: starts within an overlapping visual/audio cue')
-        promos.append(dict(episode=ep,segments=segments,duration_seconds=duration,score=score,ratings=ratings,
+        p = dict(episode=ep,segments=segments,duration_seconds=duration,score=score,ratings=ratings,
             hook=dict(id=hook['id'],start=hook['start'],end=hook['end'],text=hook['text']),
             cliffhanger=dict(id=cliff['id'],start=cliff['start'],end=cliff['end'],text=cliff['text']),
             open_question=row['open_question'],why=row['reason'],flags=flags,
-            evidence=list({b['id']:b for b in selected}.values())))
+            evidence=list({b['id']:b for b in selected}.values()))
+        if 'comparative_rank' in row: p['comparative_rank'] = row['comparative_rank']
+        if 'comparative_avg' in row: p['comparative_avg'] = row['comparative_avg']
+        if 'comparative_reason' in row: p['comparative_reason'] = row['comparative_reason']
+        promos.append(p)
     if seen!=set(by_ep): raise ValueError(f'Missing episode decisions: {sorted(set(by_ep)-seen)}')
-    promos.sort(key=lambda x: (-x['score'], -x['ratings']['cliff'], -x['ratings']['hook'], x['duration_seconds'], x['episode']))
+    if any('comparative_rank' in p for p in promos):
+        promos.sort(key=lambda x: (x.get('comparative_rank', 999), -x['score'], x['duration_seconds'], x['episode']))
+    else:
+        promos.sort(key=lambda x: (-x['score'], -x['ratings']['cliff'], -x['ratings']['hook'], x['duration_seconds'], x['episode']))
     for rank,p in enumerate(promos,1): p['rank']=rank
     return dict(version=VERSION,mode='AI editorial decisions + deterministic validation',
-        score_note='Editorial rubric: 40% hook + 40% cliffhanger + 20% standalone clarity; ties broken by cliffhanger tension, hook strength, and punchier duration.',
+        score_note='Editorial rubric: 40% hook + 40% cliffhanger + 20% standalone clarity; comparative forced ranking eliminates bunching ties.',
         coverage=coverage,promos=promos)
 
 
@@ -160,15 +167,48 @@ def csv_text(result):
     return buf.getvalue()
 
 
-def finish(pack, decisions, out):
+def finish(pack, decisions, out, comparative=False):
+    if comparative:
+        return rank(pack, decisions, out)
     episodes=read_pack(pack)
-    result=validate(episodes,json.loads(Path(decisions).read_text()))
+    decisions_path=Path(decisions)
+    raw_decisions=json.loads(decisions_path.read_text())
+    rows=raw_decisions.get('decisions',raw_decisions) if isinstance(raw_decisions,dict) else raw_decisions
+    result=validate(episodes,rows)
     out=Path(out);out.mkdir(parents=True,exist_ok=True)
     (out/'promos.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     (out/'cuts.csv').write_text(csv_text(result))
     (out/'report.html').write_text(report(result))
     print(f"Validated {len(episodes)} episodes; selected {len(result['promos'])} promos. Wrote JSON, CSV and HTML to {out}.")
     return result
+
+
+def rank(pack, decisions, out):
+    """Run 2-pass comparative forced ranking tournament on validated candidate promos."""
+    from ai_engine import rank_comparative, Settings, PROVIDERS, default_key_for
+    episodes=read_pack(pack)
+    decisions_path=Path(decisions)
+    raw_decisions=json.loads(decisions_path.read_text())
+    rows=raw_decisions.get('decisions',raw_decisions) if isinstance(raw_decisions,dict) else raw_decisions
+    res=validate(episodes,rows)
+    if len(res.get('promos',[]))>1:
+        endpoint=os.environ.get('PROMO_API_URL','')
+        provider='Google Gemini (Default)' if not endpoint else ('OpenAI' if 'openai' in endpoint.lower() else list(PROVIDERS.keys())[0])
+        key=os.environ.get('PROMO_API_KEY') or os.environ.get('GEMINI_API_KEY') or default_key_for(provider)
+        model=os.environ.get('PROMO_MODEL') or os.environ.get('GEMINI_MODEL') or PROVIDERS[provider][1]
+        settings=Settings(provider=provider,model=model,key=key or '')
+        try:
+            ranked,rho,audit=rank_comparative(res['promos'],settings)
+            res['promos']=ranked
+            res['comparative_audit']=audit
+        except Exception as e:
+            print(f"Comparative ranking pass skipped ({e}); using rubric rank.",file=sys.stderr)
+    out=Path(out);out.mkdir(parents=True,exist_ok=True)
+    (out/'promos.json').write_text(json.dumps(res,ensure_ascii=False,indent=2))
+    (out/'cuts.csv').write_text(csv_text(res))
+    (out/'report.html').write_text(report(res))
+    print(f"Ranked {len(res['promos'])} promos comparatively. Wrote JSON, CSV and HTML to {out}.")
+    return res
 
 
 def report(result):
@@ -206,17 +246,36 @@ def judge(pack, out):
         rows.append(row)
         (out/'ai_decisions.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
         print(f"Saved decision {ep['episode']}",flush=True)
+    # Complete run by validating and comparatively ranking promos
+    episodes=read_pack(pack)
+    result=validate(episodes,rows)
+    if len(result.get('promos',[]))>1:
+        try:
+            from ai_engine import rank_comparative, Settings
+            settings=Settings(provider='OpenAI-Compatible',model=model,key=key or '')
+            ranked,rho,audit=rank_comparative(result['promos'],settings)
+            result['promos']=ranked
+            result['comparative_audit']=audit
+        except Exception:
+            pass
+    (out/'promos.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+    (out/'cuts.csv').write_text(csv_text(result))
+    (out/'report.html').write_text(report(result))
 
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__); sub=ap.add_subparsers(dest='cmd',required=True)
-    for cmd in ('prepare','judge','finish'):
+    for cmd in ('prepare','judge','finish','rank'):
         p=sub.add_parser(cmd);p.add_argument('pack');p.add_argument('--out',required=True)
-        if cmd=='finish':p.add_argument('--decisions',required=True)
+        if cmd in ('finish','rank'):
+            p.add_argument('--decisions',required=True)
+        if cmd=='finish':
+            p.add_argument('--rank',action='store_true',help='Run 2-pass comparative forced ranking')
     a=ap.parse_args()
     try:
         if a.cmd=='prepare':prepare(a.pack,a.out)
         elif a.cmd=='judge':judge(a.pack,a.out)
+        elif a.cmd=='rank' or (a.cmd=='finish' and getattr(a,'rank',False)):rank(a.pack,a.decisions,a.out)
         else:finish(a.pack,a.decisions,a.out)
     except (ValueError,KeyError,TypeError,json.JSONDecodeError,OSError) as e:
         print(f'Validation failed: {e}',file=sys.stderr);sys.exit(2)

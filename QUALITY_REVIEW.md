@@ -26,7 +26,9 @@ When an AI evaluates each episode in isolation on 0–5 integers, three structur
 Large language models struggle with absolute scalar calibration, but excel at pairwise and relative comparison (*"Which of these 20 candidate clips is stronger for a cold audience?"*). 
 
 To eliminate ties without arbitrary heuristics, we implemented a second-stage comparative ranking pass (`rank_comparative` in `ai_engine.py`):
-1. **Fan-In Comparative Prompt:** After the per-episode screening stage selects the 20 candidate clips, all 20 are bundled into a single second-pass prompt containing each clip's episode ID, duration, opening hook line, closing cliffhanger, open question, and dialogue excerpt (~14k tokens total, costing ~$0.003 on Gemini 3.1 Flash Lite).
+This pass is fully wired into the end-to-end pipeline: `ai.analyse()` executes it automatically whenever candidate promos are shortlisted, the Streamlit app triggers it on fresh uploads and interactive cut refinements with live UI badges, and `promo.py` supports it via CLI (`rank` / `--rank`).
+
+1. **Fan-In Comparative Prompt:** After the per-episode screening stage selects the candidate clips, all candidates are bundled into a single second-pass prompt containing each clip's episode ID, duration, opening hook line, closing cliffhanger, open question, and dialogue excerpt (~14k tokens total, costing ~$0.003 on Gemini 3.1 Flash Lite).
 2. **Forced Total Ordering:** The model is required to return a strict 1-to-20 ranking with one sentence of comparative editorial justification per candidate. Ties are structurally prohibited.
 3. **Order-Bias Mitigation (Dual-Pass Shuffle):** LLMs suffer from position bias (favoring candidates presented early in the prompt). We run the comparative tournament twice with independently permuted candidate orders (Pass A seed 101, Pass B seed 202) and average the resulting positions ($\text{Rank}_{\text{final}} = \frac{\text{Rank}_A + \text{Rank}_B}{2}$).
 4. **Empirical Rank Stability Metric:** Comparing the two permuted passes yields a **Spearman rank correlation of $\rho = 0.811$**, confirming high cross-order stability and providing an objective confidence metric for the editor.
@@ -91,7 +93,7 @@ To transition from structural validation to true marketing evaluation, the follo
 The full pack contains 50 episodes. There are 50 validated decisions: 20 select, 30 pass. All 20
 selected cuts satisfy implemented structural checks (20-60s duration, valid cue boundaries, dialogue
 not split, hook in 0-3s, cliff ending at final cut point, and camera/sound cues excluded from evidence).
-These are compliance counts, not precision or recall. Forty unit tests pass, covering core AI logic,
+These are compliance counts, not precision or recall. Forty-two unit tests pass, covering core AI logic,
 networking, UI integration, 2nd-pass comparative tournament ranking, and known semantic limitations (such as the Episode 16 reveal).
 The supplied decisions and exports are not hand-edited after the live run; all 50 live Gemini screening responses and the 2 comparative tournament ranking passes (Spearman rho = 0.811) are preserved in `raw_outputs/api_responses.json` and `raw_outputs/ranking_responses.json` with execution hashes in `raw_outputs/run_audit.json`.
 
@@ -141,7 +143,7 @@ The Streamlit app provides two distinct, fully isolated workspaces:
 
 ## Test verification summary
 
-All 40 test suite checks pass cleanly on Python 3.12:
-- **26 Core & AI tests (`test_ai_engine.py`):** Schema validation, repair loop, cue timing, prompt hashing, 2nd-pass comparative forced ranking with dual-shuffle stability, export structure, and semantic edge cases.
+All 42 test suite checks pass cleanly on Python 3.12:
+- **28 Core & AI tests (`test_ai_engine.py`):** Schema validation, repair loop, cue timing, prompt hashing, end-to-end pipeline comparative tournament execution in `analyse()`, promo validate/finish ranking preservation, 2nd-pass comparative forced ranking with dual-shuffle stability, export structure, and semantic edge cases.
 - **5 Network tests (`test_network.py`):** IPv4 priority, IPv6 fallback, bounded timeout retry, and TLS enforcement.
 - **9 UI Integration tests (`test_app.py`):** Default sample loading, workspace switching isolation, fresh analysis execution, chat explanation, cut refinement, session reset, DOM key hiding, and missing sample guards.
