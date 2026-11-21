@@ -282,3 +282,88 @@ def export_zip(run):
         z.writestr('cuts.csv',csv_text(run['result']))
         z.writestr('report.html',report(run['result']))
     return buf.getvalue()
+
+
+def rank_comparative(promos, settings, transport=completion, seeds=(101, 202)):
+    """
+    Second-pass comparative forced ranking.
+    Solves score compression & self-selection bias: evaluates all selected clips together.
+    Runs twice with shuffled candidate orders to eliminate primacy bias, averages ranks,
+    and returns (ranked_promos, stability_metric, audit_info).
+    """
+    import copy, random
+    if not promos or len(promos) <= 1:
+        ranked = copy.deepcopy(promos)
+        for i, p in enumerate(ranked, 1):
+            p['comparative_rank'] = i
+            p['comparative_reason'] = p.get('why', '')
+        return ranked, 1.0, dict(comparative=False, passes=0, spearman_rho=1.0)
+
+    system = (
+        "You are the chief editorial director for high-converting microdrama video promos (cold audience on TikTok/Reels).\n"
+        "You are given candidate promo clips that passed deterministic structural checks.\n"
+        "Because individual ratings suffer from score compression and self-selection bias, your task is to perform a strict, comparative forced ranking of all clips from #1 (strongest marketing promo) to the last.\n"
+        "Evaluation criteria:\n"
+        "1. Immediate hook velocity (0-3s): instant intrigue, high stakes, or conflict that stops the scroll.\n"
+        "2. Unresolved tension: ending cut creates an unbearable curiosity gap without leaking answers.\n"
+        "3. Standalone clarity: a new viewer instantly understands the threat and stakes.\n"
+        "Rules:\n"
+        "- NO TIES. Output a unique integer rank for every candidate.\n"
+        "- Provide a single concise sentence of comparative editorial justification per candidate.\n"
+        "- Return ONLY a JSON object: {\"ranking\": [{\"rank\": 1, \"episode\": <num>, \"reason\": \"<why>\"}, ...]}"
+    )
+
+    pass_results = []
+    for seed in seeds:
+        shuffled = list(promos)
+        random.seed(seed)
+        random.shuffle(shuffled)
+
+        lines = []
+        for c in shuffled:
+            dialogue = ' '.join(f"{b.get('kind','UNKNOWN')}: {b.get('text','')}" for b in c.get('evidence',[]) if b.get('text'))
+            lines.append(
+                f"Candidate Episode {c['episode']}:\n"
+                f"- Duration: {c['duration_seconds']}s\n"
+                f"- Opening Hook: {c['hook']['text']}\n"
+                f"- Ending Cliffhanger: {c['cliffhanger']['text']}\n"
+                f"- Open Question: {c['open_question']}\n"
+                f"- Key Dialogue/Action: {dialogue[:400]}"
+            )
+        user_content = "\n\n".join(lines)
+        messages = [dict(role='system', content=system), dict(role='user', content=user_content)]
+        raw = transport(settings, messages)
+        obj = object_from(raw)
+        ranks = {item['episode']: (item['rank'], item.get('reason', '')) for item in obj.get('ranking', [])}
+        pass_results.append(ranks)
+
+    combined = []
+    for p in promos:
+        ep = p['episode']
+        r1, re1 = pass_results[0].get(ep, (len(promos), ''))
+        r2, re2 = pass_results[1].get(ep, (len(promos), ''))
+        avg_rank = (r1 + r2) / 2.0
+        combined.append(dict(promo=p, episode=ep, rank_1=r1, rank_2=r2, avg_rank=avg_rank, reason=re1 or re2))
+
+    combined.sort(key=lambda x: (x['avg_rank'], x['promo']['duration_seconds']))
+
+    n = len(combined)
+    diff_sq = sum((x['rank_1'] - x['rank_2'])**2 for x in combined)
+    spearman_rho = 1.0 - (6.0 * diff_sq) / (n * (n**2 - 1)) if n > 1 else 1.0
+    spearman_rho = round(spearman_rho, 3)
+
+    ranked_promos = []
+    for final_rank, item in enumerate(combined, 1):
+        p = copy.deepcopy(item['promo'])
+        p['comparative_rank'] = final_rank
+        p['comparative_avg'] = item['avg_rank']
+        p['comparative_reason'] = item['reason']
+        ranked_promos.append(p)
+
+    audit_info = dict(
+        comparative=True,
+        passes=len(seeds),
+        spearman_rho=spearman_rho,
+        description=f"2-pass shuffled comparative forced ranking (Spearman stability rho={spearman_rho})"
+    )
+    return ranked_promos, spearman_rho, audit_info

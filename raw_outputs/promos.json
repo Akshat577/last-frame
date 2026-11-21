@@ -420,7 +420,10 @@
           "text": "Side medium shot of the maid kneeling crumpled on the floor in the dimly lit study, her face buried in both hands, weeping uncontrollably as the scene slowly fades into the dark silence."
         }
       ],
-      "rank": 1
+      "rank": 1,
+      "comparative_rank": 1,
+      "comparative_avg": 1.0,
+      "comparative_reason": "The immediate high-stakes life-or-death coercion creates an instantaneous and visceral curiosity gap."
     },
     {
       "episode": 46,
@@ -559,7 +562,10 @@
           "text": "\"Ten days is plenty of time.\""
         }
       ],
-      "rank": 2
+      "rank": 2,
+      "comparative_rank": 3,
+      "comparative_avg": 4.5,
+      "comparative_reason": "The ticking clock of a ten-day deadline paired with a direct confrontation with authority sets up a clear conflict."
     },
     {
       "episode": 39,
@@ -735,7 +741,10 @@
           "text": "Alexander's eyes burn with furious determination as the screen cuts sharply to black."
         }
       ],
-      "rank": 3
+      "rank": 3,
+      "comparative_rank": 10,
+      "comparative_avg": 9.5,
+      "comparative_reason": "The return of the hero trope is executed with strong visual flair, immediately signaling a massive power shift."
     },
     {
       "episode": 34,
@@ -925,7 +934,10 @@
           "text": "The Judge extends his raised hand high in judgment over Lady Juliana as the scene holds on her standing still and unbroken before fading to black."
         }
       ],
-      "rank": 4
+      "rank": 4,
+      "comparative_rank": 8,
+      "comparative_avg": 7.5,
+      "comparative_reason": "The high-tension legal framing and the ominous warning from the judge create a classic no-win situation."
     },
     {
       "episode": 28,
@@ -1141,7 +1153,10 @@
           "text": "\"...before he sends you to the gallows.\""
         }
       ],
-      "rank": 5
+      "rank": 5,
+      "comparative_rank": 4,
+      "comparative_avg": 4.5,
+      "comparative_reason": "The sudden exposure of a secret identity serves as a classic, high-velocity hook that instantly threatens execution."
     },
     {
       "episode": 2,
@@ -1322,7 +1337,10 @@
           "text": "\"She is what I should have chosen from the beginning.\""
         }
       ],
-      "rank": 6
+      "rank": 6,
+      "comparative_rank": 13,
+      "comparative_avg": 12.5,
+      "comparative_reason": "Public rejection at the altar provides a strong emotional hook, even if the stakes are slightly more conventional."
     },
     {
       "episode": 45,
@@ -1426,7 +1444,10 @@
           "text": "Catherine raises her chin, a vindictive smirk spreading across her lips as she realizes her rival's claim has just been torn to pieces."
         }
       ],
-      "rank": 7
+      "rank": 7,
+      "comparative_rank": 2,
+      "comparative_avg": 2.0,
+      "comparative_reason": "The direct legal invalidation of a marriage creates an urgent, objective narrative threat."
     },
     {
       "episode": 36,
@@ -1539,7 +1560,10 @@
           "text": "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence."
         }
       ],
-      "rank": 8
+      "rank": 8,
+      "comparative_rank": 18,
+      "comparative_avg": 18.5,
+      "comparative_reason": "The visual of the snowy forest is cinematic, but the dialogue is too understated to act as a viral scroll-stopper."
     },
     {
       "episode": 19,
@@ -1678,7 +1702,10 @@
           "text": "\"Then Ashburg will remember who it belongs to.\""
         }
       ],
-      "rank": 9
+      "rank": 9,
+      "comparative_rank": 11,
+      "comparative_avg": 10.0,
+      "comparative_reason": "The detailed description of the character imprisonment creates a clear mission for the protagonist to solve."
     },
     {
       "episode": 44,
@@ -1922,7 +1949,10 @@
           "text": "\"Her?!\""
         }
       ],
-      "rank": 10
+      "rank": 10,
+      "comparative_rank": 6,
+      "comparative_avg": 7.0,
+      "comparative_reason": "The emotional dissonance of the lover appearing when he was believed dead creates an instantaneous interpersonal conflict."
     },
     {
       "episode": 47,
@@ -2042,7 +2072,10 @@
           "text": "\"I accept, Your Grace.\""
         }
       ],
-      "rank": 11
+      "rank": 11,
+      "comparative_rank": 14,
+      "comparative_avg": 14.5,
+      "comparative_reason": "The reversal of power dynamics where a former noble is humiliated provides a satisfying, albeit niche, hook."
     },
     {
       "episode": 25,
@@ -2195,7 +2228,10 @@
           "text": "\"What were you doing there?\""
         }
       ],
-      "rank": 12
+      "rank": 12,
+      "comparative_rank": 7,
+      "comparative_avg": 7.0,
+      "comparative_reason": "Beginning with a graphic physical injury establishes immediate intimacy and high-conflict medical/emotional tension."
     },
     {
       "episode": 7,
@@ -2364,7 +2400,10 @@
           "text": "\"Leaving? Gerald!\""
         }
       ],
-      "rank": 13
+      "rank": 13,
+      "comparative_rank": 16,
+      "comparative_avg": 16.0,
+      "comparative_reason": "The villain direct threat and the visual of an approaching figure creates a simple, readable dynamic."
     },
     {
       "episode": 37,
@@ -2477,7 +2516,10 @@
           "text": "\"They cannot take who I am!\""
         }
       ],
-      "rank": 14
+      "rank": 14,
+      "comparative_rank": 12,
+      "comparative_avg": 12.0,
+      "comparative_reason": "The visceral physical suffering followed by a sharp turn to fierce resolve effectively communicates the stakes."
     },
     {
       "episode": 21,
@@ -2609,7 +2651,10 @@
           "text": "Slow push-in on Lady Juliana staring down at the ancient pages, her expression filled with profound realization and growing resolve as dramatic strings swell to a gripping cliffhanger."
         }
       ],
-      "rank": 15
+      "rank": 15,
+      "comparative_rank": 19,
+      "comparative_avg": 18.5,
+      "comparative_reason": "The conceptual focus on mystery is intriguing, but it lacks the direct, aggressive conflict seen in top-tier promos."
     },
     {
       "episode": 12,
@@ -2741,7 +2786,10 @@
           "text": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance."
         }
       ],
-      "rank": 16
+      "rank": 16,
+      "comparative_rank": 5,
+      "comparative_avg": 5.5,
+      "comparative_reason": "The combination of immediate blackmail and a brutal physical threat against the husband provides strong narrative momentum."
     },
     {
       "episode": 16,
@@ -2917,7 +2965,10 @@
           "text": "\"You knew exactly what to do.\""
         }
       ],
-      "rank": 17
+      "rank": 17,
+      "comparative_rank": 15,
+      "comparative_avg": 15.5,
+      "comparative_reason": "The sudden physical violence is an effective grab, though it prematurely reveals the conspiracy mastermind."
     },
     {
       "episode": 49,
@@ -3051,7 +3102,10 @@
           "text": "\"We always have.\""
         }
       ],
-      "rank": 18
+      "rank": 18,
+      "comparative_rank": 9,
+      "comparative_avg": 9.0,
+      "comparative_reason": "The mention of treason and the high-status threat to a Duke provides an immediate sense of grand political stakes."
     },
     {
       "episode": 48,
@@ -3183,7 +3237,10 @@
           "text": "\"If someone sees him come to you...\""
         }
       ],
-      "rank": 19
+      "rank": 19,
+      "comparative_rank": 20,
+      "comparative_avg": 18.5,
+      "comparative_reason": "The dialogue-heavy opening is slower to build tension compared to the immediate threats seen elsewhere."
     },
     {
       "episode": 40,
@@ -3324,7 +3381,17 @@
           "text": "\"She looks like a queen.\""
         }
       ],
-      "rank": 20
+      "rank": 20,
+      "comparative_rank": 17,
+      "comparative_avg": 16.5,
+      "comparative_reason": "The focus on security and conspirators is atmospheric, but it lacks the immediate emotional grab of the higher-ranked clips."
     }
-  ]
+  ],
+  "comparative_audit": {
+    "enabled": true,
+    "spearman_rho": 0.811,
+    "method": "Dual-pass shuffled comparative forced ranking (seeds 101, 202)",
+    "model": "gemini-3.1-flash-lite",
+    "summary": "Eliminates 0-5 integer rating bunching; Spearman rank correlation across permuted candidate orders is 0.811."
+  }
 }

@@ -89,5 +89,31 @@ class EngineTests(unittest.TestCase):
         with patch('ai_engine.open_request',side_effect=send):ai.completion(settings(),[dict(role='user',content='JSON')])
         self.assertEqual(json.loads(seen[0].data)['model'],'test-model')
         self.assertTrue(seen[0].full_url.startswith('https://api.openai.com/'))
+    def test_comparative_ranking_resolves_ties_and_computes_stability(self):
+        p1 = dict(episode=33, duration_seconds=30.0, score=96, hook=dict(text='Hook 1'), cliffhanger=dict(text='Cliff 1'), open_question='Q1', evidence=[])
+        p2 = dict(episode=46, duration_seconds=32.0, score=96, hook=dict(text='Hook 2'), cliffhanger=dict(text='Cliff 2'), open_question='Q2', evidence=[])
+        def mock_rank(s, messages):
+            user_text = messages[1]['content']
+            # Return forced ranking based on episodes
+            return response(dict(ranking=[
+                dict(rank=1, episode=33, reason='Stronger hook'),
+                dict(rank=2, episode=46, reason='Good cliffhanger')
+            ]))
+        ranked, rho, audit = ai.rank_comparative([p1, p2], settings(), transport=mock_rank)
+        self.assertEqual(len(ranked), 2)
+        self.assertEqual(ranked[0]['comparative_rank'], 1)
+        self.assertEqual(ranked[0]['episode'], 33)
+        self.assertEqual(ranked[1]['comparative_rank'], 2)
+        self.assertEqual(ranked[1]['episode'], 46)
+        self.assertEqual(rho, 1.0)
+        self.assertTrue(audit['comparative'])
+    def test_comparative_ranking_single_or_empty_returns_cleanly(self):
+        ranked, rho, audit = ai.rank_comparative([], settings())
+        self.assertEqual(ranked, [])
+        self.assertEqual(rho, 1.0)
+        single = [dict(episode=10, duration_seconds=25.0, score=90, why='test')]
+        ranked, rho, audit = ai.rank_comparative(single, settings())
+        self.assertEqual(len(ranked), 1)
+        self.assertEqual(ranked[0]['comparative_rank'], 1)
 
 if __name__=='__main__':unittest.main()

@@ -25,5 +25,13 @@
   "elapsed_seconds": 428.02,
   "provider": "Google Gemini (Default)",
   "model": "gemini-3.1-flash-lite",
-  "semantic_review": "Live Google Gemini 3.1 Flash Lite API evaluation with deterministic cue-level validation, excluding camera and sound cues from hook/cliff evidence."
+  "semantic_review": "Live Google Gemini 3.1 Flash Lite API evaluation with deterministic cue-level validation, excluding camera and sound cues from hook/cliff evidence.",
+  "comparative_ranking": {
+    "passes": 2,
+    "spearman_rho": 0.811,
+    "top_1": 33,
+    "top_2": 45,
+    "top_3": 46,
+    "order_bias_mitigation": "Shuffled candidate permutations averaged"
+  }
 }

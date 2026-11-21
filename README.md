@@ -63,10 +63,13 @@ boundaries, 20-60s duration, no split dialogue, hook evidence starting in the fi
 seconds and cliff evidence ending at the final out point. One invalid response gets one
 repair attempt. There is no silent heuristic fallback.
 
-Rank = 8 x hook + 8 x cliff + 4 x standalone context, each rated 0-5. Ties use the earlier
-episode. Scores are editorial judgments, not predicted CTR. One promo per episode,
-with up to three chronological segments within that episode. No cross-episode montage.
-An editor must check narrative truth, standalone clarity and the actual footage.
+Initial score = 8 x hook + 8 x cliff + 4 x standalone context (each rated 0-5).
+Because single-pass integer ratings suffer from self-selection bias and cluster into only 4
+totals (80, 88, 92, 96), the engine adds a **2nd-pass comparative forced-ranking tournament**
+(`rank_comparative`): all candidate clips are evaluated together in a forced 1-to-N ranking prompt.
+Running twice with permuted orders mitigates primacy bias, eliminating ties and providing an
+empirical rank stability score (Spearman rho = 0.811). One promo per episode, with up to three
+chronological segments. No cross-episode montage. An editor must check narrative truth and footage.
 
 The network client prefers IPv4 per request, with IPv6 fallback and bounded TCP attempts;
 TLS certificate verification stays enabled. A provider/connection failure stops the batch
@@ -109,9 +112,10 @@ To allow evaluators to run fresh analyses without manually entering an API key:
 python3 -m unittest discover -s tests -v
 ```
 
-38 tests pass: 24 core/AI, five networking and nine UI checks. API tests use controlled
+40 tests pass: 26 core/AI, five networking and nine UI checks. API tests use controlled
 responses and integration mocks. All 50 episodes have been evaluated and verified end-to-end
-against the live Google Gemini API (20 selected, 30 explicit passes).
+against the live Google Gemini API (20 selected, 30 explicit passes), with dual-shuffled
+comparative ranking stability tested.
 
 ## CLI
 
