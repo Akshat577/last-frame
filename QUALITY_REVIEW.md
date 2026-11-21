@@ -60,16 +60,39 @@ This is the primary semantic blind spot of automated tools: code checks timestam
 
 - **Context fragility in Episode 18:** Episode 18 opened on a camera cue before repair, requiring fallback when visual cues are excluded. When cut on dialogue, opening on shouting without visible props creates cold context fragility.
 - **Delayed hooks (Episode 26 & Episode 15):** The model previously rated scenes 5/5 for hook even when dialogue was delayed by 5.2 seconds of silent reaction (Episode 26) or 8.5 seconds of physical approach (Episode 15). For TikTok/Reels ads, 5 seconds of silence causes heavy swipe-away. Our updated validator excludes camera/sound cues from hook evidence, enforcing spoken dialogue or visceral action in seconds 0–3 and correctly passing Episode 26.
+- **Atmospheric slow-burns (Episode 40 & Episode 48):** In Episode 40, the model selected an assassination discussion, but the first 12 seconds are atmospheric guard placement without immediate emotional stakes. In Episode 48, the dialogue-heavy villain recruitment takes over 15 seconds to ramp up tension. Both were demoted to ranks #17 and #20 in the comparative pass.
+- **Presumed lore context (Episode 7):** The cut ends on Gerald's retreat, which feels like a great victory to someone who knows the story, but to a cold viewer who does not know who Gerald is or why his retreat matters, the emotional climax falls flat.
 - **Weak opening in Episode 43:** Episode 43 failed the duration constraint during repair (18.46s < 20s) and was cleanly passed.
 - **Mid-sentence pickup in Episode 36:** Episode 36 opens on an action framing Alexander in the doorway. While high-stakes, spoken pickups without breathing room require editor audio crossfades.
+
+## Honest evaluation: No golden set and no human labels
+
+Crucially, **there is no ground-truth golden evaluation set and no human editor annotations for this 50-episode pack.** 
+
+We deliberately refuse to manufacture synthetic "ground truth" labels to claim artificial precision or recall scores (such as claiming "92% precision"):
+1. **Compliance vs. Quality:** The 50 decisions (20 select, 30 pass) represent **structural code compliance**, not marketing truth. Code guarantees timestamp boundaries, clip duration (20-60s), dialogue continuity, and cue types. It cannot verify whether an audience stops scrolling or converts.
+2. **LLM Self-Grading is Circular:** An LLM evaluating its own cuts or another LLM's cuts without human editorial ground truth creates circular confirmation bias.
+3. **Footnote Disparity:** Script timestamps do not reflect performance tempo, background score, or visual editing pacing. A cut that reads well on paper can feel abrupt or sluggish on actual video footage.
+
+### The Protocol: How to build a true human-labeled benchmark
+
+To transition from structural validation to true marketing evaluation, the following experimental protocol must be run:
+1. **Curate the Golden Set:** Two professional microdrama video editors independently review a stratified 15-episode sample (5 top-ranked AI picks, 5 borderline picks around rank 15–20, and 5 passed episodes).
+2. **Label the Rubric Independently:**
+   - **Hook Velocity (1–5):** Does the first 3 seconds stop a cold viewer scrolling TikTok/Reels?
+   - **Climax Integrity (Binary):** Does the cut create an open loop, or does it leak the answer (like Ep 16)?
+   - **Standalone Comprehension (1–5):** Can a viewer who knows zero backstory understand the threat?
+   - **Boundary Delta ($\Delta t$):** Measure the exact seconds a human editor trims or extends the cut for audio/visual breathing room.
+3. **Measure Inter-Annotator Agreement:** Calculate Cohen's $\kappa$ between the two editors to establish the human baseline ceiling.
+4. **Paid Audience A/B Hold-Test:** Run approved AI cuts against human-crafted promos with equal ad spend on TikTok/Meta, tracking 3-second hold rate (hook efficiency) and cost per story start (conversion).
 
 ## Technical checks and honest denominator
 
 The full pack contains 50 episodes. There are 50 validated decisions: 20 select, 30 pass. All 20
 selected cuts satisfy implemented structural checks (20-60s duration, valid cue boundaries, dialogue
 not split, hook in 0-3s, cliff ending at final cut point, and camera/sound cues excluded from evidence).
-These are compliance counts, not precision or recall. Thirty-eight unit tests pass, covering core AI logic,
-networking, UI integration, and known semantic limitations (such as the Episode 16 reveal).
+These are compliance counts, not precision or recall. Forty unit tests pass, covering core AI logic,
+networking, UI integration, 2nd-pass comparative tournament ranking, and known semantic limitations (such as the Episode 16 reveal).
 The supplied decisions and exports are not hand-edited after the live run; all 50 live Gemini responses
 are preserved in `raw_outputs/api_responses.json` with execution hashes in `raw_outputs/run_audit.json`.
 
