@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import streamlit as st
 from ai_engine import (Settings,PROVIDERS,ModelError,uploaded_episodes,analyse,
-                       decision_for,explain,export_zip,validate_decision,cache_id)
+                       decision_for,explain,export_zip,validate_decision,cache_id,default_key_for)
 from promo import validate
 from sample_data import load_sample
 
@@ -42,7 +42,7 @@ else:
         st.subheader('Connect your AI')
         provider=st.selectbox('Provider',list(PROVIDERS),key='provider')
         default_model=PROVIDERS[provider][1]
-        default_key=PROVIDERS[provider][2] if len(PROVIDERS[provider])>2 else ''
+        default_key=default_key_for(provider)
         model=st.text_input('Model ID',value=default_model,key='model_'+provider,
             placeholder='Enter a model available to your API account')
         key_input=st.text_input('API key',value='',type='password',key='api_key_'+provider,

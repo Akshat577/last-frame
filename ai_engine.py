@@ -23,6 +23,29 @@ except Exception:
 
 DEFAULT_GEMINI_KEY = _SECRET_KEY or os.getenv('GEMINI_API_KEY', '')
 
+def default_key_for(provider):
+    key = ''
+    try:
+        import streamlit as _st
+        if hasattr(_st, 'secrets'):
+            for name in ('GEMINI_API_KEY', 'gemini_api_key', 'GOOGLE_API_KEY', 'API_KEY', 'api_key'):
+                try:
+                    if name in _st.secrets:
+                        val = str(_st.secrets[name]).strip()
+                        if val:
+                            key = val
+                            break
+                except Exception:
+                    pass
+    except Exception:
+        pass
+    if not key:
+        key = os.getenv('GEMINI_API_KEY', '') or os.getenv('GOOGLE_API_KEY', '') or DEFAULT_GEMINI_KEY
+    clean = key.strip().strip('"\'')
+    if clean.lower().startswith('bearer '):
+        clean = clean[7:].strip().strip('"\'')
+    return clean
+
 PROVIDERS = {
     'Google Gemini (Default)': ('https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', 'gemini-3.1-flash-lite', DEFAULT_GEMINI_KEY),
     'Google Gemini': ('https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', 'gemini-3.1-flash-lite', DEFAULT_GEMINI_KEY),
@@ -43,6 +66,8 @@ class Settings:
     max_seconds: int = 60
     def __post_init__(self):
         clean_key = self.key.strip().strip('"\'')
+        if clean_key.lower().startswith('bearer '):
+            clean_key = clean_key[7:].strip().strip('"\'')
         clean_model = self.model.strip().strip('"\'')
         object.__setattr__(self, 'key', clean_key)
         object.__setattr__(self, 'model', clean_model)
@@ -86,10 +111,13 @@ def uploaded_episodes(files):
 def completion(settings,messages):
     """Only allow fixed public provider endpoints; keys never enter logs or exports."""
     import time
+    clean_key = settings.key.strip().strip('"\'')
+    if clean_key.lower().startswith('bearer '):
+        clean_key = clean_key[7:].strip().strip('"\'')
     for attempt in range(4):
         req=urllib.request.Request(PROVIDERS[settings.provider][0],
             data=json.dumps(dict(model=settings.model,messages=messages,response_format={'type':'json_object'},max_completion_tokens=4096)).encode(),
-            headers={'Content-Type':'application/json','Authorization':'Bearer '+settings.key.strip()})
+            headers={'Content-Type':'application/json','Authorization':'Bearer '+clean_key})
         try:
             with open_request(req,timeout=60) as response:
                 raw=json.load(response)
@@ -99,6 +127,18 @@ def completion(settings,messages):
             if e.code in (429, 503, 500, 502, 504) and attempt < 3:
                 time.sleep(4.0 * (attempt + 1))
                 continue
+            err_msg = ''
+            try:
+                raw_body = e.read().decode('utf-8', errors='ignore')
+                parsed = json.loads(raw_body)
+                if isinstance(parsed, list) and parsed and isinstance(parsed[0], dict):
+                    err_msg = parsed[0].get('error', {}).get('message', '')
+                elif isinstance(parsed, dict):
+                    err_msg = parsed.get('error', {}).get('message', '')
+            except Exception:
+                pass
+            if e.code == 400 and any(w in err_msg.lower() for w in ('api key', 'authorization', 'invalid argument')):
+                raise ModelError('The API key was rejected as invalid or missing by the provider. Check your API key in the sidebar or Streamlit secrets.', 401) from None
             # Never echo a provider error body: it may include request data or credentials.
             messages_map={400:'The provider rejected the request. Check the model ID and JSON-output support.',401:'The API key was rejected. Check your key and selected provider.',403:'This key cannot access that model or service.',404:'Model not found. Enter an available model ID.',413:'This episode is too large for the provider.',429:'Provider rate limit or quota reached. Wait or check your API quota, then resume.'}
             raise ModelError(messages_map.get(e.code,f'Provider request failed (HTTP {e.code}).'),e.code) from None
