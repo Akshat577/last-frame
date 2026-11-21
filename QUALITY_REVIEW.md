@@ -6,11 +6,11 @@ No independent human editor labels, unseen evaluation set, footage verification 
 
 ## First posting hypothesis
 
-1. Episode 33, 02:14.50-02:44.50, 30.0s: coerced perjury framing Juliana for witchcraft. Starts on "My testimony?!", cuts on "Save your tears for the trial." Visceral stakes and unyielding threat.
-2. Episode 46, 01:51.80-02:23.80, 32.0s: a ticking-clock standoff before witnesses. Starts on challenging forged seals, cuts on the High Priest's ominous "Ten days is plenty of time."
-3. Episode 39, 01:05.60-01:38.41, 32.8s: declaration of war upon returning from exile. Starts on "Today, he comes home", cuts on Alexander's burning, resolute stare into the camera.
-4. Episode 34, 02:31.80-03:10.00, 38.2s: courtroom drama with a life-or-death ultimatum. Cuts on the judge's raised hand before pronouncing sentence.
-5. Episode 28, 01:35.00-02:16.70, 41.7s: secret identity exposed, facing impending doom. Cuts on "...before he sends you to the gallows."
+1. Episode 33, 02:14.50-02:44.50, 30.0s: coerced perjury framing Juliana for witchcraft. Starts on "My testimony?!", cuts on "Save your tears for the trial." Visceral stakes and unyielding threat (Comparative Rank #1).
+2. Episode 45, 01:41.20-02:01.75, 20.6s: invalidated marriage vows. Starts on "These vows were never entered into the Royal Matrimonial Register", cuts on Catherine's vindictive smirk as Juliana's claim collapses (Comparative Rank #2).
+3. Episode 46, 01:51.80-02:23.80, 32.0s: a ticking-clock standoff before witnesses. Starts on challenging forged seals, cuts on the High Priest's ominous "Ten days is plenty of time." (Comparative Rank #3).
+4. Episode 28, 01:35.00-02:16.70, 41.7s: secret identity exposed, facing impending doom. Cuts on "...before he sends you to the gallows." (Comparative Rank #4).
+5. Episode 12, 01:03.20-01:27.21, 24.0s: high-stakes sacrifice ultimatum with a clean cut on defiance. Starts on "Do it, and we withdraw the charges", cuts on freezing on Juliana's resolute eye contact (Comparative Rank #5).
 
 All cut times refer to each episode's local screenplay clock. Footage may differ.
 
@@ -41,7 +41,7 @@ To eliminate ties without arbitrary heuristics, we implemented a second-stage co
 
 ## The headline failure: Episode 16 answer leakage
 
-In the live Google Gemini API evaluation, the model selected **Episode 16** (`00:41.20 - 01:06.20`, 25.0s, Rank 17) as an approved promo.
+In the live Google Gemini API evaluation, the model selected **Episode 16** (`00:41.20 - 01:06.20`, 25.0s, Rank 15 in final comparative ranking / Rank 17 in initial rubric) as an approved promo.
 - At `00:42.50`, Alexander violently interrogates a captured attacker against the stone wall: *"Who sent you?!"*
 - At `00:49.80 - 00:52.20`, the thug breaks under his grip and screams: *"Harrington! Gerald Harrington paid us!"*
 - The cut then captures the thugs fleeing and Alexander flexing his knuckles.
@@ -93,8 +93,7 @@ selected cuts satisfy implemented structural checks (20-60s duration, valid cue 
 not split, hook in 0-3s, cliff ending at final cut point, and camera/sound cues excluded from evidence).
 These are compliance counts, not precision or recall. Forty unit tests pass, covering core AI logic,
 networking, UI integration, 2nd-pass comparative tournament ranking, and known semantic limitations (such as the Episode 16 reveal).
-The supplied decisions and exports are not hand-edited after the live run; all 50 live Gemini responses
-are preserved in `raw_outputs/api_responses.json` with execution hashes in `raw_outputs/run_audit.json`.
+The supplied decisions and exports are not hand-edited after the live run; all 50 live Gemini screening responses and the 2 comparative tournament ranking passes (Spearman rho = 0.811) are preserved in `raw_outputs/api_responses.json` and `raw_outputs/ranking_responses.json` with execution hashes in `raw_outputs/run_audit.json`.
 
 ## Small next experiment
 

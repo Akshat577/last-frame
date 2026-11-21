@@ -426,6 +426,113 @@
       "comparative_reason": "The immediate high-stakes life-or-death coercion creates an instantaneous and visceral curiosity gap."
     },
     {
+      "episode": 45,
+      "segments": [
+        {
+          "start": "01:41.20",
+          "end": "02:01.75"
+        }
+      ],
+      "duration_seconds": 20.55,
+      "score": 88,
+      "ratings": {
+        "hook": 4,
+        "cliff": 5,
+        "context": 4
+      },
+      "hook": {
+        "id": "E045B066",
+        "start": "01:41.50",
+        "end": "01:45.50",
+        "text": "\"These vows were never entered into the Royal Matrimonial Register.\""
+      },
+      "cliffhanger": {
+        "id": "E045B074",
+        "start": "01:58.00",
+        "end": "02:01.75",
+        "text": "Catherine raises her chin, a vindictive smirk spreading across her lips as she realizes her rival's claim has just been torn to pieces."
+      },
+      "open_question": "Will Alexander's marriage to Juliana survive this legal annulment, and what will Catherine do with this newfound power?",
+      "why": "A high-stakes, dramatic revelation scene with a perfect cliffhanger ending as the protagonist's marriage is declared void.",
+      "flags": [],
+      "evidence": [
+        {
+          "id": "E045B065",
+          "kind": "CAMERA",
+          "start": "01:41.20",
+          "end": "01:45.80",
+          "text": "Close-up on the High Priest unfolding the document, reading aloud to the congregation."
+        },
+        {
+          "id": "E045B066",
+          "kind": "HIGH PRIEST (Stern, Official)",
+          "start": "01:41.50",
+          "end": "01:45.50",
+          "text": "\"These vows were never entered into the Royal Matrimonial Register.\""
+        },
+        {
+          "id": "E045B067",
+          "kind": "CAMERA",
+          "start": "01:45.80",
+          "end": "01:48.80",
+          "text": "Medium shot of Alexander shielding Juliana behind him as the Crown officer approaches with drawn sword."
+        },
+        {
+          "id": "E045B068",
+          "kind": "HIGH PRIEST (O.S.) (Harsh, Resolute)",
+          "start": "01:46.20",
+          "end": "01:48.80",
+          "text": "\"Before the Crown, you are not Duchess of Ashburton.\""
+        },
+        {
+          "id": "E045B069",
+          "kind": "CAMERA",
+          "start": "01:48.80",
+          "end": "01:53.20",
+          "text": "Close-up of the High Priest scowling directly at Juliana with unyielding authority."
+        },
+        {
+          "id": "E045B070",
+          "kind": "HIGH PRIEST (Unyielding, Condemning)",
+          "start": "01:49.00",
+          "end": "01:53.00",
+          "text": "\"You are not Alexander Ashburton's lawful wife.\""
+        },
+        {
+          "id": "E045B071",
+          "kind": "CAMERA",
+          "start": "01:53.20",
+          "end": "01:57.50",
+          "text": "Close-up two-shot of Juliana gasping in terror, clutching Alexander's hand tightly as Alexander glares at the Priest."
+        },
+        {
+          "id": "E045B072",
+          "kind": "ACTION",
+          "start": "01:53.50",
+          "end": "01:57.20",
+          "text": "Juliana looks up at Alexander in sudden panic, her fingers gripping his leather-gloved hand."
+        },
+        {
+          "id": "E045B073",
+          "kind": "CAMERA",
+          "start": "01:57.50",
+          "end": "02:01.75",
+          "text": "Slow push-in close-up on Catherine beneath her veil, her initial despair morphing into a cold, venomous, triumphant smile as the episode cuts."
+        },
+        {
+          "id": "E045B074",
+          "kind": "ACTION",
+          "start": "01:58.00",
+          "end": "02:01.75",
+          "text": "Catherine raises her chin, a vindictive smirk spreading across her lips as she realizes her rival's claim has just been torn to pieces."
+        }
+      ],
+      "rank": 2,
+      "comparative_rank": 2,
+      "comparative_avg": 2.0,
+      "comparative_reason": "The direct legal invalidation of a marriage creates an urgent, objective narrative threat."
+    },
+    {
       "episode": 46,
       "segments": [
         {
@@ -562,382 +669,10 @@
           "text": "\"Ten days is plenty of time.\""
         }
       ],
-      "rank": 2,
+      "rank": 3,
       "comparative_rank": 3,
       "comparative_avg": 4.5,
       "comparative_reason": "The ticking clock of a ten-day deadline paired with a direct confrontation with authority sets up a clear conflict."
-    },
-    {
-      "episode": 39,
-      "segments": [
-        {
-          "start": "01:05.60",
-          "end": "01:38.41"
-        }
-      ],
-      "duration_seconds": 32.81,
-      "score": 96,
-      "ratings": {
-        "hook": 5,
-        "cliff": 5,
-        "context": 4
-      },
-      "hook": {
-        "id": "E039B042",
-        "start": "01:05.60",
-        "end": "01:06.90",
-        "text": "\"Today, he comes home.\""
-      },
-      "cliffhanger": {
-        "id": "E039B059",
-        "start": "01:37.80",
-        "end": "01:38.41",
-        "text": "Alexander's eyes burn with furious determination as the screen cuts sharply to black."
-      },
-      "open_question": "Can Alexander successfully reclaim his estate and rescue his wife after emerging from his three-year exile?",
-      "why": "The segment effectively captures the protagonist's transformation and declaration of war, meeting all timing and cue criteria.",
-      "flags": [
-        "IN: starts within an overlapping visual/audio cue"
-      ],
-      "evidence": [
-        {
-          "id": "E039B038",
-          "kind": "CAMERA",
-          "start": "01:01.20",
-          "end": "01:06.60",
-          "text": "Medium shot framed in the mirror of Alexander now handsomely groomed, his trimmed beard framing his fierce, scarred features."
-        },
-        {
-          "id": "E039B039",
-          "kind": "ACTION",
-          "start": "01:02.00",
-          "end": "01:06.60",
-          "text": "Alexander lightly traces the jagged combat scar across his cheek, eyes burning with reclaimed power."
-        },
-        {
-          "id": "E039B042",
-          "kind": "ALEXANDER (Fierce, Commanding)",
-          "start": "01:05.60",
-          "end": "01:06.90",
-          "text": "\"Today, he comes home.\""
-        },
-        {
-          "id": "E039B043",
-          "kind": "CAMERA",
-          "start": "01:06.60",
-          "end": "01:08.50",
-          "text": "Medium shot of Alexander lifting his royal navy-blue embroidered ducal coat from the wooden bench."
-        },
-        {
-          "id": "E039B044",
-          "kind": "CAMERA",
-          "start": "01:08.50",
-          "end": "01:11.80",
-          "text": "Wide tracking shot through double wooden barn doors opening outward onto a vast, snow-covered landscape as Alexander steps forward into the light."
-        },
-        {
-          "id": "E039B045",
-          "kind": "ACTION",
-          "start": "01:08.50",
-          "end": "01:11.80",
-          "text": "Alexander emerges in full ducal splendor—dressed in an immaculate navy tailcoat lined with gold embroidery, double-breasted brass buttons, and a crisp white cravat."
-        },
-        {
-          "id": "E039B046",
-          "kind": "CAMERA",
-          "start": "01:11.80",
-          "end": "01:14.80",
-          "text": "Extreme close-up of Alexander's hand adjusting the ornate golden lion crest pinned at his cravat."
-        },
-        {
-          "id": "E039B047",
-          "kind": "CAMERA",
-          "start": "01:14.80",
-          "end": "01:17.80",
-          "text": "Medium low-angle shot as a loyalist soldier drops down onto one knee before him in the snow."
-        },
-        {
-          "id": "E039B048",
-          "kind": "LOYALIST (Reverent, Submissive)",
-          "start": "01:15.80",
-          "end": "01:17.20",
-          "text": "\"Your Grace.\""
-        },
-        {
-          "id": "E039B049",
-          "kind": "CAMERA",
-          "start": "01:17.80",
-          "end": "01:22.50",
-          "text": "Close-up profile of Alexander, his breath pluming in the winter cold, his eyes hardened like steel."
-        },
-        {
-          "id": "E039B050",
-          "kind": "ALEXANDER (Authoritative, Command)",
-          "start": "01:20.50",
-          "end": "01:22.20",
-          "text": "\"Secure the chapel.\""
-        },
-        {
-          "id": "E039B051",
-          "kind": "CAMERA",
-          "start": "01:22.50",
-          "end": "01:25.20",
-          "text": "Medium close-up of the soldier rising and snapping a crisp military salute."
-        },
-        {
-          "id": "E039B052",
-          "kind": "LOYALIST (Resolute)",
-          "start": "01:23.80",
-          "end": "01:25.20",
-          "text": "\"Yes, Your Grace.\""
-        },
-        {
-          "id": "E039B053",
-          "kind": "CAMERA",
-          "start": "01:25.20",
-          "end": "01:35.00",
-          "text": "Slow dramatic tracking shot moving backward in front of Alexander as he strides purposefully through the deep snow, the wooden chapel looming in the distance behind him."
-        },
-        {
-          "id": "E039B054",
-          "kind": "ALEXANDER (Powerful, Roaring Defiance)",
-          "start": "01:25.50",
-          "end": "01:27.20",
-          "text": "\"No more hiding.\""
-        },
-        {
-          "id": "E039B055",
-          "kind": "ALEXANDER (Fierce, Unyielding)",
-          "start": "01:27.50",
-          "end": "01:30.20",
-          "text": "\"I am taking back my house.\""
-        },
-        {
-          "id": "E039B056",
-          "kind": "ACTION",
-          "start": "01:30.20",
-          "end": "01:35.00",
-          "text": "Alexander marches forward unstoppably, his long coat fluttering in the winter wind as his icy gaze locks forward."
-        },
-        {
-          "id": "E039B057",
-          "kind": "CAMERA",
-          "start": "01:35.00",
-          "end": "01:38.41",
-          "text": "Dramatic push-in close-up directly onto Alexander's scarred, fierce face as he speaks with absolute conviction."
-        },
-        {
-          "id": "E039B058",
-          "kind": "ALEXANDER (Passionate, Unstoppable Vow)",
-          "start": "01:35.00",
-          "end": "01:38.00",
-          "text": "\"And I am bringing my wife home.\""
-        },
-        {
-          "id": "E039B059",
-          "kind": "ACTION",
-          "start": "01:37.80",
-          "end": "01:38.41",
-          "text": "Alexander's eyes burn with furious determination as the screen cuts sharply to black."
-        }
-      ],
-      "rank": 3,
-      "comparative_rank": 10,
-      "comparative_avg": 9.5,
-      "comparative_reason": "The return of the hero trope is executed with strong visual flair, immediately signaling a massive power shift."
-    },
-    {
-      "episode": 34,
-      "segments": [
-        {
-          "start": "02:31.80",
-          "end": "03:10.00"
-        }
-      ],
-      "duration_seconds": 38.2,
-      "score": 96,
-      "ratings": {
-        "hook": 5,
-        "cliff": 5,
-        "context": 4
-      },
-      "hook": {
-        "id": "E034B096",
-        "start": "02:31.80",
-        "end": "02:33.80",
-        "text": "\"Think carefully.\""
-      },
-      "cliffhanger": {
-        "id": "E034B116",
-        "start": "03:05.00",
-        "end": "03:10.00",
-        "text": "The Judge extends his raised hand high in judgment over Lady Juliana as the scene holds on her standing still and unbroken before fading to black."
-      },
-      "open_question": "What is the final sentence the Judge is about to pronounce upon Lady Juliana?",
-      "why": "High-stakes courtroom drama with a clear, life-or-death ultimatum and an unresolved final sentence that builds strong tension.",
-      "flags": [
-        "IN: starts within an overlapping visual/audio cue"
-      ],
-      "evidence": [
-        {
-          "id": "E034B095",
-          "kind": "CAMERA",
-          "start": "02:31.20",
-          "end": "02:34.80",
-          "text": "Medium shot of the Judge lowering his brow with dark finality."
-        },
-        {
-          "id": "E034B096",
-          "kind": "JUDGE (Ominous, Warning)",
-          "start": "02:31.80",
-          "end": "02:33.80",
-          "text": "\"Think carefully.\""
-        },
-        {
-          "id": "E034B097",
-          "kind": "CAMERA",
-          "start": "02:34.80",
-          "end": "02:36.80",
-          "text": "Low-angle close-up of Lady Juliana looking skyward through the arched court windows."
-        },
-        {
-          "id": "E034B098",
-          "kind": "LADY JULIANA (Firm, Resolute)",
-          "start": "02:35.20",
-          "end": "02:36.40",
-          "text": "\"I have.\""
-        },
-        {
-          "id": "E034B099",
-          "kind": "CAMERA",
-          "start": "02:36.80",
-          "end": "02:42.00",
-          "text": "Medium shot of the Judge pointing an outstretched finger across the bench, his tone hardening into lethal severity."
-        },
-        {
-          "id": "E034B100",
-          "kind": "JUDGE (Severe, Imposing)",
-          "start": "02:37.00",
-          "end": "02:41.80",
-          "text": "\"You understand that refusal may be treated as proof that you knowingly practiced witchcraft?\""
-        },
-        {
-          "id": "E034B101",
-          "kind": "CAMERA",
-          "start": "02:42.00",
-          "end": "02:43.60",
-          "text": "Close-up of Lady Juliana unflinchingly accepting her fate."
-        },
-        {
-          "id": "E034B102",
-          "kind": "LADY JULIANA (Proud, Fearless)",
-          "start": "02:42.10",
-          "end": "02:43.50",
-          "text": "\"Then let it be.\""
-        },
-        {
-          "id": "E034B103",
-          "kind": "CAMERA",
-          "start": "02:43.60",
-          "end": "02:46.80",
-          "text": "Medium shot of Prudence breaking into shattered sobs, pressing her apron to her face to muffle her tears."
-        },
-        {
-          "id": "E034B104",
-          "kind": "ACTION",
-          "start": "02:44.00",
-          "end": "02:46.80",
-          "text": "Prudence buries her face in her stained white apron, shuddering with grief."
-        },
-        {
-          "id": "E034B105",
-          "kind": "CAMERA",
-          "start": "02:46.80",
-          "end": "02:54.40",
-          "text": "Medium shot pushing into Lady Juliana's face as she speaks directly across the hall with compassionate, unwavering authority."
-        },
-        {
-          "id": "E034B106",
-          "kind": "LADY JULIANA (Passionate, Defiant)",
-          "start": "02:47.00",
-          "end": "02:53.60",
-          "text": "\"Do not be afraid. I will not call healing evil just because powerful people have decided to fear it.\""
-        },
-        {
-          "id": "E034B107",
-          "kind": "CAMERA",
-          "start": "02:54.40",
-          "end": "02:56.50",
-          "text": "Medium close-up profile of the Lord, his smirk instantly freezing into an irritated, malevolent scowl."
-        },
-        {
-          "id": "E034B108",
-          "kind": "ACTION",
-          "start": "02:56.50",
-          "end": "02:58.20",
-          "text": "The Judge furiously smashes his gavel down upon the sound block with a deafening crack."
-        },
-        {
-          "id": "E034B109",
-          "kind": "CAMERA",
-          "start": "02:56.50",
-          "end": "02:58.20",
-          "text": "Close-up of the Judge slamming the wooden gavel down."
-        },
-        {
-          "id": "E034B110",
-          "kind": "SOUND FX",
-          "start": "02:56.60",
-          "end": "02:57.60",
-          "text": "[Violent, resonant smash of the wooden gavel]"
-        },
-        {
-          "id": "E034B111",
-          "kind": "JUDGE (Thunderous)",
-          "start": "02:57.80",
-          "end": "02:59.40",
-          "text": "\"Enough!\""
-        },
-        {
-          "id": "E034B112",
-          "kind": "ACTION",
-          "start": "02:59.50",
-          "end": "03:04.50",
-          "text": "The Judge rises to his full height behind the bench, towering over the silent court."
-        },
-        {
-          "id": "E034B113",
-          "kind": "CAMERA",
-          "start": "02:59.50",
-          "end": "03:04.50",
-          "text": "Low-angle medium shot looking up at the imposing Judge as he stands formally to deliver the judgment."
-        },
-        {
-          "id": "E034B114",
-          "kind": "JUDGE (Booming, Solemn)",
-          "start": "03:01.00",
-          "end": "03:04.20",
-          "text": "\"Lady Juliana Ashcroft...\""
-        },
-        {
-          "id": "E034B115",
-          "kind": "CAMERA",
-          "start": "03:04.50",
-          "end": "03:10.00",
-          "text": "Over-the-shoulder shot from behind Lady Juliana in the prisoner's dock looking toward the Judge, who solemnly raises his right hand to pronounce the final sentence as the heavy silence hangs over the courtroom."
-        },
-        {
-          "id": "E034B116",
-          "kind": "ACTION",
-          "start": "03:05.00",
-          "end": "03:10.00",
-          "text": "The Judge extends his raised hand high in judgment over Lady Juliana as the scene holds on her standing still and unbroken before fading to black."
-        }
-      ],
-      "rank": 4,
-      "comparative_rank": 8,
-      "comparative_avg": 7.5,
-      "comparative_reason": "The high-tension legal framing and the ominous warning from the judge create a classic no-win situation."
     },
     {
       "episode": 28,
@@ -1153,559 +888,145 @@
           "text": "\"...before he sends you to the gallows.\""
         }
       ],
-      "rank": 5,
+      "rank": 4,
       "comparative_rank": 4,
       "comparative_avg": 4.5,
       "comparative_reason": "The sudden exposure of a secret identity serves as a classic, high-velocity hook that instantly threatens execution."
     },
     {
-      "episode": 2,
+      "episode": 12,
       "segments": [
         {
-          "start": "00:00.00",
-          "end": "00:30.50"
+          "start": "01:03.20",
+          "end": "01:27.21"
         }
       ],
-      "duration_seconds": 30.5,
-      "score": 92,
+      "duration_seconds": 24.01,
+      "score": 80,
       "ratings": {
-        "hook": 5,
+        "hook": 4,
         "cliff": 4,
-        "context": 5
-      },
-      "hook": {
-        "id": "E002B002",
-        "start": "00:00.00",
-        "end": "00:02.50",
-        "text": "\"I cannot marry you, Juliana.\""
-      },
-      "cliffhanger": {
-        "id": "E002B021",
-        "start": "00:27.80",
-        "end": "00:30.50",
-        "text": "\"She is what I should have chosen from the beginning.\""
-      },
-      "open_question": "What is the exact secret or leverage Juliana possesses that will make them regret this public humiliation?",
-      "why": "The opening hook is a powerful, high-stakes public rejection that immediately establishes the conflict, followed by a steady escalation of tension leading to a strong, defiant climax that hooks the audience for what comes next.",
-      "flags": [],
-      "evidence": [
-        {
-          "id": "E002B001",
-          "kind": "CAMERA",
-          "start": "00:00.00",
-          "end": "00:02.80",
-          "text": "Medium low-angle shot on Gerald at the altar steps, looking down dismissively, while Clarissa in her shimmering gold gown stands behind him gloating."
-        },
-        {
-          "id": "E002B002",
-          "kind": "THE FORMER GROOM (Cold, Callous)",
-          "start": "00:00.00",
-          "end": "00:02.50",
-          "text": "\"I cannot marry you, Juliana.\""
-        },
-        {
-          "id": "E002B003",
-          "kind": "CAMERA",
-          "start": "00:02.80",
-          "end": "00:04.60",
-          "text": "Medium close-up on Juliana trembling in disbelief, her hands clasped tightly to her chest."
-        },
-        {
-          "id": "E002B004",
-          "kind": "ACTION",
-          "start": "00:02.80",
-          "end": "00:04.60",
-          "text": "Juliana gasps softly in heartbreak, her eyes wide and brimming with tears."
-        },
-        {
-          "id": "E002B005",
-          "kind": "CAMERA",
-          "start": "00:04.60",
-          "end": "00:06.60",
-          "text": "Medium shot returning to Gerald, sneering down at Juliana."
-        },
-        {
-          "id": "E002B006",
-          "kind": "THE FORMER GROOM (Cruel, Derisive)",
-          "start": "00:04.70",
-          "end": "00:06.50",
-          "text": "\"You are far too plain...\""
-        },
-        {
-          "id": "E002B007",
-          "kind": "CAMERA",
-          "start": "00:06.60",
-          "end": "00:09.50",
-          "text": "Close-up on Juliana's tear-streaked face, crushed under his biting words."
-        },
-        {
-          "id": "E002B008",
-          "kind": "THE FORMER GROOM (Off-screen) (Dismissive)",
-          "start": "00:06.80",
-          "end": "00:09.50",
-          "text": "\"...far too silent...\""
-        },
-        {
-          "id": "E002B009",
-          "kind": "CAMERA",
-          "start": "00:09.50",
-          "end": "00:12.00",
-          "text": "Medium shot on Gerald turning slightly toward Clarissa as she smiles admiringly at him."
-        },
-        {
-          "id": "E002B010",
-          "kind": "THE FORMER GROOM (Arrogant, Conceited)",
-          "start": "00:09.60",
-          "end": "00:12.00",
-          "text": "\"...and completely beneath the future I deserve.\""
-        },
-        {
-          "id": "E002B011",
-          "kind": "CAMERA",
-          "start": "00:12.00",
-          "end": "00:15.80",
-          "text": "Wide shot down the aisle as Juliana takes an agonizing step forward toward the altar, extending a trembling hand."
-        },
-        {
-          "id": "E002B012",
-          "kind": "LADY JULIANA (Desperate, Pleading)",
-          "start": "00:12.40",
-          "end": "00:15.50",
-          "text": "\"Gerald... Look at me.\""
-        },
-        {
-          "id": "E002B013",
-          "kind": "CAMERA",
-          "start": "00:15.80",
-          "end": "00:18.00",
-          "text": "Close-up on Gerald's cold, merciless face staring ahead unblinkingly."
-        },
-        {
-          "id": "E002B014",
-          "kind": "CAMERA",
-          "start": "00:18.00",
-          "end": "00:20.70",
-          "text": "Tight insert on Juliana's hand clutching the heirloom amethyst pendant resting against her gown."
-        },
-        {
-          "id": "E002B015",
-          "kind": "LADY JULIANA (Trembling, Betrayed)",
-          "start": "00:18.20",
-          "end": "00:20.60",
-          "text": "\"You gave me your word before both our families.\""
-        },
-        {
-          "id": "E002B016",
-          "kind": "CAMERA",
-          "start": "00:20.70",
-          "end": "00:23.80",
-          "text": "Medium two-shot of Gerald and Clarissa standing side by side before the priest."
-        },
-        {
-          "id": "E002B017",
-          "kind": "THE FORMER GROOM (Indifferent, Unapologetic)",
-          "start": "00:20.90",
-          "end": "00:23.70",
-          "text": "\"Promises change when a better choice appears.\""
-        },
-        {
-          "id": "E002B018",
-          "kind": "CAMERA",
-          "start": "00:23.80",
-          "end": "00:27.60",
-          "text": "Medium close-up on Juliana clutching her chest, her voice quivering with disbelief."
-        },
-        {
-          "id": "E002B019",
-          "kind": "LADY JULIANA (Shattered, Disbelieving)",
-          "start": "00:24.00",
-          "end": "00:27.40",
-          "text": "\"A better choice? Is that what she is?\""
-        },
-        {
-          "id": "E002B020",
-          "kind": "CAMERA",
-          "start": "00:27.60",
-          "end": "00:30.60",
-          "text": "Wide shot from behind Juliana looking up the altar stairs at Gerald with Clarissa linked to his arm."
-        },
-        {
-          "id": "E002B021",
-          "kind": "THE FORMER GROOM (Resolute, Harsh)",
-          "start": "00:27.80",
-          "end": "00:30.50",
-          "text": "\"She is what I should have chosen from the beginning.\""
-        }
-      ],
-      "rank": 6,
-      "comparative_rank": 13,
-      "comparative_avg": 12.5,
-      "comparative_reason": "Public rejection at the altar provides a strong emotional hook, even if the stakes are slightly more conventional."
-    },
-    {
-      "episode": 45,
-      "segments": [
-        {
-          "start": "01:41.20",
-          "end": "02:01.75"
-        }
-      ],
-      "duration_seconds": 20.55,
-      "score": 88,
-      "ratings": {
-        "hook": 4,
-        "cliff": 5,
         "context": 4
       },
       "hook": {
-        "id": "E045B066",
-        "start": "01:41.50",
-        "end": "01:45.50",
-        "text": "\"These vows were never entered into the Royal Matrimonial Register.\""
+        "id": "E012B043",
+        "start": "01:03.30",
+        "end": "01:05.10",
+        "text": "\"Do it, and we withdraw the charges.\""
       },
       "cliffhanger": {
-        "id": "E045B074",
-        "start": "01:58.00",
-        "end": "02:01.75",
-        "text": "Catherine raises her chin, a vindictive smirk spreading across her lips as she realizes her rival's claim has just been torn to pieces."
+        "id": "E012B055",
+        "start": "01:24.70",
+        "end": "01:27.21",
+        "text": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance."
       },
-      "open_question": "Will Alexander's marriage to Juliana survive this legal annulment, and what will Catherine do with this newfound power?",
-      "why": "A high-stakes, dramatic revelation scene with a perfect cliffhanger ending as the protagonist's marriage is declared void.",
+      "open_question": "Will Juliana successfully retrieve the ring with her bare hands, and will the villain keep their word?",
+      "why": "High-stakes sacrifice ultimatum with a clean cut on a dramatic character decision.",
       "flags": [],
       "evidence": [
         {
-          "id": "E045B065",
+          "id": "E012B042",
           "kind": "CAMERA",
-          "start": "01:41.20",
-          "end": "01:45.80",
-          "text": "Close-up on the High Priest unfolding the document, reading aloud to the congregation."
+          "start": "01:03.20",
+          "end": "01:05.20",
+          "text": "Medium three-shot of Clarissa stepping behind Juliana, as Alexander watches helplessly with dark fury."
         },
         {
-          "id": "E045B066",
-          "kind": "HIGH PRIEST (Stern, Official)",
-          "start": "01:41.50",
-          "end": "01:45.50",
-          "text": "\"These vows were never entered into the Royal Matrimonial Register.\""
+          "id": "E012B043",
+          "kind": "CLARISSA (Cold, Transactional)",
+          "start": "01:03.30",
+          "end": "01:05.10",
+          "text": "\"Do it, and we withdraw the charges.\""
         },
         {
-          "id": "E045B067",
+          "id": "E012B044",
           "kind": "CAMERA",
-          "start": "01:45.80",
-          "end": "01:48.80",
-          "text": "Medium shot of Alexander shielding Juliana behind him as the Crown officer approaches with drawn sword."
+          "start": "01:05.20",
+          "end": "01:09.50",
+          "text": "Extreme close-up of Clarissa's mouth leaning directly into Juliana's ear, whispering venomously."
         },
         {
-          "id": "E045B068",
-          "kind": "HIGH PRIEST (O.S.) (Harsh, Resolute)",
-          "start": "01:46.20",
-          "end": "01:48.80",
-          "text": "\"Before the Crown, you are not Duchess of Ashburton.\""
+          "id": "E012B045",
+          "kind": "CLARISSA (Whispering, Menacing)",
+          "start": "01:05.40",
+          "end": "01:09.20",
+          "text": "\"Fail, or refuse, and your husband hangs from the gallows.\""
         },
         {
-          "id": "E045B069",
+          "id": "E012B046",
           "kind": "CAMERA",
-          "start": "01:48.80",
-          "end": "01:53.20",
-          "text": "Close-up of the High Priest scowling directly at Juliana with unyielding authority."
+          "start": "01:09.50",
+          "end": "01:14.00",
+          "text": "Medium close-up of Alexander stepping up beside Juliana, tenderly placing his large hand on her shoulder."
         },
         {
-          "id": "E045B070",
-          "kind": "HIGH PRIEST (Unyielding, Condemning)",
-          "start": "01:49.00",
-          "end": "01:53.00",
-          "text": "\"You are not Alexander Ashburton's lawful wife.\""
-        },
-        {
-          "id": "E045B071",
-          "kind": "CAMERA",
-          "start": "01:53.20",
-          "end": "01:57.50",
-          "text": "Close-up two-shot of Juliana gasping in terror, clutching Alexander's hand tightly as Alexander glares at the Priest."
-        },
-        {
-          "id": "E045B072",
+          "id": "E012B047",
           "kind": "ACTION",
-          "start": "01:53.50",
-          "end": "01:57.20",
-          "text": "Juliana looks up at Alexander in sudden panic, her fingers gripping his leather-gloved hand."
+          "start": "01:09.60",
+          "end": "01:11.20",
+          "text": "Alexander rests his scarred hand reassuringly on Juliana's shoulder, leaning in toward her."
         },
         {
-          "id": "E045B073",
+          "id": "E012B048",
+          "kind": "ALEXANDER (Desperate, Protective, Urgent)",
+          "start": "01:09.80",
+          "end": "01:13.80",
+          "text": "\"Juliana, no. Do not let them hurt you. I can handle the law.\""
+        },
+        {
+          "id": "E012B049",
           "kind": "CAMERA",
-          "start": "01:57.50",
-          "end": "02:01.75",
-          "text": "Slow push-in close-up on Catherine beneath her veil, her initial despair morphing into a cold, venomous, triumphant smile as the episode cuts."
+          "start": "01:14.00",
+          "end": "01:21.80",
+          "text": "Close-up of Juliana, her eyes glistening with unshed tears, her hand gripping the fabric over her heart in agony and resolve."
         },
         {
-          "id": "E045B074",
+          "id": "E012B050",
           "kind": "ACTION",
-          "start": "01:58.00",
-          "end": "02:01.75",
-          "text": "Catherine raises her chin, a vindictive smirk spreading across her lips as she realizes her rival's claim has just been torn to pieces."
-        }
-      ],
-      "rank": 7,
-      "comparative_rank": 2,
-      "comparative_avg": 2.0,
-      "comparative_reason": "The direct legal invalidation of a marriage creates an urgent, objective narrative threat."
-    },
-    {
-      "episode": 36,
-      "segments": [
-        {
-          "start": "03:00.00",
-          "end": "03:20.75"
-        }
-      ],
-      "duration_seconds": 20.75,
-      "score": 88,
-      "ratings": {
-        "hook": 4,
-        "cliff": 5,
-        "context": 4
-      },
-      "hook": {
-        "id": "E036B112",
-        "start": "03:00.00",
-        "end": "03:04.00",
-        "text": "Alexander stands framed in the doorway, staring out into the vast, snow-covered pine forest under the cold moonlight."
-      },
-      "cliffhanger": {
-        "id": "E036B120",
-        "start": "03:17.00",
-        "end": "03:20.75",
-        "text": "Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black."
-      },
-      "open_question": "Will Alexander successfully reach Ashbourne in time to stop his wife's execution and the wedding?",
-      "why": "The clip features a high-stakes, well-paced revelation of a ticking-clock conflict, fitting the dramatic needs of a microdrama promo.",
-      "flags": [
-        "IN: starts within an overlapping visual/audio cue"
-      ],
-      "evidence": [
-        {
-          "id": "E036B111",
-          "kind": "CAMERA",
-          "start": "02:59.50",
-          "end": "03:04.00",
-          "text": "Tracking shot following Alexander as he turns his back on the warmth of the cabin and walks boldly toward the open double barn doors."
+          "start": "01:14.20",
+          "end": "01:16.00",
+          "text": "Juliana clutches the front of her rustic grey dress, her breathing trembling."
         },
         {
-          "id": "E036B112",
+          "id": "E012B051",
+          "kind": "JULIANA (Fierce, Emotional, Sacrificial)",
+          "start": "01:15.30",
+          "end": "01:18.20",
+          "text": "\"I am not letting them take you.\""
+        },
+        {
+          "id": "E012B052",
           "kind": "ACTION",
-          "start": "03:00.00",
-          "end": "03:04.00",
-          "text": "Alexander stands framed in the doorway, staring out into the vast, snow-covered pine forest under the cold moonlight."
-        },
-        {
-          "id": "E036B113",
-          "kind": "ALEXANDER (Calm, Chilling)",
-          "start": "03:02.00",
-          "end": "03:03.50",
-          "text": "\"Two days.\""
-        },
-        {
-          "id": "E036B114",
-          "kind": "CAMERA",
-          "start": "03:04.00",
-          "end": "03:08.00",
-          "text": "Medium shot from inside the cabin, showing his mother clutching her chest, looking after Alexander's imposing silhouette standing at the threshold of the blizzard."
-        },
-        {
-          "id": "E036B115",
-          "kind": "ALEXANDER (Vow of Vengeance)",
-          "start": "03:04.50",
-          "end": "03:07.80",
-          "text": "\"Then they have two days to celebrate.\""
-        },
-        {
-          "id": "E036B116",
-          "kind": "CAMERA",
-          "start": "03:08.00",
-          "end": "03:12.50",
-          "text": "Side profile close-up on Alexander as his breath fogs into the icy winter night air, his jaw clenched tight."
-        },
-        {
-          "id": "E036B117",
-          "kind": "ALEXANDER (Low, Menacing Promise)",
-          "start": "03:09.50",
-          "end": "03:12.20",
-          "text": "\"Because before that wedding begins...\""
-        },
-        {
-          "id": "E036B118",
-          "kind": "CAMERA",
-          "start": "03:12.50",
-          "end": "03:20.75",
-          "text": "Tight side profile close-up of Alexander's battle-scarred cheek and burning gaze as he makes his final declaration."
-        },
-        {
-          "id": "E036B119",
-          "kind": "ALEXANDER (Cold, Thunderous Finale)",
-          "start": "03:13.00",
-          "end": "03:16.80",
-          "text": "\"...their dead Duke is coming home.\""
-        },
-        {
-          "id": "E036B120",
-          "kind": "ACTION",
-          "start": "03:17.00",
-          "end": "03:20.75",
-          "text": "Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black."
-        },
-        {
-          "id": "E036B121",
-          "kind": "SOUND FX",
-          "start": "03:17.00",
-          "end": "03:20.75",
-          "text": "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence."
-        }
-      ],
-      "rank": 8,
-      "comparative_rank": 18,
-      "comparative_avg": 18.5,
-      "comparative_reason": "The visual of the snowy forest is cinematic, but the dialogue is too understated to act as a viral scroll-stopper."
-    },
-    {
-      "episode": 19,
-      "segments": [
-        {
-          "start": "01:04.80",
-          "end": "01:28.90"
-        }
-      ],
-      "duration_seconds": 24.1,
-      "score": 88,
-      "ratings": {
-        "hook": 4,
-        "cliff": 5,
-        "context": 4
-      },
-      "hook": {
-        "id": "E019B037",
-        "start": "01:05.10",
-        "end": "01:10.50",
-        "text": "\"But they have separated her from the household. She is watched constantly. Every letter she sends is checked. Every visitor is questioned.\""
-      },
-      "cliffhanger": {
-        "id": "E019B050",
-        "start": "01:25.90",
-        "end": "01:28.90",
-        "text": "\"Then Ashburg will remember who it belongs to.\""
-      },
-      "open_question": "How will Alexander reclaim his birthright and liberate his mother from the usurpers?",
-      "why": "The segment establishes the high-stakes political intrigue and personal motivation, fitting perfectly within the 20-60s requirement while maintaining narrative momentum without dialogue cuts.",
-      "flags": [],
-      "evidence": [
-        {
-          "id": "E019B036",
-          "kind": "CAMERA",
-          "start": "01:04.80",
-          "end": "01:10.60",
-          "text": "Close-up of the informant, his voice dropping into urgent, discreet concern."
-        },
-        {
-          "id": "E019B037",
-          "kind": "INFORMANT (Whispering, Alarmed)",
-          "start": "01:05.10",
-          "end": "01:10.50",
-          "text": "\"But they have separated her from the household. She is watched constantly. Every letter she sends is checked. Every visitor is questioned.\""
-        },
-        {
-          "id": "E019B038",
-          "kind": "CAMERA",
-          "start": "01:10.60",
-          "end": "01:13.30",
-          "text": "Extreme close-up of Alexander's right hand clenching into a powerful, trembling fist at his coat seam, veins bulging with restrained violence."
-        },
-        {
-          "id": "E019B039",
-          "kind": "INFORMANT (O.S.)",
-          "start": "01:10.90",
-          "end": "01:13.20",
-          "text": "\"There are almost no loyal servants left around her.\""
-        },
-        {
-          "id": "E019B040",
-          "kind": "CAMERA",
-          "start": "01:13.30",
-          "end": "01:16.20",
-          "text": "Low-angle shot past Alexander toward the informant."
-        },
-        {
-          "id": "E019B041",
-          "kind": "INFORMANT (Grave)",
-          "start": "01:13.50",
-          "end": "01:16.40",
-          "text": "\"The people who served your family for years have been dismissed, frightened away, or replaced.\""
-        },
-        {
-          "id": "E019B042",
-          "kind": "ACTION",
-          "start": "01:16.20",
-          "end": "01:18.80",
-          "text": "Alexander lifts his gaze toward the cold forest canopy, his breathing heavy with profound anguish."
-        },
-        {
-          "id": "E019B043",
-          "kind": "ALEXANDER (Cold, Pained Fury)",
-          "start": "01:16.50",
-          "end": "01:18.80",
-          "text": "\"My mother is a prisoner in her own house.\""
-        },
-        {
-          "id": "E019B044",
-          "kind": "CAMERA",
-          "start": "01:18.80",
-          "end": "01:21.20",
-          "text": "Close-up of the informant looking steadily at Alexander."
-        },
-        {
-          "id": "E019B045",
-          "kind": "INFORMANT (Quiet, Solemn)",
-          "start": "01:19.00",
-          "end": "01:21.00",
-          "text": "\"And everyone believes you are dead.\""
-        },
-        {
-          "id": "E019B046",
-          "kind": "CAMERA",
-          "start": "01:21.20",
-          "end": "01:23.80",
-          "text": "Extreme close-up of Alexander's scarred eye and grimly set mouth."
-        },
-        {
-          "id": "E019B047",
-          "kind": "ALEXANDER (Lethal, Calculating)",
           "start": "01:21.50",
-          "end": "01:23.70",
-          "text": "\"Then let them believe it a little longer.\""
+          "end": "01:23.00",
+          "text": "Juliana turns her head sharply back toward Clarissa, her expression hardening with fierce resolution."
         },
         {
-          "id": "E019B048",
-          "kind": "INFORMANT (Inquiring, Tense)",
-          "start": "01:24.00",
-          "end": "01:25.50",
-          "text": "\"And when we have the proof?\""
-        },
-        {
-          "id": "E019B049",
+          "id": "E012B053",
           "kind": "CAMERA",
-          "start": "01:25.50",
-          "end": "01:29.50",
-          "text": "Dramatic low-angle push-in on Alexander's commanding silhouette, his combat scar etched sharply against the fog."
+          "start": "01:21.80",
+          "end": "01:27.21",
+          "text": "Over-the-shoulder shot past Clarissa onto Juliana's determined face, holding on her fierce, defiant stare as the tension peaks."
         },
         {
-          "id": "E019B050",
-          "kind": "ALEXANDER (Vow of Vengeance, Resolute)",
-          "start": "01:25.90",
-          "end": "01:28.90",
-          "text": "\"Then Ashburg will remember who it belongs to.\""
+          "id": "E012B054",
+          "kind": "JULIANA (Steely, Resolute)",
+          "start": "01:22.80",
+          "end": "01:24.70",
+          "text": "\"Tell me where the garden is.\""
+        },
+        {
+          "id": "E012B055",
+          "kind": "ACTION",
+          "start": "01:24.70",
+          "end": "01:27.21",
+          "text": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance."
         }
       ],
-      "rank": 9,
-      "comparative_rank": 11,
-      "comparative_avg": 10.0,
-      "comparative_reason": "The detailed description of the character imprisonment creates a clear mission for the protagonist to solve."
+      "rank": 5,
+      "comparative_rank": 5,
+      "comparative_avg": 5.5,
+      "comparative_reason": "The combination of immediate blackmail and a brutal physical threat against the husband provides strong narrative momentum."
     },
     {
       "episode": 44,
@@ -1949,133 +1270,10 @@
           "text": "\"Her?!\""
         }
       ],
-      "rank": 10,
+      "rank": 6,
       "comparative_rank": 6,
       "comparative_avg": 7.0,
       "comparative_reason": "The emotional dissonance of the lover appearing when he was believed dead creates an instantaneous interpersonal conflict."
-    },
-    {
-      "episode": 47,
-      "segments": [
-        {
-          "start": "01:48.80",
-          "end": "02:11.20"
-        }
-      ],
-      "duration_seconds": 22.4,
-      "score": 88,
-      "ratings": {
-        "hook": 5,
-        "cliff": 4,
-        "context": 4
-      },
-      "hook": {
-        "id": "E047B059",
-        "start": "01:48.80",
-        "end": "01:51.50",
-        "text": "\"You will scrub the manor hearths at dawn.\""
-      },
-      "cliffhanger": {
-        "id": "E047B069",
-        "start": "02:08.50",
-        "end": "02:11.20",
-        "text": "\"I accept, Your Grace.\""
-      },
-      "open_question": "Will Catherine truly endure the life of a scullery maid, or is this a calculated step in a deeper, more dangerous plan of revenge?",
-      "why": "The scene features a high-stakes, satisfying power shift where the protagonist forces her rival to submit, delivering a clear hook and a definitive cliffhanger moment of total humiliation.",
-      "flags": [
-        "IN: starts within an overlapping visual/audio cue"
-      ],
-      "evidence": [
-        {
-          "id": "E047B058",
-          "kind": "CAMERA",
-          "start": "01:48.50",
-          "end": "01:51.50",
-          "text": "Juliana extends the ring of iron keys outward in her fist."
-        },
-        {
-          "id": "E047B059",
-          "kind": "JULIANA (Stern, Demanding)",
-          "start": "01:48.80",
-          "end": "01:51.50",
-          "text": "\"You will scrub the manor hearths at dawn.\""
-        },
-        {
-          "id": "E047B060",
-          "kind": "CAMERA",
-          "start": "01:51.50",
-          "end": "01:54.50",
-          "text": "Close profile two-shot of the two women locked in an intense psychological battle."
-        },
-        {
-          "id": "E047B061",
-          "kind": "JULIANA (Unforgiving)",
-          "start": "01:51.80",
-          "end": "01:54.50",
-          "text": "\"You will scour the kitchen grease until midnight.\""
-        },
-        {
-          "id": "E047B062",
-          "kind": "CAMERA",
-          "start": "01:54.50",
-          "end": "01:58.50",
-          "text": "Juliana presents the rough hemp apron and heavy keys right to Catherine's face."
-        },
-        {
-          "id": "E047B063",
-          "kind": "JULIANA (Stern, Final)",
-          "start": "01:54.80",
-          "end": "01:58.50",
-          "text": "\"One complaint from the housekeeper, and you are cast out with nothing.\""
-        },
-        {
-          "id": "E047B064",
-          "kind": "CAMERA",
-          "start": "01:58.50",
-          "end": "02:01.80",
-          "text": "Close-up of Catherine's trembling lips, humiliated tears spilling down her heavily made-up cheeks."
-        },
-        {
-          "id": "E047B065",
-          "kind": "CATHERINE (Choked, Humiliated)",
-          "start": "01:59.20",
-          "end": "02:01.60",
-          "text": "\"You humiliate me.\""
-        },
-        {
-          "id": "E047B066",
-          "kind": "CAMERA",
-          "start": "02:01.80",
-          "end": "02:07.50",
-          "text": "Medium shot of both women standing beneath the cathedral vaulting of the hall."
-        },
-        {
-          "id": "E047B067",
-          "kind": "JULIANA (Calm, Sovereign)",
-          "start": "02:02.20",
-          "end": "02:07.20",
-          "text": "\"I offer you bread and honest labor. Take the apron, or leave the county.\""
-        },
-        {
-          "id": "E047B068",
-          "kind": "CAMERA",
-          "start": "02:07.50",
-          "end": "02:11.50",
-          "text": "Extreme close-up on Catherine's trembling hands as she reaches out, taking the coarse apron and clattering iron keys, pressing them desperately against her chest."
-        },
-        {
-          "id": "E047B069",
-          "kind": "CATHERINE (Broken, Defeated)",
-          "start": "02:08.50",
-          "end": "02:11.20",
-          "text": "\"I accept, Your Grace.\""
-        }
-      ],
-      "rank": 11,
-      "comparative_rank": 14,
-      "comparative_avg": 14.5,
-      "comparative_reason": "The reversal of power dynamics where a former noble is humiliated provides a satisfying, albeit niche, hook."
     },
     {
       "episode": 25,
@@ -2228,182 +1426,661 @@
           "text": "\"What were you doing there?\""
         }
       ],
-      "rank": 12,
+      "rank": 7,
       "comparative_rank": 7,
       "comparative_avg": 7.0,
       "comparative_reason": "Beginning with a graphic physical injury establishes immediate intimacy and high-conflict medical/emotional tension."
     },
     {
-      "episode": 7,
+      "episode": 34,
       "segments": [
         {
-          "start": "01:05.60",
-          "end": "01:33.80"
+          "start": "02:31.80",
+          "end": "03:10.00"
         }
       ],
-      "duration_seconds": 28.2,
-      "score": 88,
+      "duration_seconds": 38.2,
+      "score": 96,
       "ratings": {
         "hook": 5,
-        "cliff": 4,
+        "cliff": 5,
         "context": 4
       },
       "hook": {
-        "id": "E007B032",
-        "start": "01:05.60",
-        "end": "01:08.50",
-        "text": "\"I have enough influence to make a beggar disappear.\""
+        "id": "E034B096",
+        "start": "02:31.80",
+        "end": "02:33.80",
+        "text": "\"Think carefully.\""
       },
       "cliffhanger": {
-        "id": "E007B049",
-        "start": "01:32.00",
-        "end": "01:33.80",
-        "text": "\"Leaving? Gerald!\""
+        "id": "E034B116",
+        "start": "03:05.00",
+        "end": "03:10.00",
+        "text": "The Judge extends his raised hand high in judgment over Lady Juliana as the scene holds on her standing still and unbroken before fading to black."
       },
-      "open_question": "Will the antagonists retaliate after this humiliating defeat?",
-      "why": "The segment captures the full power-dynamic reversal, starting with Gerald's threat and ending with his cowardly retreat as his arrogance is stripped away.",
+      "open_question": "What is the final sentence the Judge is about to pronounce upon Lady Juliana?",
+      "why": "High-stakes courtroom drama with a clear, life-or-death ultimatum and an unresolved final sentence that builds strong tension.",
       "flags": [
         "IN: starts within an overlapping visual/audio cue"
       ],
       "evidence": [
         {
-          "id": "E007B031",
+          "id": "E034B095",
           "kind": "CAMERA",
-          "start": "01:05.20",
-          "end": "01:09.50",
-          "text": "Close-up of Gerald lunging forward, aggressively pointing his finger into Juliana's face."
+          "start": "02:31.20",
+          "end": "02:34.80",
+          "text": "Medium shot of the Judge lowering his brow with dark finality."
         },
         {
-          "id": "E007B032",
-          "kind": "GERALD (Furious, Threatening)",
-          "start": "01:05.60",
-          "end": "01:08.50",
-          "text": "\"I have enough influence to make a beggar disappear.\""
+          "id": "E034B096",
+          "kind": "JUDGE (Ominous, Warning)",
+          "start": "02:31.80",
+          "end": "02:33.80",
+          "text": "\"Think carefully.\""
         },
         {
-          "id": "E007B033",
-          "kind": "GERALD (Spiteful, Boastful)",
-          "start": "01:08.60",
-          "end": "01:09.50",
-          "text": "\"And your husband?\""
-        },
-        {
-          "id": "E007B034",
+          "id": "E034B097",
           "kind": "CAMERA",
-          "start": "01:09.50",
-          "end": "01:14.00",
-          "text": "Wide shot down a dark, fog-drenched forest path. A towering, shadowed figure walks steadily forward through the mist."
+          "start": "02:34.80",
+          "end": "02:36.80",
+          "text": "Low-angle close-up of Lady Juliana looking skyward through the arched court windows."
         },
         {
-          "id": "E007B035",
-          "kind": "GERALD (V.O.) (Snarl)",
-          "start": "01:09.50",
-          "end": "01:11.20",
-          "text": "\"Where is that beggar husband?\""
+          "id": "E034B098",
+          "kind": "LADY JULIANA (Firm, Resolute)",
+          "start": "02:35.20",
+          "end": "02:36.40",
+          "text": "\"I have.\""
         },
         {
-          "id": "E007B036",
+          "id": "E034B099",
+          "kind": "CAMERA",
+          "start": "02:36.80",
+          "end": "02:42.00",
+          "text": "Medium shot of the Judge pointing an outstretched finger across the bench, his tone hardening into lethal severity."
+        },
+        {
+          "id": "E034B100",
+          "kind": "JUDGE (Severe, Imposing)",
+          "start": "02:37.00",
+          "end": "02:41.80",
+          "text": "\"You understand that refusal may be treated as proof that you knowingly practiced witchcraft?\""
+        },
+        {
+          "id": "E034B101",
+          "kind": "CAMERA",
+          "start": "02:42.00",
+          "end": "02:43.60",
+          "text": "Close-up of Lady Juliana unflinchingly accepting her fate."
+        },
+        {
+          "id": "E034B102",
+          "kind": "LADY JULIANA (Proud, Fearless)",
+          "start": "02:42.10",
+          "end": "02:43.50",
+          "text": "\"Then let it be.\""
+        },
+        {
+          "id": "E034B103",
+          "kind": "CAMERA",
+          "start": "02:43.60",
+          "end": "02:46.80",
+          "text": "Medium shot of Prudence breaking into shattered sobs, pressing her apron to her face to muffle her tears."
+        },
+        {
+          "id": "E034B104",
           "kind": "ACTION",
-          "start": "01:10.00",
-          "end": "01:15.50",
-          "text": "The Scarred Bearded Man marches purposefully toward the cottage, carrying a heavy bundle of chopped firewood bound tightly with hemp cord."
+          "start": "02:44.00",
+          "end": "02:46.80",
+          "text": "Prudence buries her face in her stained white apron, shuddering with grief."
         },
         {
-          "id": "E007B037",
+          "id": "E034B105",
           "kind": "CAMERA",
-          "start": "01:14.00",
-          "end": "01:15.50",
-          "text": "Medium tracking shot pushing in on the Scarred Bearded Man's stern, rugged face as he approaches the gate."
+          "start": "02:46.80",
+          "end": "02:54.40",
+          "text": "Medium shot pushing into Lady Juliana's face as she speaks directly across the hall with compassionate, unwavering authority."
         },
         {
-          "id": "E007B038",
+          "id": "E034B106",
+          "kind": "LADY JULIANA (Passionate, Defiant)",
+          "start": "02:47.00",
+          "end": "02:53.60",
+          "text": "\"Do not be afraid. I will not call healing evil just because powerful people have decided to fear it.\""
+        },
+        {
+          "id": "E034B107",
           "kind": "CAMERA",
-          "start": "01:15.50",
-          "end": "01:18.50",
-          "text": "Low shot of the Scarred Bearded Man bending down and dropping the bundle of logs by the stone wall."
+          "start": "02:54.40",
+          "end": "02:56.50",
+          "text": "Medium close-up profile of the Lord, his smirk instantly freezing into an irritated, malevolent scowl."
         },
         {
-          "id": "E007B039",
+          "id": "E034B108",
+          "kind": "ACTION",
+          "start": "02:56.50",
+          "end": "02:58.20",
+          "text": "The Judge furiously smashes his gavel down upon the sound block with a deafening crack."
+        },
+        {
+          "id": "E034B109",
+          "kind": "CAMERA",
+          "start": "02:56.50",
+          "end": "02:58.20",
+          "text": "Close-up of the Judge slamming the wooden gavel down."
+        },
+        {
+          "id": "E034B110",
           "kind": "SOUND FX",
-          "start": "01:16.20",
-          "end": "01:17.50",
-          "text": "A dull, heavy thud of timber striking the mud."
+          "start": "02:56.60",
+          "end": "02:57.60",
+          "text": "[Violent, resonant smash of the wooden gavel]"
         },
         {
-          "id": "E007B040",
-          "kind": "CAMERA",
-          "start": "01:18.50",
-          "end": "01:21.00",
-          "text": "Medium full shot as the Scarred Bearded Man straightens to his full imposing height and steps directly toward Gerald."
+          "id": "E034B111",
+          "kind": "JUDGE (Thunderous)",
+          "start": "02:57.80",
+          "end": "02:59.40",
+          "text": "\"Enough!\""
         },
         {
-          "id": "E007B041",
-          "kind": "CAMERA",
-          "start": "01:21.00",
-          "end": "01:23.50",
-          "text": "Two-shot framing the Scarred Bearded Man towering menacingly over Gerald, staring down at him with unyielding intensity."
-        },
-        {
-          "id": "E007B042",
+          "id": "E034B112",
           "kind": "ACTION",
-          "start": "01:21.50",
-          "end": "01:24.00",
-          "text": "Gerald freezes, his arrogant bravado instantly vanishing as cold dread overtakes his face."
+          "start": "02:59.50",
+          "end": "03:04.50",
+          "text": "The Judge rises to his full height behind the bench, towering over the silent court."
         },
         {
-          "id": "E007B043",
+          "id": "E034B113",
           "kind": "CAMERA",
-          "start": "01:23.50",
-          "end": "01:28.00",
-          "text": "Low-angle close-up of Gerald looking up in sheer terror, his adam's apple bobbing nervously."
+          "start": "02:59.50",
+          "end": "03:04.50",
+          "text": "Low-angle medium shot looking up at the imposing Judge as he stands formally to deliver the judgment."
         },
         {
-          "id": "E007B044",
-          "kind": "ARISTOCRATIC WOMAN (O.S.) (Urgent, Annoyed)",
-          "start": "01:26.50",
-          "end": "01:28.50",
-          "text": "\"Gerald, don't let him frighten you.\""
+          "id": "E034B114",
+          "kind": "JUDGE (Booming, Solemn)",
+          "start": "03:01.00",
+          "end": "03:04.20",
+          "text": "\"Lady Juliana Ashcroft...\""
         },
         {
-          "id": "E007B045",
-          "kind": "GERALD (Trembling, Trying to Save Face)",
-          "start": "01:28.60",
-          "end": "01:30.00",
-          "text": "\"What are you staring at?\""
+          "id": "E034B115",
+          "kind": "CAMERA",
+          "start": "03:04.50",
+          "end": "03:10.00",
+          "text": "Over-the-shoulder shot from behind Lady Juliana in the prisoner's dock looking toward the Judge, who solemnly raises his right hand to pronounce the final sentence as the heavy silence hangs over the courtroom."
         },
         {
-          "id": "E007B046",
+          "id": "E034B116",
           "kind": "ACTION",
-          "start": "01:30.00",
-          "end": "01:31.50",
-          "text": "Gerald rapidly turns on his heel toward the carriage, unwilling to face another second of the silent glare."
-        },
-        {
-          "id": "E007B047",
-          "kind": "GERALD (Nervous, Hurried)",
-          "start": "01:30.10",
-          "end": "01:31.40",
-          "text": "\"We are leaving.\""
-        },
-        {
-          "id": "E007B048",
-          "kind": "CAMERA",
-          "start": "01:31.50",
-          "end": "01:33.80",
-          "text": "Medium shot of Aristocratic Woman, shocked and indignant as Gerald flees past her."
-        },
-        {
-          "id": "E007B049",
-          "kind": "ARISTOCRATIC WOMAN (Outraged, Flustered)",
-          "start": "01:32.00",
-          "end": "01:33.80",
-          "text": "\"Leaving? Gerald!\""
+          "start": "03:05.00",
+          "end": "03:10.00",
+          "text": "The Judge extends his raised hand high in judgment over Lady Juliana as the scene holds on her standing still and unbroken before fading to black."
         }
       ],
-      "rank": 13,
-      "comparative_rank": 16,
-      "comparative_avg": 16.0,
-      "comparative_reason": "The villain direct threat and the visual of an approaching figure creates a simple, readable dynamic."
+      "rank": 8,
+      "comparative_rank": 8,
+      "comparative_avg": 7.5,
+      "comparative_reason": "The high-tension legal framing and the ominous warning from the judge create a classic no-win situation."
+    },
+    {
+      "episode": 49,
+      "segments": [
+        {
+          "start": "01:58.20",
+          "end": "02:24.00"
+        }
+      ],
+      "duration_seconds": 25.8,
+      "score": 80,
+      "ratings": {
+        "hook": 4,
+        "cliff": 4,
+        "context": 4
+      },
+      "hook": {
+        "id": "E049B050",
+        "start": "01:58.20",
+        "end": "02:04.50",
+        "text": "\"Careful men still hang, my lady, when the crime is treason against a Duke the King himself just restored.\""
+      },
+      "cliffhanger": {
+        "id": "E049B062",
+        "start": "02:23.00",
+        "end": "02:24.00",
+        "text": "\"We always have.\""
+      },
+      "open_question": "Will their conspiracy remain hidden from the Duke, or will the weight of their treason destroy them both?",
+      "why": "The scene features high-stakes political intrigue and an illicit pact between a priest and a duchess, hitting the exact required tension for a cold audience.",
+      "flags": [
+        "IN: starts within an overlapping visual/audio cue"
+      ],
+      "evidence": [
+        {
+          "id": "E049B049",
+          "kind": "CAMERA",
+          "start": "01:58.00",
+          "end": "02:04.80",
+          "text": "Tight close-up on Father Thomas's intense, brooding face."
+        },
+        {
+          "id": "E049B050",
+          "kind": "FATHER THOMAS (Stern, Stark)",
+          "start": "01:58.20",
+          "end": "02:04.50",
+          "text": "\"Careful men still hang, my lady, when the crime is treason against a Duke the King himself just restored.\""
+        },
+        {
+          "id": "E049B051",
+          "kind": "CAMERA",
+          "start": "02:04.80",
+          "end": "02:08.80",
+          "text": "Close-up on Catherine, her lips parting into an alluring, promising smile."
+        },
+        {
+          "id": "E049B052",
+          "kind": "CATHERINE (Tempting)",
+          "start": "02:05.00",
+          "end": "02:08.50",
+          "text": "\"Careful men who help me also get remembered.\""
+        },
+        {
+          "id": "E049B053",
+          "kind": "CAMERA",
+          "start": "02:08.80",
+          "end": "02:14.50",
+          "text": "Split focus close-up between Father Thomas's intense gaze and Catherine leaning in close, whispering with lethal conviction."
+        },
+        {
+          "id": "E049B054",
+          "kind": "CATHERINE (Whispering, Promising)",
+          "start": "02:09.20",
+          "end": "02:14.20",
+          "text": "\"A grateful Duchess collects debts differently than a desperate one.\""
+        },
+        {
+          "id": "E049B055",
+          "kind": "CAMERA",
+          "start": "02:14.50",
+          "end": "02:19.80",
+          "text": "Medium two-shot as Father Thomas extends his open right hand between them."
+        },
+        {
+          "id": "E049B056",
+          "kind": "ACTION",
+          "start": "02:15.00",
+          "end": "02:19.50",
+          "text": "Father Thomas slowly raises his right hand, palm turned upward in invitation and pact."
+        },
+        {
+          "id": "E049B057",
+          "kind": "FATHER THOMAS (Low, Resigned)",
+          "start": "02:15.20",
+          "end": "02:19.50",
+          "text": "\"The rest depends on how well you keep your part of this quiet.\""
+        },
+        {
+          "id": "E049B058",
+          "kind": "CAMERA",
+          "start": "02:19.80",
+          "end": "02:22.80",
+          "text": "Close-up on Father Thomas looking down into her eyes."
+        },
+        {
+          "id": "E049B059",
+          "kind": "FATHER THOMAS (Softly)",
+          "start": "02:20.00",
+          "end": "02:22.50",
+          "text": "\"Then we understand each other.\""
+        },
+        {
+          "id": "E049B060",
+          "kind": "ACTION",
+          "start": "02:20.50",
+          "end": "02:22.80",
+          "text": "Catherine reaches out and places her slender hand firmly into Father Thomas's open palm."
+        },
+        {
+          "id": "E049B061",
+          "kind": "CAMERA",
+          "start": "02:22.80",
+          "end": "02:24.00",
+          "text": "Close-up of Catherine gazing up at him, her eyes glistening in the candlelight."
+        },
+        {
+          "id": "E049B062",
+          "kind": "CATHERINE (Intimate)",
+          "start": "02:23.00",
+          "end": "02:24.00",
+          "text": "\"We always have.\""
+        }
+      ],
+      "rank": 9,
+      "comparative_rank": 9,
+      "comparative_avg": 9.0,
+      "comparative_reason": "The mention of treason and the high-status threat to a Duke provides an immediate sense of grand political stakes."
+    },
+    {
+      "episode": 39,
+      "segments": [
+        {
+          "start": "01:05.60",
+          "end": "01:38.41"
+        }
+      ],
+      "duration_seconds": 32.81,
+      "score": 96,
+      "ratings": {
+        "hook": 5,
+        "cliff": 5,
+        "context": 4
+      },
+      "hook": {
+        "id": "E039B042",
+        "start": "01:05.60",
+        "end": "01:06.90",
+        "text": "\"Today, he comes home.\""
+      },
+      "cliffhanger": {
+        "id": "E039B059",
+        "start": "01:37.80",
+        "end": "01:38.41",
+        "text": "Alexander's eyes burn with furious determination as the screen cuts sharply to black."
+      },
+      "open_question": "Can Alexander successfully reclaim his estate and rescue his wife after emerging from his three-year exile?",
+      "why": "The segment effectively captures the protagonist's transformation and declaration of war, meeting all timing and cue criteria.",
+      "flags": [
+        "IN: starts within an overlapping visual/audio cue"
+      ],
+      "evidence": [
+        {
+          "id": "E039B038",
+          "kind": "CAMERA",
+          "start": "01:01.20",
+          "end": "01:06.60",
+          "text": "Medium shot framed in the mirror of Alexander now handsomely groomed, his trimmed beard framing his fierce, scarred features."
+        },
+        {
+          "id": "E039B039",
+          "kind": "ACTION",
+          "start": "01:02.00",
+          "end": "01:06.60",
+          "text": "Alexander lightly traces the jagged combat scar across his cheek, eyes burning with reclaimed power."
+        },
+        {
+          "id": "E039B042",
+          "kind": "ALEXANDER (Fierce, Commanding)",
+          "start": "01:05.60",
+          "end": "01:06.90",
+          "text": "\"Today, he comes home.\""
+        },
+        {
+          "id": "E039B043",
+          "kind": "CAMERA",
+          "start": "01:06.60",
+          "end": "01:08.50",
+          "text": "Medium shot of Alexander lifting his royal navy-blue embroidered ducal coat from the wooden bench."
+        },
+        {
+          "id": "E039B044",
+          "kind": "CAMERA",
+          "start": "01:08.50",
+          "end": "01:11.80",
+          "text": "Wide tracking shot through double wooden barn doors opening outward onto a vast, snow-covered landscape as Alexander steps forward into the light."
+        },
+        {
+          "id": "E039B045",
+          "kind": "ACTION",
+          "start": "01:08.50",
+          "end": "01:11.80",
+          "text": "Alexander emerges in full ducal splendor—dressed in an immaculate navy tailcoat lined with gold embroidery, double-breasted brass buttons, and a crisp white cravat."
+        },
+        {
+          "id": "E039B046",
+          "kind": "CAMERA",
+          "start": "01:11.80",
+          "end": "01:14.80",
+          "text": "Extreme close-up of Alexander's hand adjusting the ornate golden lion crest pinned at his cravat."
+        },
+        {
+          "id": "E039B047",
+          "kind": "CAMERA",
+          "start": "01:14.80",
+          "end": "01:17.80",
+          "text": "Medium low-angle shot as a loyalist soldier drops down onto one knee before him in the snow."
+        },
+        {
+          "id": "E039B048",
+          "kind": "LOYALIST (Reverent, Submissive)",
+          "start": "01:15.80",
+          "end": "01:17.20",
+          "text": "\"Your Grace.\""
+        },
+        {
+          "id": "E039B049",
+          "kind": "CAMERA",
+          "start": "01:17.80",
+          "end": "01:22.50",
+          "text": "Close-up profile of Alexander, his breath pluming in the winter cold, his eyes hardened like steel."
+        },
+        {
+          "id": "E039B050",
+          "kind": "ALEXANDER (Authoritative, Command)",
+          "start": "01:20.50",
+          "end": "01:22.20",
+          "text": "\"Secure the chapel.\""
+        },
+        {
+          "id": "E039B051",
+          "kind": "CAMERA",
+          "start": "01:22.50",
+          "end": "01:25.20",
+          "text": "Medium close-up of the soldier rising and snapping a crisp military salute."
+        },
+        {
+          "id": "E039B052",
+          "kind": "LOYALIST (Resolute)",
+          "start": "01:23.80",
+          "end": "01:25.20",
+          "text": "\"Yes, Your Grace.\""
+        },
+        {
+          "id": "E039B053",
+          "kind": "CAMERA",
+          "start": "01:25.20",
+          "end": "01:35.00",
+          "text": "Slow dramatic tracking shot moving backward in front of Alexander as he strides purposefully through the deep snow, the wooden chapel looming in the distance behind him."
+        },
+        {
+          "id": "E039B054",
+          "kind": "ALEXANDER (Powerful, Roaring Defiance)",
+          "start": "01:25.50",
+          "end": "01:27.20",
+          "text": "\"No more hiding.\""
+        },
+        {
+          "id": "E039B055",
+          "kind": "ALEXANDER (Fierce, Unyielding)",
+          "start": "01:27.50",
+          "end": "01:30.20",
+          "text": "\"I am taking back my house.\""
+        },
+        {
+          "id": "E039B056",
+          "kind": "ACTION",
+          "start": "01:30.20",
+          "end": "01:35.00",
+          "text": "Alexander marches forward unstoppably, his long coat fluttering in the winter wind as his icy gaze locks forward."
+        },
+        {
+          "id": "E039B057",
+          "kind": "CAMERA",
+          "start": "01:35.00",
+          "end": "01:38.41",
+          "text": "Dramatic push-in close-up directly onto Alexander's scarred, fierce face as he speaks with absolute conviction."
+        },
+        {
+          "id": "E039B058",
+          "kind": "ALEXANDER (Passionate, Unstoppable Vow)",
+          "start": "01:35.00",
+          "end": "01:38.00",
+          "text": "\"And I am bringing my wife home.\""
+        },
+        {
+          "id": "E039B059",
+          "kind": "ACTION",
+          "start": "01:37.80",
+          "end": "01:38.41",
+          "text": "Alexander's eyes burn with furious determination as the screen cuts sharply to black."
+        }
+      ],
+      "rank": 10,
+      "comparative_rank": 10,
+      "comparative_avg": 9.5,
+      "comparative_reason": "The return of the hero trope is executed with strong visual flair, immediately signaling a massive power shift."
+    },
+    {
+      "episode": 19,
+      "segments": [
+        {
+          "start": "01:04.80",
+          "end": "01:28.90"
+        }
+      ],
+      "duration_seconds": 24.1,
+      "score": 88,
+      "ratings": {
+        "hook": 4,
+        "cliff": 5,
+        "context": 4
+      },
+      "hook": {
+        "id": "E019B037",
+        "start": "01:05.10",
+        "end": "01:10.50",
+        "text": "\"But they have separated her from the household. She is watched constantly. Every letter she sends is checked. Every visitor is questioned.\""
+      },
+      "cliffhanger": {
+        "id": "E019B050",
+        "start": "01:25.90",
+        "end": "01:28.90",
+        "text": "\"Then Ashburg will remember who it belongs to.\""
+      },
+      "open_question": "How will Alexander reclaim his birthright and liberate his mother from the usurpers?",
+      "why": "The segment establishes the high-stakes political intrigue and personal motivation, fitting perfectly within the 20-60s requirement while maintaining narrative momentum without dialogue cuts.",
+      "flags": [],
+      "evidence": [
+        {
+          "id": "E019B036",
+          "kind": "CAMERA",
+          "start": "01:04.80",
+          "end": "01:10.60",
+          "text": "Close-up of the informant, his voice dropping into urgent, discreet concern."
+        },
+        {
+          "id": "E019B037",
+          "kind": "INFORMANT (Whispering, Alarmed)",
+          "start": "01:05.10",
+          "end": "01:10.50",
+          "text": "\"But they have separated her from the household. She is watched constantly. Every letter she sends is checked. Every visitor is questioned.\""
+        },
+        {
+          "id": "E019B038",
+          "kind": "CAMERA",
+          "start": "01:10.60",
+          "end": "01:13.30",
+          "text": "Extreme close-up of Alexander's right hand clenching into a powerful, trembling fist at his coat seam, veins bulging with restrained violence."
+        },
+        {
+          "id": "E019B039",
+          "kind": "INFORMANT (O.S.)",
+          "start": "01:10.90",
+          "end": "01:13.20",
+          "text": "\"There are almost no loyal servants left around her.\""
+        },
+        {
+          "id": "E019B040",
+          "kind": "CAMERA",
+          "start": "01:13.30",
+          "end": "01:16.20",
+          "text": "Low-angle shot past Alexander toward the informant."
+        },
+        {
+          "id": "E019B041",
+          "kind": "INFORMANT (Grave)",
+          "start": "01:13.50",
+          "end": "01:16.40",
+          "text": "\"The people who served your family for years have been dismissed, frightened away, or replaced.\""
+        },
+        {
+          "id": "E019B042",
+          "kind": "ACTION",
+          "start": "01:16.20",
+          "end": "01:18.80",
+          "text": "Alexander lifts his gaze toward the cold forest canopy, his breathing heavy with profound anguish."
+        },
+        {
+          "id": "E019B043",
+          "kind": "ALEXANDER (Cold, Pained Fury)",
+          "start": "01:16.50",
+          "end": "01:18.80",
+          "text": "\"My mother is a prisoner in her own house.\""
+        },
+        {
+          "id": "E019B044",
+          "kind": "CAMERA",
+          "start": "01:18.80",
+          "end": "01:21.20",
+          "text": "Close-up of the informant looking steadily at Alexander."
+        },
+        {
+          "id": "E019B045",
+          "kind": "INFORMANT (Quiet, Solemn)",
+          "start": "01:19.00",
+          "end": "01:21.00",
+          "text": "\"And everyone believes you are dead.\""
+        },
+        {
+          "id": "E019B046",
+          "kind": "CAMERA",
+          "start": "01:21.20",
+          "end": "01:23.80",
+          "text": "Extreme close-up of Alexander's scarred eye and grimly set mouth."
+        },
+        {
+          "id": "E019B047",
+          "kind": "ALEXANDER (Lethal, Calculating)",
+          "start": "01:21.50",
+          "end": "01:23.70",
+          "text": "\"Then let them believe it a little longer.\""
+        },
+        {
+          "id": "E019B048",
+          "kind": "INFORMANT (Inquiring, Tense)",
+          "start": "01:24.00",
+          "end": "01:25.50",
+          "text": "\"And when we have the proof?\""
+        },
+        {
+          "id": "E019B049",
+          "kind": "CAMERA",
+          "start": "01:25.50",
+          "end": "01:29.50",
+          "text": "Dramatic low-angle push-in on Alexander's commanding silhouette, his combat scar etched sharply against the fog."
+        },
+        {
+          "id": "E019B050",
+          "kind": "ALEXANDER (Vow of Vengeance, Resolute)",
+          "start": "01:25.90",
+          "end": "01:28.90",
+          "text": "\"Then Ashburg will remember who it belongs to.\""
+        }
+      ],
+      "rank": 11,
+      "comparative_rank": 11,
+      "comparative_avg": 10.0,
+      "comparative_reason": "The detailed description of the character imprisonment creates a clear mission for the protagonist to solve."
     },
     {
       "episode": 37,
@@ -2516,280 +2193,317 @@
           "text": "\"They cannot take who I am!\""
         }
       ],
-      "rank": 14,
+      "rank": 12,
       "comparative_rank": 12,
       "comparative_avg": 12.0,
       "comparative_reason": "The visceral physical suffering followed by a sharp turn to fierce resolve effectively communicates the stakes."
     },
     {
-      "episode": 21,
+      "episode": 2,
       "segments": [
         {
-          "start": "01:31.00",
-          "end": "01:54.00"
+          "start": "00:00.00",
+          "end": "00:30.50"
         }
       ],
-      "duration_seconds": 23.0,
-      "score": 80,
+      "duration_seconds": 30.5,
+      "score": 92,
       "ratings": {
-        "hook": 4,
+        "hook": 5,
         "cliff": 4,
-        "context": 4
+        "context": 5
       },
       "hook": {
-        "id": "E021B064",
-        "start": "01:31.00",
-        "end": "01:34.50",
-        "text": "\"At the grand manor, they ignore us. They only care about their own luxury.\""
+        "id": "E002B002",
+        "start": "00:00.00",
+        "end": "00:02.50",
+        "text": "\"I cannot marry you, Juliana.\""
       },
       "cliffhanger": {
-        "id": "E021B075",
-        "start": "01:48.50",
-        "end": "01:54.00",
-        "text": "Lady Juliana sits motionless at the rustic wooden table, her bandaged hands holding open her late mother's leather-bound herbal ledger. Her eyes reflect deep apprehension as the dire truth settles over her."
+        "id": "E002B021",
+        "start": "00:27.80",
+        "end": "00:30.50",
+        "text": "\"She is what I should have chosen from the beginning.\""
       },
-      "open_question": "What is the mysterious illness killing the Dowager Duchess, and why does Lady Juliana look so apprehensive?",
-      "why": "The segment captures a high-stakes medical emergency followed by an intriguing, high-stakes revelation about the Dowager Duchess that creates an immediate, unresolved mystery for the viewer.",
+      "open_question": "What is the exact secret or leverage Juliana possesses that will make them regret this public humiliation?",
+      "why": "The opening hook is a powerful, high-stakes public rejection that immediately establishes the conflict, followed by a steady escalation of tension leading to a strong, defiant climax that hooks the audience for what comes next.",
       "flags": [],
       "evidence": [
         {
-          "id": "E021B063",
+          "id": "E002B001",
           "kind": "CAMERA",
-          "start": "01:31.00",
-          "end": "01:36.50",
-          "text": "Low-angle shot past sleeping Toby toward Prudence standing in the room, her expression darkening with anger."
+          "start": "00:00.00",
+          "end": "00:02.80",
+          "text": "Medium low-angle shot on Gerald at the altar steps, looking down dismissively, while Clarissa in her shimmering gold gown stands behind him gloating."
         },
         {
-          "id": "E021B064",
-          "kind": "PRUDENCE (Indignant, Resentful)",
-          "start": "01:31.00",
-          "end": "01:34.50",
-          "text": "\"At the grand manor, they ignore us. They only care about their own luxury.\""
+          "id": "E002B002",
+          "kind": "THE FORMER GROOM (Cold, Callous)",
+          "start": "00:00.00",
+          "end": "00:02.50",
+          "text": "\"I cannot marry you, Juliana.\""
         },
         {
-          "id": "E021B065",
-          "kind": "PRUDENCE (Ominous)",
-          "start": "01:34.60",
-          "end": "01:36.40",
-          "text": "\"But their gold cannot buy them health.\""
+          "id": "E002B003",
+          "kind": "CAMERA",
+          "start": "00:02.80",
+          "end": "00:04.60",
+          "text": "Medium close-up on Juliana trembling in disbelief, her hands clasped tightly to her chest."
         },
         {
-          "id": "E021B066",
+          "id": "E002B004",
           "kind": "ACTION",
-          "start": "01:36.50",
-          "end": "01:38.20",
-          "text": "Lady Juliana turns sharply, her eyes widening with sudden recognition."
+          "start": "00:02.80",
+          "end": "00:04.60",
+          "text": "Juliana gasps softly in heartbreak, her eyes wide and brimming with tears."
         },
         {
-          "id": "E021B067",
+          "id": "E002B005",
           "kind": "CAMERA",
-          "start": "01:36.50",
-          "end": "01:39.20",
-          "text": "Close-up of Lady Juliana looking directly into Prudence's eyes with startled concern."
+          "start": "00:04.60",
+          "end": "00:06.60",
+          "text": "Medium shot returning to Gerald, sneering down at Juliana."
         },
         {
-          "id": "E021B068",
-          "kind": "LADY JULIANA (Startled, Curious)",
-          "start": "01:36.50",
-          "end": "01:39.20",
-          "text": "\"What do you mean? Is someone ill? The Dowager Duchess?\""
+          "id": "E002B006",
+          "kind": "THE FORMER GROOM (Cruel, Derisive)",
+          "start": "00:04.70",
+          "end": "00:06.50",
+          "text": "\"You are far too plain...\""
         },
         {
-          "id": "E021B069",
+          "id": "E002B007",
           "kind": "CAMERA",
-          "start": "01:39.20",
-          "end": "01:41.20",
-          "text": "Low-angle cut to Toby sleeping peacefully as the fire crackles behind him."
+          "start": "00:06.60",
+          "end": "00:09.50",
+          "text": "Close-up on Juliana's tear-streaked face, crushed under his biting words."
         },
         {
-          "id": "E021B070",
-          "kind": "PRUDENCE (Solemn, O.S.)",
-          "start": "01:39.20",
-          "end": "01:41.20",
-          "text": "\"She is dying, Lady Juliana.\""
+          "id": "E002B008",
+          "kind": "THE FORMER GROOM (Off-screen) (Dismissive)",
+          "start": "00:06.80",
+          "end": "00:09.50",
+          "text": "\"...far too silent...\""
         },
         {
-          "id": "E021B071",
+          "id": "E002B009",
           "kind": "CAMERA",
-          "start": "01:41.20",
-          "end": "01:46.80",
-          "text": "Close-up of Prudence leaning in close to Lady Juliana, whispering with grave intensity."
+          "start": "00:09.50",
+          "end": "00:12.00",
+          "text": "Medium shot on Gerald turning slightly toward Clarissa as she smiles admiringly at him."
         },
         {
-          "id": "E021B072",
-          "kind": "PRUDENCE (Conspiratorial, Grim)",
-          "start": "01:41.20",
-          "end": "01:43.40",
-          "text": "\"A strange, mysterious illness is eating her away.\""
+          "id": "E002B010",
+          "kind": "THE FORMER GROOM (Arrogant, Conceited)",
+          "start": "00:09.60",
+          "end": "00:12.00",
+          "text": "\"...and completely beneath the future I deserve.\""
         },
         {
-          "id": "E021B073",
-          "kind": "PRUDENCE (Dark, Chilling)",
-          "start": "01:43.50",
-          "end": "01:48.40",
-          "text": "\"Inside that massive house with all their wealth, she is fading to nothing, and no one can stop it.\""
-        },
-        {
-          "id": "E021B074",
+          "id": "E002B011",
           "kind": "CAMERA",
-          "start": "01:46.80",
-          "end": "01:48.50",
-          "text": "Brief cut back to Toby sleeping peacefully on his straw pillow by the warm fireplace."
+          "start": "00:12.00",
+          "end": "00:15.80",
+          "text": "Wide shot down the aisle as Juliana takes an agonizing step forward toward the altar, extending a trembling hand."
         },
         {
-          "id": "E021B075",
-          "kind": "ACTION",
-          "start": "01:48.50",
-          "end": "01:54.00",
-          "text": "Lady Juliana sits motionless at the rustic wooden table, her bandaged hands holding open her late mother's leather-bound herbal ledger. Her eyes reflect deep apprehension as the dire truth settles over her."
+          "id": "E002B012",
+          "kind": "LADY JULIANA (Desperate, Pleading)",
+          "start": "00:12.40",
+          "end": "00:15.50",
+          "text": "\"Gerald... Look at me.\""
         },
         {
-          "id": "E021B076",
+          "id": "E002B013",
           "kind": "CAMERA",
-          "start": "01:48.50",
-          "end": "01:54.00",
-          "text": "Slow push-in on Lady Juliana staring down at the ancient pages, her expression filled with profound realization and growing resolve as dramatic strings swell to a gripping cliffhanger."
+          "start": "00:15.80",
+          "end": "00:18.00",
+          "text": "Close-up on Gerald's cold, merciless face staring ahead unblinkingly."
+        },
+        {
+          "id": "E002B014",
+          "kind": "CAMERA",
+          "start": "00:18.00",
+          "end": "00:20.70",
+          "text": "Tight insert on Juliana's hand clutching the heirloom amethyst pendant resting against her gown."
+        },
+        {
+          "id": "E002B015",
+          "kind": "LADY JULIANA (Trembling, Betrayed)",
+          "start": "00:18.20",
+          "end": "00:20.60",
+          "text": "\"You gave me your word before both our families.\""
+        },
+        {
+          "id": "E002B016",
+          "kind": "CAMERA",
+          "start": "00:20.70",
+          "end": "00:23.80",
+          "text": "Medium two-shot of Gerald and Clarissa standing side by side before the priest."
+        },
+        {
+          "id": "E002B017",
+          "kind": "THE FORMER GROOM (Indifferent, Unapologetic)",
+          "start": "00:20.90",
+          "end": "00:23.70",
+          "text": "\"Promises change when a better choice appears.\""
+        },
+        {
+          "id": "E002B018",
+          "kind": "CAMERA",
+          "start": "00:23.80",
+          "end": "00:27.60",
+          "text": "Medium close-up on Juliana clutching her chest, her voice quivering with disbelief."
+        },
+        {
+          "id": "E002B019",
+          "kind": "LADY JULIANA (Shattered, Disbelieving)",
+          "start": "00:24.00",
+          "end": "00:27.40",
+          "text": "\"A better choice? Is that what she is?\""
+        },
+        {
+          "id": "E002B020",
+          "kind": "CAMERA",
+          "start": "00:27.60",
+          "end": "00:30.60",
+          "text": "Wide shot from behind Juliana looking up the altar stairs at Gerald with Clarissa linked to his arm."
+        },
+        {
+          "id": "E002B021",
+          "kind": "THE FORMER GROOM (Resolute, Harsh)",
+          "start": "00:27.80",
+          "end": "00:30.50",
+          "text": "\"She is what I should have chosen from the beginning.\""
         }
       ],
-      "rank": 15,
-      "comparative_rank": 19,
-      "comparative_avg": 18.5,
-      "comparative_reason": "The conceptual focus on mystery is intriguing, but it lacks the direct, aggressive conflict seen in top-tier promos."
+      "rank": 13,
+      "comparative_rank": 13,
+      "comparative_avg": 12.5,
+      "comparative_reason": "Public rejection at the altar provides a strong emotional hook, even if the stakes are slightly more conventional."
     },
     {
-      "episode": 12,
+      "episode": 47,
       "segments": [
         {
-          "start": "01:03.20",
-          "end": "01:27.21"
+          "start": "01:48.80",
+          "end": "02:11.20"
         }
       ],
-      "duration_seconds": 24.01,
-      "score": 80,
+      "duration_seconds": 22.4,
+      "score": 88,
       "ratings": {
-        "hook": 4,
+        "hook": 5,
         "cliff": 4,
         "context": 4
       },
       "hook": {
-        "id": "E012B043",
-        "start": "01:03.30",
-        "end": "01:05.10",
-        "text": "\"Do it, and we withdraw the charges.\""
+        "id": "E047B059",
+        "start": "01:48.80",
+        "end": "01:51.50",
+        "text": "\"You will scrub the manor hearths at dawn.\""
       },
       "cliffhanger": {
-        "id": "E012B055",
-        "start": "01:24.70",
-        "end": "01:27.21",
-        "text": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance."
+        "id": "E047B069",
+        "start": "02:08.50",
+        "end": "02:11.20",
+        "text": "\"I accept, Your Grace.\""
       },
-      "open_question": "Will Juliana successfully retrieve the ring with her bare hands, and will the villain keep their word?",
-      "why": "High-stakes sacrifice ultimatum with a clean cut on a dramatic character decision.",
-      "flags": [],
+      "open_question": "Will Catherine truly endure the life of a scullery maid, or is this a calculated step in a deeper, more dangerous plan of revenge?",
+      "why": "The scene features a high-stakes, satisfying power shift where the protagonist forces her rival to submit, delivering a clear hook and a definitive cliffhanger moment of total humiliation.",
+      "flags": [
+        "IN: starts within an overlapping visual/audio cue"
+      ],
       "evidence": [
         {
-          "id": "E012B042",
+          "id": "E047B058",
           "kind": "CAMERA",
-          "start": "01:03.20",
-          "end": "01:05.20",
-          "text": "Medium three-shot of Clarissa stepping behind Juliana, as Alexander watches helplessly with dark fury."
+          "start": "01:48.50",
+          "end": "01:51.50",
+          "text": "Juliana extends the ring of iron keys outward in her fist."
         },
         {
-          "id": "E012B043",
-          "kind": "CLARISSA (Cold, Transactional)",
-          "start": "01:03.30",
-          "end": "01:05.10",
-          "text": "\"Do it, and we withdraw the charges.\""
+          "id": "E047B059",
+          "kind": "JULIANA (Stern, Demanding)",
+          "start": "01:48.80",
+          "end": "01:51.50",
+          "text": "\"You will scrub the manor hearths at dawn.\""
         },
         {
-          "id": "E012B044",
+          "id": "E047B060",
           "kind": "CAMERA",
-          "start": "01:05.20",
-          "end": "01:09.50",
-          "text": "Extreme close-up of Clarissa's mouth leaning directly into Juliana's ear, whispering venomously."
+          "start": "01:51.50",
+          "end": "01:54.50",
+          "text": "Close profile two-shot of the two women locked in an intense psychological battle."
         },
         {
-          "id": "E012B045",
-          "kind": "CLARISSA (Whispering, Menacing)",
-          "start": "01:05.40",
-          "end": "01:09.20",
-          "text": "\"Fail, or refuse, and your husband hangs from the gallows.\""
+          "id": "E047B061",
+          "kind": "JULIANA (Unforgiving)",
+          "start": "01:51.80",
+          "end": "01:54.50",
+          "text": "\"You will scour the kitchen grease until midnight.\""
         },
         {
-          "id": "E012B046",
+          "id": "E047B062",
           "kind": "CAMERA",
-          "start": "01:09.50",
-          "end": "01:14.00",
-          "text": "Medium close-up of Alexander stepping up beside Juliana, tenderly placing his large hand on her shoulder."
+          "start": "01:54.50",
+          "end": "01:58.50",
+          "text": "Juliana presents the rough hemp apron and heavy keys right to Catherine's face."
         },
         {
-          "id": "E012B047",
-          "kind": "ACTION",
-          "start": "01:09.60",
-          "end": "01:11.20",
-          "text": "Alexander rests his scarred hand reassuringly on Juliana's shoulder, leaning in toward her."
+          "id": "E047B063",
+          "kind": "JULIANA (Stern, Final)",
+          "start": "01:54.80",
+          "end": "01:58.50",
+          "text": "\"One complaint from the housekeeper, and you are cast out with nothing.\""
         },
         {
-          "id": "E012B048",
-          "kind": "ALEXANDER (Desperate, Protective, Urgent)",
-          "start": "01:09.80",
-          "end": "01:13.80",
-          "text": "\"Juliana, no. Do not let them hurt you. I can handle the law.\""
-        },
-        {
-          "id": "E012B049",
+          "id": "E047B064",
           "kind": "CAMERA",
-          "start": "01:14.00",
-          "end": "01:21.80",
-          "text": "Close-up of Juliana, her eyes glistening with unshed tears, her hand gripping the fabric over her heart in agony and resolve."
+          "start": "01:58.50",
+          "end": "02:01.80",
+          "text": "Close-up of Catherine's trembling lips, humiliated tears spilling down her heavily made-up cheeks."
         },
         {
-          "id": "E012B050",
-          "kind": "ACTION",
-          "start": "01:14.20",
-          "end": "01:16.00",
-          "text": "Juliana clutches the front of her rustic grey dress, her breathing trembling."
+          "id": "E047B065",
+          "kind": "CATHERINE (Choked, Humiliated)",
+          "start": "01:59.20",
+          "end": "02:01.60",
+          "text": "\"You humiliate me.\""
         },
         {
-          "id": "E012B051",
-          "kind": "JULIANA (Fierce, Emotional, Sacrificial)",
-          "start": "01:15.30",
-          "end": "01:18.20",
-          "text": "\"I am not letting them take you.\""
-        },
-        {
-          "id": "E012B052",
-          "kind": "ACTION",
-          "start": "01:21.50",
-          "end": "01:23.00",
-          "text": "Juliana turns her head sharply back toward Clarissa, her expression hardening with fierce resolution."
-        },
-        {
-          "id": "E012B053",
+          "id": "E047B066",
           "kind": "CAMERA",
-          "start": "01:21.80",
-          "end": "01:27.21",
-          "text": "Over-the-shoulder shot past Clarissa onto Juliana's determined face, holding on her fierce, defiant stare as the tension peaks."
+          "start": "02:01.80",
+          "end": "02:07.50",
+          "text": "Medium shot of both women standing beneath the cathedral vaulting of the hall."
         },
         {
-          "id": "E012B054",
-          "kind": "JULIANA (Steely, Resolute)",
-          "start": "01:22.80",
-          "end": "01:24.70",
-          "text": "\"Tell me where the garden is.\""
+          "id": "E047B067",
+          "kind": "JULIANA (Calm, Sovereign)",
+          "start": "02:02.20",
+          "end": "02:07.20",
+          "text": "\"I offer you bread and honest labor. Take the apron, or leave the county.\""
         },
         {
-          "id": "E012B055",
-          "kind": "ACTION",
-          "start": "01:24.70",
-          "end": "01:27.21",
-          "text": "Juliana locks eyes with Clarissa without flinching as the scene freezes on her brave, sacrificial defiance."
+          "id": "E047B068",
+          "kind": "CAMERA",
+          "start": "02:07.50",
+          "end": "02:11.50",
+          "text": "Extreme close-up on Catherine's trembling hands as she reaches out, taking the coarse apron and clattering iron keys, pressing them desperately against her chest."
+        },
+        {
+          "id": "E047B069",
+          "kind": "CATHERINE (Broken, Defeated)",
+          "start": "02:08.50",
+          "end": "02:11.20",
+          "text": "\"I accept, Your Grace.\""
         }
       ],
-      "rank": 16,
-      "comparative_rank": 5,
-      "comparative_avg": 5.5,
-      "comparative_reason": "The combination of immediate blackmail and a brutal physical threat against the husband provides strong narrative momentum."
+      "rank": 14,
+      "comparative_rank": 14,
+      "comparative_avg": 14.5,
+      "comparative_reason": "The reversal of power dynamics where a former noble is humiliated provides a satisfying, albeit niche, hook."
     },
     {
       "episode": 16,
@@ -2965,282 +2679,182 @@
           "text": "\"You knew exactly what to do.\""
         }
       ],
-      "rank": 17,
+      "rank": 15,
       "comparative_rank": 15,
       "comparative_avg": 15.5,
       "comparative_reason": "The sudden physical violence is an effective grab, though it prematurely reveals the conspiracy mastermind."
     },
     {
-      "episode": 49,
+      "episode": 7,
       "segments": [
         {
-          "start": "01:58.20",
-          "end": "02:24.00"
+          "start": "01:05.60",
+          "end": "01:33.80"
         }
       ],
-      "duration_seconds": 25.8,
-      "score": 80,
+      "duration_seconds": 28.2,
+      "score": 88,
       "ratings": {
-        "hook": 4,
+        "hook": 5,
         "cliff": 4,
         "context": 4
       },
       "hook": {
-        "id": "E049B050",
-        "start": "01:58.20",
-        "end": "02:04.50",
-        "text": "\"Careful men still hang, my lady, when the crime is treason against a Duke the King himself just restored.\""
+        "id": "E007B032",
+        "start": "01:05.60",
+        "end": "01:08.50",
+        "text": "\"I have enough influence to make a beggar disappear.\""
       },
       "cliffhanger": {
-        "id": "E049B062",
-        "start": "02:23.00",
-        "end": "02:24.00",
-        "text": "\"We always have.\""
+        "id": "E007B049",
+        "start": "01:32.00",
+        "end": "01:33.80",
+        "text": "\"Leaving? Gerald!\""
       },
-      "open_question": "Will their conspiracy remain hidden from the Duke, or will the weight of their treason destroy them both?",
-      "why": "The scene features high-stakes political intrigue and an illicit pact between a priest and a duchess, hitting the exact required tension for a cold audience.",
+      "open_question": "Will the antagonists retaliate after this humiliating defeat?",
+      "why": "The segment captures the full power-dynamic reversal, starting with Gerald's threat and ending with his cowardly retreat as his arrogance is stripped away.",
       "flags": [
         "IN: starts within an overlapping visual/audio cue"
       ],
       "evidence": [
         {
-          "id": "E049B049",
+          "id": "E007B031",
           "kind": "CAMERA",
-          "start": "01:58.00",
-          "end": "02:04.80",
-          "text": "Tight close-up on Father Thomas's intense, brooding face."
+          "start": "01:05.20",
+          "end": "01:09.50",
+          "text": "Close-up of Gerald lunging forward, aggressively pointing his finger into Juliana's face."
         },
         {
-          "id": "E049B050",
-          "kind": "FATHER THOMAS (Stern, Stark)",
-          "start": "01:58.20",
-          "end": "02:04.50",
-          "text": "\"Careful men still hang, my lady, when the crime is treason against a Duke the King himself just restored.\""
+          "id": "E007B032",
+          "kind": "GERALD (Furious, Threatening)",
+          "start": "01:05.60",
+          "end": "01:08.50",
+          "text": "\"I have enough influence to make a beggar disappear.\""
         },
         {
-          "id": "E049B051",
+          "id": "E007B033",
+          "kind": "GERALD (Spiteful, Boastful)",
+          "start": "01:08.60",
+          "end": "01:09.50",
+          "text": "\"And your husband?\""
+        },
+        {
+          "id": "E007B034",
           "kind": "CAMERA",
-          "start": "02:04.80",
-          "end": "02:08.80",
-          "text": "Close-up on Catherine, her lips parting into an alluring, promising smile."
+          "start": "01:09.50",
+          "end": "01:14.00",
+          "text": "Wide shot down a dark, fog-drenched forest path. A towering, shadowed figure walks steadily forward through the mist."
         },
         {
-          "id": "E049B052",
-          "kind": "CATHERINE (Tempting)",
-          "start": "02:05.00",
-          "end": "02:08.50",
-          "text": "\"Careful men who help me also get remembered.\""
+          "id": "E007B035",
+          "kind": "GERALD (V.O.) (Snarl)",
+          "start": "01:09.50",
+          "end": "01:11.20",
+          "text": "\"Where is that beggar husband?\""
         },
         {
-          "id": "E049B053",
-          "kind": "CAMERA",
-          "start": "02:08.80",
-          "end": "02:14.50",
-          "text": "Split focus close-up between Father Thomas's intense gaze and Catherine leaning in close, whispering with lethal conviction."
-        },
-        {
-          "id": "E049B054",
-          "kind": "CATHERINE (Whispering, Promising)",
-          "start": "02:09.20",
-          "end": "02:14.20",
-          "text": "\"A grateful Duchess collects debts differently than a desperate one.\""
-        },
-        {
-          "id": "E049B055",
-          "kind": "CAMERA",
-          "start": "02:14.50",
-          "end": "02:19.80",
-          "text": "Medium two-shot as Father Thomas extends his open right hand between them."
-        },
-        {
-          "id": "E049B056",
+          "id": "E007B036",
           "kind": "ACTION",
-          "start": "02:15.00",
-          "end": "02:19.50",
-          "text": "Father Thomas slowly raises his right hand, palm turned upward in invitation and pact."
+          "start": "01:10.00",
+          "end": "01:15.50",
+          "text": "The Scarred Bearded Man marches purposefully toward the cottage, carrying a heavy bundle of chopped firewood bound tightly with hemp cord."
         },
         {
-          "id": "E049B057",
-          "kind": "FATHER THOMAS (Low, Resigned)",
-          "start": "02:15.20",
-          "end": "02:19.50",
-          "text": "\"The rest depends on how well you keep your part of this quiet.\""
-        },
-        {
-          "id": "E049B058",
+          "id": "E007B037",
           "kind": "CAMERA",
-          "start": "02:19.80",
-          "end": "02:22.80",
-          "text": "Close-up on Father Thomas looking down into her eyes."
+          "start": "01:14.00",
+          "end": "01:15.50",
+          "text": "Medium tracking shot pushing in on the Scarred Bearded Man's stern, rugged face as he approaches the gate."
         },
         {
-          "id": "E049B059",
-          "kind": "FATHER THOMAS (Softly)",
-          "start": "02:20.00",
-          "end": "02:22.50",
-          "text": "\"Then we understand each other.\""
+          "id": "E007B038",
+          "kind": "CAMERA",
+          "start": "01:15.50",
+          "end": "01:18.50",
+          "text": "Low shot of the Scarred Bearded Man bending down and dropping the bundle of logs by the stone wall."
         },
         {
-          "id": "E049B060",
+          "id": "E007B039",
+          "kind": "SOUND FX",
+          "start": "01:16.20",
+          "end": "01:17.50",
+          "text": "A dull, heavy thud of timber striking the mud."
+        },
+        {
+          "id": "E007B040",
+          "kind": "CAMERA",
+          "start": "01:18.50",
+          "end": "01:21.00",
+          "text": "Medium full shot as the Scarred Bearded Man straightens to his full imposing height and steps directly toward Gerald."
+        },
+        {
+          "id": "E007B041",
+          "kind": "CAMERA",
+          "start": "01:21.00",
+          "end": "01:23.50",
+          "text": "Two-shot framing the Scarred Bearded Man towering menacingly over Gerald, staring down at him with unyielding intensity."
+        },
+        {
+          "id": "E007B042",
           "kind": "ACTION",
-          "start": "02:20.50",
-          "end": "02:22.80",
-          "text": "Catherine reaches out and places her slender hand firmly into Father Thomas's open palm."
+          "start": "01:21.50",
+          "end": "01:24.00",
+          "text": "Gerald freezes, his arrogant bravado instantly vanishing as cold dread overtakes his face."
         },
         {
-          "id": "E049B061",
+          "id": "E007B043",
           "kind": "CAMERA",
-          "start": "02:22.80",
-          "end": "02:24.00",
-          "text": "Close-up of Catherine gazing up at him, her eyes glistening in the candlelight."
+          "start": "01:23.50",
+          "end": "01:28.00",
+          "text": "Low-angle close-up of Gerald looking up in sheer terror, his adam's apple bobbing nervously."
         },
         {
-          "id": "E049B062",
-          "kind": "CATHERINE (Intimate)",
-          "start": "02:23.00",
-          "end": "02:24.00",
-          "text": "\"We always have.\""
+          "id": "E007B044",
+          "kind": "ARISTOCRATIC WOMAN (O.S.) (Urgent, Annoyed)",
+          "start": "01:26.50",
+          "end": "01:28.50",
+          "text": "\"Gerald, don't let him frighten you.\""
+        },
+        {
+          "id": "E007B045",
+          "kind": "GERALD (Trembling, Trying to Save Face)",
+          "start": "01:28.60",
+          "end": "01:30.00",
+          "text": "\"What are you staring at?\""
+        },
+        {
+          "id": "E007B046",
+          "kind": "ACTION",
+          "start": "01:30.00",
+          "end": "01:31.50",
+          "text": "Gerald rapidly turns on his heel toward the carriage, unwilling to face another second of the silent glare."
+        },
+        {
+          "id": "E007B047",
+          "kind": "GERALD (Nervous, Hurried)",
+          "start": "01:30.10",
+          "end": "01:31.40",
+          "text": "\"We are leaving.\""
+        },
+        {
+          "id": "E007B048",
+          "kind": "CAMERA",
+          "start": "01:31.50",
+          "end": "01:33.80",
+          "text": "Medium shot of Aristocratic Woman, shocked and indignant as Gerald flees past her."
+        },
+        {
+          "id": "E007B049",
+          "kind": "ARISTOCRATIC WOMAN (Outraged, Flustered)",
+          "start": "01:32.00",
+          "end": "01:33.80",
+          "text": "\"Leaving? Gerald!\""
         }
       ],
-      "rank": 18,
-      "comparative_rank": 9,
-      "comparative_avg": 9.0,
-      "comparative_reason": "The mention of treason and the high-status threat to a Duke provides an immediate sense of grand political stakes."
-    },
-    {
-      "episode": 48,
-      "segments": [
-        {
-          "start": "00:34.00",
-          "end": "01:00.60"
-        }
-      ],
-      "duration_seconds": 26.6,
-      "score": 80,
-      "ratings": {
-        "hook": 4,
-        "cliff": 4,
-        "context": 4
-      },
-      "hook": {
-        "id": "E048B021",
-        "start": "00:34.00",
-        "end": "00:36.50",
-        "text": "Catherine strides forward and firmly grasps Agnes by both hands, stepping uncomfortably close."
-      },
-      "cliffhanger": {
-        "id": "E048B034",
-        "start": "00:58.50",
-        "end": "01:00.60",
-        "text": "\"If someone sees him come to you...\""
-      },
-      "open_question": "If the Duke has the roads watched, how will Catherine and her accomplice navigate the danger without being exposed?",
-      "why": "High-stakes manipulation segment (00:34.00-01:00.60) showing the villain recruiting an accomplice, with a natural cliffhanger regarding the Duke's surveillance.",
-      "flags": [],
-      "evidence": [
-        {
-          "id": "E048B021",
-          "kind": "ACTION",
-          "start": "00:34.00",
-          "end": "00:36.50",
-          "text": "Catherine strides forward and firmly grasps Agnes by both hands, stepping uncomfortably close."
-        },
-        {
-          "id": "E048B022",
-          "kind": "CAMERA",
-          "start": "00:34.00",
-          "end": "00:43.00",
-          "text": "Two-shot profile of Catherine towering over Agnes in the candlelight."
-        },
-        {
-          "id": "E048B023",
-          "kind": "CATHERINE (Fierce, Hissing)",
-          "start": "00:34.20",
-          "end": "00:37.10",
-          "text": "\"Everyone in that chapel saw me humiliated today.\""
-        },
-        {
-          "id": "E048B024",
-          "kind": "CATHERINE (Spiteful, calculating)",
-          "start": "00:37.30",
-          "end": "00:39.00",
-          "text": "\"Good. Let them remember it.\""
-        },
-        {
-          "id": "E048B025",
-          "kind": "CATHERINE (Sinister, Predatory)",
-          "start": "00:39.20",
-          "end": "00:43.00",
-          "text": "\"Grief makes people careless, and carelessness is exactly what I need from that household right now.\""
-        },
-        {
-          "id": "E048B026",
-          "kind": "CAMERA",
-          "start": "00:43.00",
-          "end": "00:46.80",
-          "text": "Over-the-shoulder close-up on Agnes, her brow furrowed in anxious alarm."
-        },
-        {
-          "id": "E048B027",
-          "kind": "AGNES (Anxious, Whispering)",
-          "start": "00:43.30",
-          "end": "00:46.80",
-          "text": "\"My lady... the Duke has bailiffs watching every road out of the county.\""
-        },
-        {
-          "id": "E048B028",
-          "kind": "CAMERA",
-          "start": "00:46.80",
-          "end": "00:51.50",
-          "text": "Close-up on Catherine, a smug, venomous smile spreading across her painted lips."
-        },
-        {
-          "id": "E048B029",
-          "kind": "CATHERINE (Confident, Devious)",
-          "start": "00:47.00",
-          "end": "00:51.30",
-          "text": "\"I'm not leaving the county, Agnes. I'm going back into that house.\""
-        },
-        {
-          "id": "E048B030",
-          "kind": "CAMERA",
-          "start": "00:51.50",
-          "end": "00:58.20",
-          "text": "Medium tracking shot following Catherine as she releases Agnes and stalks across the room toward the window sill."
-        },
-        {
-          "id": "E048B031",
-          "kind": "CATHERINE (Pleased, Scheming)",
-          "start": "00:52.00",
-          "end": "00:55.00",
-          "text": "\"Father Thomas did his part beautifully today.\""
-        },
-        {
-          "id": "E048B032",
-          "kind": "CATHERINE (Calculated, Demanding)",
-          "start": "00:55.20",
-          "end": "00:58.20",
-          "text": "\"Now I need him to do a little more before that hearing convenes.\""
-        },
-        {
-          "id": "E048B033",
-          "kind": "CAMERA",
-          "start": "00:58.20",
-          "end": "01:01.00",
-          "text": "Medium close-up of Agnes glancing nervously over her shoulder."
-        },
-        {
-          "id": "E048B034",
-          "kind": "AGNES (Apprehensive)",
-          "start": "00:58.50",
-          "end": "01:00.60",
-          "text": "\"If someone sees him come to you...\""
-        }
-      ],
-      "rank": 19,
-      "comparative_rank": 20,
-      "comparative_avg": 18.5,
-      "comparative_reason": "The dialogue-heavy opening is slower to build tension compared to the immediate threats seen elsewhere."
+      "rank": 16,
+      "comparative_rank": 16,
+      "comparative_avg": 16.0,
+      "comparative_reason": "The villain direct threat and the visual of an approaching figure creates a simple, readable dynamic."
     },
     {
       "episode": 40,
@@ -3381,10 +2995,396 @@
           "text": "\"She looks like a queen.\""
         }
       ],
-      "rank": 20,
+      "rank": 17,
       "comparative_rank": 17,
       "comparative_avg": 16.5,
       "comparative_reason": "The focus on security and conspirators is atmospheric, but it lacks the immediate emotional grab of the higher-ranked clips."
+    },
+    {
+      "episode": 36,
+      "segments": [
+        {
+          "start": "03:00.00",
+          "end": "03:20.75"
+        }
+      ],
+      "duration_seconds": 20.75,
+      "score": 88,
+      "ratings": {
+        "hook": 4,
+        "cliff": 5,
+        "context": 4
+      },
+      "hook": {
+        "id": "E036B112",
+        "start": "03:00.00",
+        "end": "03:04.00",
+        "text": "Alexander stands framed in the doorway, staring out into the vast, snow-covered pine forest under the cold moonlight."
+      },
+      "cliffhanger": {
+        "id": "E036B120",
+        "start": "03:17.00",
+        "end": "03:20.75",
+        "text": "Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black."
+      },
+      "open_question": "Will Alexander successfully reach Ashbourne in time to stop his wife's execution and the wedding?",
+      "why": "The clip features a high-stakes, well-paced revelation of a ticking-clock conflict, fitting the dramatic needs of a microdrama promo.",
+      "flags": [
+        "IN: starts within an overlapping visual/audio cue"
+      ],
+      "evidence": [
+        {
+          "id": "E036B111",
+          "kind": "CAMERA",
+          "start": "02:59.50",
+          "end": "03:04.00",
+          "text": "Tracking shot following Alexander as he turns his back on the warmth of the cabin and walks boldly toward the open double barn doors."
+        },
+        {
+          "id": "E036B112",
+          "kind": "ACTION",
+          "start": "03:00.00",
+          "end": "03:04.00",
+          "text": "Alexander stands framed in the doorway, staring out into the vast, snow-covered pine forest under the cold moonlight."
+        },
+        {
+          "id": "E036B113",
+          "kind": "ALEXANDER (Calm, Chilling)",
+          "start": "03:02.00",
+          "end": "03:03.50",
+          "text": "\"Two days.\""
+        },
+        {
+          "id": "E036B114",
+          "kind": "CAMERA",
+          "start": "03:04.00",
+          "end": "03:08.00",
+          "text": "Medium shot from inside the cabin, showing his mother clutching her chest, looking after Alexander's imposing silhouette standing at the threshold of the blizzard."
+        },
+        {
+          "id": "E036B115",
+          "kind": "ALEXANDER (Vow of Vengeance)",
+          "start": "03:04.50",
+          "end": "03:07.80",
+          "text": "\"Then they have two days to celebrate.\""
+        },
+        {
+          "id": "E036B116",
+          "kind": "CAMERA",
+          "start": "03:08.00",
+          "end": "03:12.50",
+          "text": "Side profile close-up on Alexander as his breath fogs into the icy winter night air, his jaw clenched tight."
+        },
+        {
+          "id": "E036B117",
+          "kind": "ALEXANDER (Low, Menacing Promise)",
+          "start": "03:09.50",
+          "end": "03:12.20",
+          "text": "\"Because before that wedding begins...\""
+        },
+        {
+          "id": "E036B118",
+          "kind": "CAMERA",
+          "start": "03:12.50",
+          "end": "03:20.75",
+          "text": "Tight side profile close-up of Alexander's battle-scarred cheek and burning gaze as he makes his final declaration."
+        },
+        {
+          "id": "E036B119",
+          "kind": "ALEXANDER (Cold, Thunderous Finale)",
+          "start": "03:13.00",
+          "end": "03:16.80",
+          "text": "\"...their dead Duke is coming home.\""
+        },
+        {
+          "id": "E036B120",
+          "kind": "ACTION",
+          "start": "03:17.00",
+          "end": "03:20.75",
+          "text": "Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black."
+        },
+        {
+          "id": "E036B121",
+          "kind": "SOUND FX",
+          "start": "03:17.00",
+          "end": "03:20.75",
+          "text": "A heavy, ominous orchestral swell builds to a thunderous cliffhanger sting and reverberates into silence."
+        }
+      ],
+      "rank": 18,
+      "comparative_rank": 18,
+      "comparative_avg": 18.5,
+      "comparative_reason": "The visual of the snowy forest is cinematic, but the dialogue is too understated to act as a viral scroll-stopper."
+    },
+    {
+      "episode": 21,
+      "segments": [
+        {
+          "start": "01:31.00",
+          "end": "01:54.00"
+        }
+      ],
+      "duration_seconds": 23.0,
+      "score": 80,
+      "ratings": {
+        "hook": 4,
+        "cliff": 4,
+        "context": 4
+      },
+      "hook": {
+        "id": "E021B064",
+        "start": "01:31.00",
+        "end": "01:34.50",
+        "text": "\"At the grand manor, they ignore us. They only care about their own luxury.\""
+      },
+      "cliffhanger": {
+        "id": "E021B075",
+        "start": "01:48.50",
+        "end": "01:54.00",
+        "text": "Lady Juliana sits motionless at the rustic wooden table, her bandaged hands holding open her late mother's leather-bound herbal ledger. Her eyes reflect deep apprehension as the dire truth settles over her."
+      },
+      "open_question": "What is the mysterious illness killing the Dowager Duchess, and why does Lady Juliana look so apprehensive?",
+      "why": "The segment captures a high-stakes medical emergency followed by an intriguing, high-stakes revelation about the Dowager Duchess that creates an immediate, unresolved mystery for the viewer.",
+      "flags": [],
+      "evidence": [
+        {
+          "id": "E021B063",
+          "kind": "CAMERA",
+          "start": "01:31.00",
+          "end": "01:36.50",
+          "text": "Low-angle shot past sleeping Toby toward Prudence standing in the room, her expression darkening with anger."
+        },
+        {
+          "id": "E021B064",
+          "kind": "PRUDENCE (Indignant, Resentful)",
+          "start": "01:31.00",
+          "end": "01:34.50",
+          "text": "\"At the grand manor, they ignore us. They only care about their own luxury.\""
+        },
+        {
+          "id": "E021B065",
+          "kind": "PRUDENCE (Ominous)",
+          "start": "01:34.60",
+          "end": "01:36.40",
+          "text": "\"But their gold cannot buy them health.\""
+        },
+        {
+          "id": "E021B066",
+          "kind": "ACTION",
+          "start": "01:36.50",
+          "end": "01:38.20",
+          "text": "Lady Juliana turns sharply, her eyes widening with sudden recognition."
+        },
+        {
+          "id": "E021B067",
+          "kind": "CAMERA",
+          "start": "01:36.50",
+          "end": "01:39.20",
+          "text": "Close-up of Lady Juliana looking directly into Prudence's eyes with startled concern."
+        },
+        {
+          "id": "E021B068",
+          "kind": "LADY JULIANA (Startled, Curious)",
+          "start": "01:36.50",
+          "end": "01:39.20",
+          "text": "\"What do you mean? Is someone ill? The Dowager Duchess?\""
+        },
+        {
+          "id": "E021B069",
+          "kind": "CAMERA",
+          "start": "01:39.20",
+          "end": "01:41.20",
+          "text": "Low-angle cut to Toby sleeping peacefully as the fire crackles behind him."
+        },
+        {
+          "id": "E021B070",
+          "kind": "PRUDENCE (Solemn, O.S.)",
+          "start": "01:39.20",
+          "end": "01:41.20",
+          "text": "\"She is dying, Lady Juliana.\""
+        },
+        {
+          "id": "E021B071",
+          "kind": "CAMERA",
+          "start": "01:41.20",
+          "end": "01:46.80",
+          "text": "Close-up of Prudence leaning in close to Lady Juliana, whispering with grave intensity."
+        },
+        {
+          "id": "E021B072",
+          "kind": "PRUDENCE (Conspiratorial, Grim)",
+          "start": "01:41.20",
+          "end": "01:43.40",
+          "text": "\"A strange, mysterious illness is eating her away.\""
+        },
+        {
+          "id": "E021B073",
+          "kind": "PRUDENCE (Dark, Chilling)",
+          "start": "01:43.50",
+          "end": "01:48.40",
+          "text": "\"Inside that massive house with all their wealth, she is fading to nothing, and no one can stop it.\""
+        },
+        {
+          "id": "E021B074",
+          "kind": "CAMERA",
+          "start": "01:46.80",
+          "end": "01:48.50",
+          "text": "Brief cut back to Toby sleeping peacefully on his straw pillow by the warm fireplace."
+        },
+        {
+          "id": "E021B075",
+          "kind": "ACTION",
+          "start": "01:48.50",
+          "end": "01:54.00",
+          "text": "Lady Juliana sits motionless at the rustic wooden table, her bandaged hands holding open her late mother's leather-bound herbal ledger. Her eyes reflect deep apprehension as the dire truth settles over her."
+        },
+        {
+          "id": "E021B076",
+          "kind": "CAMERA",
+          "start": "01:48.50",
+          "end": "01:54.00",
+          "text": "Slow push-in on Lady Juliana staring down at the ancient pages, her expression filled with profound realization and growing resolve as dramatic strings swell to a gripping cliffhanger."
+        }
+      ],
+      "rank": 19,
+      "comparative_rank": 19,
+      "comparative_avg": 18.5,
+      "comparative_reason": "The conceptual focus on mystery is intriguing, but it lacks the direct, aggressive conflict seen in top-tier promos."
+    },
+    {
+      "episode": 48,
+      "segments": [
+        {
+          "start": "00:34.00",
+          "end": "01:00.60"
+        }
+      ],
+      "duration_seconds": 26.6,
+      "score": 80,
+      "ratings": {
+        "hook": 4,
+        "cliff": 4,
+        "context": 4
+      },
+      "hook": {
+        "id": "E048B021",
+        "start": "00:34.00",
+        "end": "00:36.50",
+        "text": "Catherine strides forward and firmly grasps Agnes by both hands, stepping uncomfortably close."
+      },
+      "cliffhanger": {
+        "id": "E048B034",
+        "start": "00:58.50",
+        "end": "01:00.60",
+        "text": "\"If someone sees him come to you...\""
+      },
+      "open_question": "If the Duke has the roads watched, how will Catherine and her accomplice navigate the danger without being exposed?",
+      "why": "High-stakes manipulation segment (00:34.00-01:00.60) showing the villain recruiting an accomplice, with a natural cliffhanger regarding the Duke's surveillance.",
+      "flags": [],
+      "evidence": [
+        {
+          "id": "E048B021",
+          "kind": "ACTION",
+          "start": "00:34.00",
+          "end": "00:36.50",
+          "text": "Catherine strides forward and firmly grasps Agnes by both hands, stepping uncomfortably close."
+        },
+        {
+          "id": "E048B022",
+          "kind": "CAMERA",
+          "start": "00:34.00",
+          "end": "00:43.00",
+          "text": "Two-shot profile of Catherine towering over Agnes in the candlelight."
+        },
+        {
+          "id": "E048B023",
+          "kind": "CATHERINE (Fierce, Hissing)",
+          "start": "00:34.20",
+          "end": "00:37.10",
+          "text": "\"Everyone in that chapel saw me humiliated today.\""
+        },
+        {
+          "id": "E048B024",
+          "kind": "CATHERINE (Spiteful, calculating)",
+          "start": "00:37.30",
+          "end": "00:39.00",
+          "text": "\"Good. Let them remember it.\""
+        },
+        {
+          "id": "E048B025",
+          "kind": "CATHERINE (Sinister, Predatory)",
+          "start": "00:39.20",
+          "end": "00:43.00",
+          "text": "\"Grief makes people careless, and carelessness is exactly what I need from that household right now.\""
+        },
+        {
+          "id": "E048B026",
+          "kind": "CAMERA",
+          "start": "00:43.00",
+          "end": "00:46.80",
+          "text": "Over-the-shoulder close-up on Agnes, her brow furrowed in anxious alarm."
+        },
+        {
+          "id": "E048B027",
+          "kind": "AGNES (Anxious, Whispering)",
+          "start": "00:43.30",
+          "end": "00:46.80",
+          "text": "\"My lady... the Duke has bailiffs watching every road out of the county.\""
+        },
+        {
+          "id": "E048B028",
+          "kind": "CAMERA",
+          "start": "00:46.80",
+          "end": "00:51.50",
+          "text": "Close-up on Catherine, a smug, venomous smile spreading across her painted lips."
+        },
+        {
+          "id": "E048B029",
+          "kind": "CATHERINE (Confident, Devious)",
+          "start": "00:47.00",
+          "end": "00:51.30",
+          "text": "\"I'm not leaving the county, Agnes. I'm going back into that house.\""
+        },
+        {
+          "id": "E048B030",
+          "kind": "CAMERA",
+          "start": "00:51.50",
+          "end": "00:58.20",
+          "text": "Medium tracking shot following Catherine as she releases Agnes and stalks across the room toward the window sill."
+        },
+        {
+          "id": "E048B031",
+          "kind": "CATHERINE (Pleased, Scheming)",
+          "start": "00:52.00",
+          "end": "00:55.00",
+          "text": "\"Father Thomas did his part beautifully today.\""
+        },
+        {
+          "id": "E048B032",
+          "kind": "CATHERINE (Calculated, Demanding)",
+          "start": "00:55.20",
+          "end": "00:58.20",
+          "text": "\"Now I need him to do a little more before that hearing convenes.\""
+        },
+        {
+          "id": "E048B033",
+          "kind": "CAMERA",
+          "start": "00:58.20",
+          "end": "01:01.00",
+          "text": "Medium close-up of Agnes glancing nervously over her shoulder."
+        },
+        {
+          "id": "E048B034",
+          "kind": "AGNES (Apprehensive)",
+          "start": "00:58.50",
+          "end": "01:00.60",
+          "text": "\"If someone sees him come to you...\""
+        }
+      ],
+      "rank": 20,
+      "comparative_rank": 20,
+      "comparative_avg": 18.5,
+      "comparative_reason": "The dialogue-heavy opening is slower to build tension compared to the immediate threats seen elsewhere."
     }
   ],
   "comparative_audit": {

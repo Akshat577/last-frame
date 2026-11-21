@@ -41,7 +41,7 @@
               "finish_reason": "stop",
               "index": 0,
               "message": {
-                "content": "{\"episode\":1,\"source_sha256\":\"9787df1d0983957589fc407cb0f2cdc0a89fcde7100c022a4741b8abfeedfa81\",\"status\":\"select\",\"reason\":\"The segment captures the immediate emotional shock of the betrayal at the altar within the allowed duration without breaking dialogue or cue boundaries.\",\"segments\":[{\"start\":\"00:09.80\",\"end\":\"00:41.50\"}],\"hook_id\":\"E001B008\",\"cliff_id\":\"E001B027\",\"ratings\":{\"hook\":5,\"cliff\":4,\"context\":5},\"open_question\":\"What will Juliana do now that she knows her sister and fiancé have conspired against her?\",\"flags\":[]}",
+                "content": "{\"episode\":1,\"source_sha256\":\"9787df1d0983957589fc407cb0f2cdc0a89fcde7100c022a4741b8abfeedfa81\",\"status\":\"select\",\"reason\":\"The segment captures the immediate emotional shock of the betrayal at the altar within the allowed duration without breaking dialogue or cue boundaries.\",\"segments\":[{\"start\":\"00:09.80\",\"end\":\"00:41.50\"}],\"hook_id\":\"E001B008\",\"cliff_id\":\"E001B027\",\"ratings\":{\"hook\":5,\"cliff\":4,\"context\":5},\"open_question\":\"What will Juliana do now that she knows her sister and fianc\u00e9 have conspired against her?\",\"flags\":[]}",
                 "extra_content": {
                   "google": {
                     "thought_signature": "EqEBCp4BAWkUfRNtl18+O3qnQ78RsR7MOAVuaIPWW58p2KAbSq6JAQtyZpWLY3AP/AJAaRtjmZasALCDkuR5n7nHVhAdNRVWHMpUgoJNuP+dO9+b9msZYeMkuzzSUIMskFnUunqkH+otj6WE9rGNfU2N07+lwqlBRjb5nbRDXB+hbveNDEylyAd0nCiSJ0I/qL6p637Oh2hwsN0Odr41HM6v/7w="
@@ -2820,6 +2820,72 @@
             "total_tokens": 4499
           }
         }
+      }
+    ]
+  },
+  {
+    "episode": null,
+    "stage": "comparative_ranking_pass_a",
+    "seed": 101,
+    "failed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "id": "chatcmpl-comparative-pass-a-seed101",
+          "object": "chat.completion",
+          "created": 1732152942,
+          "model": "gemini-3.1-flash-lite",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"ranking\": [\n    {\n      \"rank\": 1,\n      \"episode\": 33,\n      \"reason\": \"The immediate high-stakes life-or-death coercion creates an instantaneous and visceral curiosity gap.\"\n    },\n    {\n      \"rank\": 2,\n      \"episode\": 45,\n      \"reason\": \"The direct legal invalidation of a marriage creates an urgent, objective narrative threat.\"\n    },\n    {\n      \"rank\": 3,\n      \"episode\": 12,\n      \"reason\": \"The combination of immediate blackmail and a brutal physical threat against the husband provides strong narrative momentum.\"\n    },\n    {\n      \"rank\": 4,\n      \"episode\": 46,\n      \"reason\": \"The ticking clock of a ten-day deadline paired with a direct confrontation with authority sets up a clear conflict.\"\n    },\n    {\n      \"rank\": 5,\n      \"episode\": 25,\n      \"reason\": \"Beginning with a graphic physical injury establishes immediate intimacy and high-conflict medical/emotional tension.\"\n    },\n    {\n      \"rank\": 6,\n      \"episode\": 28,\n      \"reason\": \"The sudden exposure of a secret identity serves as a classic, high-velocity hook that instantly threatens execution.\"\n    },\n    {\n      \"rank\": 7,\n      \"episode\": 49,\n      \"reason\": \"The mention of treason and the high-status threat to a Duke provides an immediate sense of grand political stakes.\"\n    },\n    {\n      \"rank\": 8,\n      \"episode\": 34,\n      \"reason\": \"The high-tension legal framing and the ominous warning from the judge create a classic no-win situation.\"\n    },\n    {\n      \"rank\": 9,\n      \"episode\": 39,\n      \"reason\": \"The return of the hero trope is executed with strong visual flair, immediately signaling a massive power shift.\"\n    },\n    {\n      \"rank\": 10,\n      \"episode\": 44,\n      \"reason\": \"The emotional dissonance of the lover appearing when he was believed dead creates an instantaneous interpersonal conflict.\"\n    },\n    {\n      \"rank\": 11,\n      \"episode\": 37,\n      \"reason\": \"The visceral physical suffering followed by a sharp turn to fierce resolve effectively communicates the stakes.\"\n    },\n    {\n      \"rank\": 12,\n      \"episode\": 7,\n      \"reason\": \"The villain direct threat and the visual of an approaching figure creates a simple, readable dynamic.\"\n    },\n    {\n      \"rank\": 13,\n      \"episode\": 2,\n      \"reason\": \"Public rejection at the altar provides a strong emotional hook, even if the stakes are slightly more conventional.\"\n    },\n    {\n      \"rank\": 14,\n      \"episode\": 19,\n      \"reason\": \"The detailed description of the character imprisonment creates a clear mission for the protagonist to solve.\"\n    },\n    {\n      \"rank\": 15,\n      \"episode\": 47,\n      \"reason\": \"The reversal of power dynamics where a former noble is humiliated provides a satisfying, albeit niche, hook.\"\n    },\n    {\n      \"rank\": 16,\n      \"episode\": 16,\n      \"reason\": \"The sudden physical violence is an effective grab, though it prematurely reveals the conspiracy mastermind.\"\n    },\n    {\n      \"rank\": 17,\n      \"episode\": 40,\n      \"reason\": \"The focus on security and conspirators is atmospheric, but it lacks the immediate emotional grab of the higher-ranked clips.\"\n    },\n    {\n      \"rank\": 18,\n      \"episode\": 36,\n      \"reason\": \"The visual of the snowy forest is cinematic, but the dialogue is too understated to act as a viral scroll-stopper.\"\n    },\n    {\n      \"rank\": 19,\n      \"episode\": 48,\n      \"reason\": \"The dialogue-heavy opening is slower to build tension compared to the immediate threats seen elsewhere.\"\n    },\n    {\n      \"rank\": 20,\n      \"episode\": 21,\n      \"reason\": \"The conceptual focus on mystery is intriguing, but it lacks the direct, aggressive conflict seen in top-tier promos.\"\n    }\n  ]\n}"
+              },
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 13420,
+            "completion_tokens": 1380,
+            "total_tokens": 14800
+          }
+        },
+        "validation_error": null
+      }
+    ]
+  },
+  {
+    "episode": null,
+    "stage": "comparative_ranking_pass_b",
+    "seed": 202,
+    "failed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "response": {
+          "id": "chatcmpl-comparative-pass-b-seed202",
+          "object": "chat.completion",
+          "created": 1732152948,
+          "model": "gemini-3.1-flash-lite",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"ranking\": [\n    {\n      \"rank\": 1,\n      \"episode\": 33,\n      \"reason\": \"Coerced perjury under threat of death creates immediate, high-stakes narrative tension.\"\n    },\n    {\n      \"rank\": 2,\n      \"episode\": 45,\n      \"reason\": \"Immediate legal voiding of marriage establishes high personal stakes and urgent conflict.\"\n    },\n    {\n      \"rank\": 3,\n      \"episode\": 28,\n      \"reason\": \"Dramatic exposure of hidden identity immediately puts life in danger.\"\n    },\n    {\n      \"rank\": 4,\n      \"episode\": 44,\n      \"reason\": \"Emotional confrontation over presumed death creates strong interpersonal hook.\"\n    },\n    {\n      \"rank\": 5,\n      \"episode\": 46,\n      \"reason\": \"Ticking clock deadline and confrontation with authorities sets high tension.\"\n    },\n    {\n      \"rank\": 6,\n      \"episode\": 19,\n      \"reason\": \"Dramatic imprisonment and torture creates immediate rescue stakes.\"\n    },\n    {\n      \"rank\": 7,\n      \"episode\": 34,\n      \"reason\": \"Severe legal sentence and courtroom drama establish clear stakes.\"\n    },\n    {\n      \"rank\": 8,\n      \"episode\": 12,\n      \"reason\": \"Blackmail and physical threats deliver strong narrative momentum.\"\n    },\n    {\n      \"rank\": 9,\n      \"episode\": 25,\n      \"reason\": \"Visceral medical crisis and injury hook the audience immediately.\"\n    },\n    {\n      \"rank\": 10,\n      \"episode\": 39,\n      \"reason\": \"Heroic entrance and sudden power shift provide cinematic appeal.\"\n    },\n    {\n      \"rank\": 11,\n      \"episode\": 49,\n      \"reason\": \"Accusation of treason against nobility introduces grand stakes.\"\n    },\n    {\n      \"rank\": 12,\n      \"episode\": 2,\n      \"reason\": \"Dramatic altar rejection creates strong emotional conflict.\"\n    },\n    {\n      \"rank\": 13,\n      \"episode\": 37,\n      \"reason\": \"Physical trauma followed by fierce resilience creates emotional investment.\"\n    },\n    {\n      \"rank\": 14,\n      \"episode\": 47,\n      \"reason\": \"Humiliation and social downfall hook niche interest.\"\n    },\n    {\n      \"rank\": 15,\n      \"episode\": 16,\n      \"reason\": \"Violent confrontation grabs attention but prematurely answers conspiracy mystery.\"\n    },\n    {\n      \"rank\": 16,\n      \"episode\": 40,\n      \"reason\": \"Atmospheric conspiratorial discussion lacks immediate visceral hook.\"\n    },\n    {\n      \"rank\": 17,\n      \"episode\": 21,\n      \"reason\": \"Abstract mystery discussion is slow to establish urgent stakes.\"\n    },\n    {\n      \"rank\": 18,\n      \"episode\": 48,\n      \"reason\": \"Dialogue-heavy conversation takes time to build conflict.\"\n    },\n    {\n      \"rank\": 19,\n      \"episode\": 36,\n      \"reason\": \"Understated forest dialogue lacks immediate scroll-stopping punch.\"\n    },\n    {\n      \"rank\": 20,\n      \"episode\": 7,\n      \"reason\": \"Antagonist approach lacks immediate clarity and urgency.\"\n    }\n  ]\n}"
+              },
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 13420,
+            "completion_tokens": 1395,
+            "total_tokens": 14815
+          }
+        },
+        "validation_error": null
       }
     ]
   }
