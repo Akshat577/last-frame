@@ -14,32 +14,29 @@ No independent human editor labels, unseen evaluation set, footage verification 
 
 All cut times refer to each episode's local screenplay clock. Footage may differ.
 
-## Actual mistakes and weak picks
+## The headline failure: Episode 16 answer leakage
 
-- AI boundary mistake during authoring: episode 18 was initially set to end at 01:24.00,
-  the START of her scream, rather than its END at 01:26.20. Source lookup caught that the
-  proposed cliff evidence did not end there. The supplied decisions use 01:26.20, before
-  the rescue at 01:26.50. This is the concrete example of where the AI got it wrong.
-- Episode 18 remains context-fragile: it opens on "Leave it!" and assumes the book is visible.
-  If the actual first frame does not show the ledger, reject this pick or expand the setup
-  and rerun validation. Its context rating is only 3/5. It is ranked tenth, not launch-first.
-- Episode 43 has a credible open loop (the betrayers' names), but a report being presented
-  is a weak first-three-second hook. It scores 3/5 on hook and ranks fourteenth. Structural
-  validity cannot rescue exposition-heavy creative.
-- Episode 36 starts on a conjunction ("...and killing my wife afterward"). It states stakes
-  immediately, but the spoken pickup may feel abrupt. Keep the flag until footage review.
+In the live Google Gemini API evaluation, the model selected **Episode 16** (`00:40.80 - 01:03.00`, 22.2s) as an approved promo.
+- At `00:42.50`, Alexander violently interrogates a captured attacker against the stone wall: *"Who sent you?!"*
+- At `00:49.80 - 00:52.20`, the thug breaks under his grip and screams: *"Harrington! Gerald Harrington paid us!"*
+- The cut then captures the thugs fleeing and Alexander flexing his knuckles.
 
-## Counterexample: exciting does not mean unresolved
+**Why this is a severe failure of the AI model:**
+Ending after the thug screams the culprit's name destroys the central tension of the scene. It cannot sell the mystery of *"Who sent the thugs?"* because the answer was just shouted aloud.
+Yet, Gemini rated the cliffhanger 4/5, rationalizing the spoiled resolution with an invented open loop:
+> *"With the identity of the mastermind revealed as Gerald, what will happen to Juliana and Alexander now that the betrayal has been exposed?"*
 
-Episode 16, 00:19.20-00:58.50 (39.3s) has a fight, an interrogation and retreat. It is an
-attractive naive action pick, but it includes "Harrington! Gerald Harrington paid us!" at
-00:49.80-00:52.20. Ending after that cannot be sold as "Who sent the thugs?". The episode
-is passed over in favor of episode 15, which ends before the fight and confession.
-This is a self-reviewed negative example, not an empirical comparison to a baseline system.
+**Why deterministic code passed it:**
+The cut snapped to valid cue timestamps, the duration was 22.2s (within 20–60s), dialogue was not split, and the closing cue was a character action (`E016B051`). Python verified the structure and emitted zero errors.
 
-The synthetic test `test_resolved_answer_is_semantic_blind_spot` deliberately demonstrates
-that the validator accepts a structurally correct clip containing its answer. AI/editor
-review must catch this; no claim of automatic narrative correctness is made.
+This is the primary semantic blind spot of automated tools: code checks timestamps and syntax; it cannot prove narrative suspense. The LLM readily justifies resolved plotlines as cliffhangers. This failure is why an editor must review every cut before ad spend is committed. The synthetic unit test `test_resolved_answer_is_semantic_blind_spot` deliberately verifies that the code accepts such clips, ensuring developers never falsely believe structural validity equals marketing quality.
+
+## Additional failure modes and weak picks
+
+- **Context fragility in Episode 18:** Episode 18 (`00:58.00 - 01:26.20`, 28.2s) opens on Alexander shouting *"Leave it!"*. If the cold ad's first frame does not visibly show the mother's ledger in her hands, a cold viewer has no context for her refusal to flee. Its context rating is appropriately low (3/5), ranking it ninth.
+- **Delayed hooks (Episode 26 & Episode 15):** The model previously rated scenes 5/5 for hook even when dialogue was delayed by 5.2 seconds of silent reaction (Episode 26) or 8.5 seconds of physical approach (Episode 15). For TikTok/Reels ads, 5 seconds of silence causes heavy swipe-away. Our updated validator excludes camera/sound cues from hook evidence, enforcing spoken dialogue or visceral action in seconds 0–3 and correctly passing Episode 26.
+- **Weak opening in Episode 43:** Although Episode 43 has a strong open loop (the betrayers' names under Crown seal), the opening consists of a report being handed over. It scores only 3/5 on hook and ranks twelfth.
+- **Mid-sentence pickup in Episode 36:** Episode 36 opens on a conjunction (*"...and killing my wife afterward"*). While high-stakes, spoken pickups without breathing room require editor audio crossfades.
 
 ## Technical checks and honest denominator
 
