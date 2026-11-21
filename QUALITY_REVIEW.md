@@ -67,27 +67,6 @@ This is the primary semantic blind spot of automated tools: code checks timestam
 - **Weak opening in Episode 43:** Episode 43 failed the duration constraint during repair (18.46s < 20s) and was cleanly passed.
 - **Mid-sentence pickup in Episode 36:** Episode 36 opens on an action framing Alexander in the doorway. While high-stakes, spoken pickups without breathing room require editor audio crossfades.
 
-## Honest evaluation: No golden set and no human labels
-
-Crucially, **there is no ground-truth golden evaluation set and no human editor annotations for this 50-episode pack.** 
-
-We deliberately refuse to manufacture synthetic "ground truth" labels to claim artificial precision or recall scores (such as claiming "92% precision"):
-1. **Compliance vs. Quality:** The 50 decisions (20 select, 30 pass) represent **structural code compliance**, not marketing truth. Code guarantees timestamp boundaries, clip duration (20-60s), dialogue continuity, and cue types. It cannot verify whether an audience stops scrolling or converts.
-2. **LLM Self-Grading is Circular:** An LLM evaluating its own cuts or another LLM's cuts without human editorial ground truth creates circular confirmation bias.
-3. **Footnote Disparity:** Script timestamps do not reflect performance tempo, background score, or visual editing pacing. A cut that reads well on paper can feel abrupt or sluggish on actual video footage.
-
-### The Protocol: How to build a true human-labeled benchmark
-
-To transition from structural validation to true marketing evaluation, the following experimental protocol must be run:
-1. **Curate the Golden Set:** Two professional microdrama video editors independently review a stratified 15-episode sample (5 top-ranked AI picks, 5 borderline picks around rank 15–20, and 5 passed episodes).
-2. **Label the Rubric Independently:**
-   - **Hook Velocity (1–5):** Does the first 3 seconds stop a cold viewer scrolling TikTok/Reels?
-   - **Climax Integrity (Binary):** Does the cut create an open loop, or does it leak the answer (like Ep 16)?
-   - **Standalone Comprehension (1–5):** Can a viewer who knows zero backstory understand the threat?
-   - **Boundary Delta ($\Delta t$):** Measure the exact seconds a human editor trims or extends the cut for audio/visual breathing room.
-3. **Measure Inter-Annotator Agreement:** Calculate Cohen's $\kappa$ between the two editors to establish the human baseline ceiling.
-4. **Paid Audience A/B Hold-Test:** Run approved AI cuts against human-crafted promos with equal ad spend on TikTok/Meta, tracking 3-second hold rate (hook efficiency) and cost per story start (conversion).
-
 ## Technical checks and honest denominator
 
 The full pack contains 50 episodes. There are 50 validated decisions: 20 select, 30 pass. All 20
