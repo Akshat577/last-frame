@@ -42,6 +42,10 @@ class Settings:
     min_seconds: int = 20
     max_seconds: int = 60
     def __post_init__(self):
+        clean_key = self.key.strip().strip('"\'')
+        clean_model = self.model.strip().strip('"\'')
+        object.__setattr__(self, 'key', clean_key)
+        object.__setattr__(self, 'model', clean_model)
         if self.provider not in PROVIDERS: raise ValueError('Choose a supported provider.')
         if not self.model.strip(): raise ValueError('Enter a model ID available to your API account.')
         if not self.key.strip(): raise ValueError('Enter your API key in the sidebar.')
